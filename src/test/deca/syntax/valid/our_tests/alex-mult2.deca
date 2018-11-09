@@ -1,0 +1,17 @@
+// Description:
+//    Programme faisant appel aux opérations de multiplication sur des flottants
+//
+// Resultats:
+//    c = a(2.50000e+00) * b(3.60000e+00) = 9.00000e+00
+//
+// Historique:
+//    cree le 11/01/2017
+
+{
+    float a = 2.5;
+    float b = 3.6;
+    float c = a * b;
+    print("c = a(",a);
+    print(") * b(",b);
+    println(") = ",c);
+}

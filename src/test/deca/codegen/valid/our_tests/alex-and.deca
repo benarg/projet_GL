@@ -1,0 +1,42 @@
+// Description:
+//    Programme faisant appel aux conditions et au AND
+//
+// Resultats:
+//    SUCCESS: false and false
+//    SUCCESS: false and true
+//    SUCCESS: true  and false
+//    SUCCESS: true  and true
+//
+// Historique:
+//    cree le 12/01/2017
+
+{
+    if ( false && false ) {
+        println("ERROR: false and false");
+    }
+    else {
+        println("SUCCESS: false and false");
+    }
+
+    if ( false && true ) {
+        println("ERROR: false and true");
+    }
+    else {
+        println("SUCCESS: false and true");
+    }
+
+    if ( true && false ) {
+        println("ERROR: true  and false");
+    }
+    else {
+        println("SUCCESS: true  and false");
+    }
+
+    if ( true && true ) {
+        println("SUCCESS: true  and true");
+    }
+    else {
+        println("ERROR: true  and true");
+    }
+
+}

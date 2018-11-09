@@ -1,0 +1,12 @@
+// Description:
+//    OpCmp Valid
+//
+// Resultats:
+//    Ligne 11: Operation avec OpDroit float et OpGauche int
+// 
+// Historique:
+//    cree le 18/01/2017
+
+{
+1 == 1.0;
+}

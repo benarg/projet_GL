@@ -1,0 +1,44 @@
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> [11, 4] ListDeclVar [List with 9 elements]
+      |  []> [11, 8] DeclVar
+      |  ||  +> [11, 4] Identifier (int)
+      |  ||  +> [11, 8] Identifier (i1)
+      |  ||  `> [11, 8] NoInitialization
+      |  []> [12, 8] DeclVar
+      |  ||  +> [12, 4] Identifier (int)
+      |  ||  +> [12, 8] Identifier (i2)
+      |  ||  `> [12, 8] NoInitialization
+      |  []> [12, 12] DeclVar
+      |  ||  +> [12, 4] Identifier (int)
+      |  ||  +> [12, 12] Identifier (i3)
+      |  ||  `> [12, 12] NoInitialization
+      |  []> [13, 12] DeclVar
+      |  ||  +> [13, 4] Identifier (boolean)
+      |  ||  +> [13, 12] Identifier (b1)
+      |  ||  `> [13, 12] NoInitialization
+      |  []> [13, 16] DeclVar
+      |  ||  +> [13, 4] Identifier (boolean)
+      |  ||  +> [13, 16] Identifier (b2)
+      |  ||  `> [13, 16] NoInitialization
+      |  []> [14, 12] DeclVar
+      |  ||  +> [14, 4] Identifier (boolean)
+      |  ||  +> [14, 12] Identifier (b3)
+      |  ||  `> [14, 12] NoInitialization
+      |  []> [15, 10] DeclVar
+      |  ||  +> [15, 4] Identifier (float)
+      |  ||  +> [15, 10] Identifier (f1)
+      |  ||  `> [15, 10] NoInitialization
+      |  []> [15, 14] DeclVar
+      |  ||  +> [15, 4] Identifier (float)
+      |  ||  +> [15, 14] Identifier (f2)
+      |  ||  `> [15, 14] NoInitialization
+      |  []> [16, 10] DeclVar
+      |      +> [16, 4] Identifier (float)
+      |      +> [16, 10] Identifier (f3)
+      |      `> [16, 10] NoInitialization
+      `> [18, 4] ListInst [List with 1 elements]
+         []> [18, 4] Print
+             `> [18, 10] ListExpr [List with 1 elements]
+                []> [18, 10] StringLiteral (There is nothing to see here)

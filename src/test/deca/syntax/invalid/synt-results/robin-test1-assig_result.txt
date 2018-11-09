@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/robin-test1-assig.deca:7:8: no viable alternative at input 'if'

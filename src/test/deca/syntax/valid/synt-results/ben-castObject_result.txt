@@ -1,0 +1,31 @@
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 2 elements]
+   |  []> [10, 0] DeclClass
+   |  ||  +> [10, 6] Identifier (A)
+   |  ||  +> [10, 8] Identifier (Object)
+   |  ||  +> [11, 0] ListDeclField [List with 1 elements]
+   |  ||  |  []> [11, 4] [Visibility=PUBLIC] DeclField
+   |  ||  |      +> [11, 0] Identifier (int)
+   |  ||  |      +> [11, 4] Identifier (a)
+   |  ||  |      `> [11, 4] Initialization
+   |  ||  |         `> [11, 8] Int (0)
+   |  ||  `> [11, 0] ListDeclMethod [List with 0 elements]
+   |  []> [15, 0] DeclClass
+   |      +> [15, 6] Identifier (B)
+   |      +> [15, 8] Identifier (A)
+   |      +> [15, 19] ListDeclField [List with 0 elements]
+   |      `> [15, 19] ListDeclMethod [List with 0 elements]
+   `> [17, 0] Main
+      +> [18, 0] ListDeclVar [List with 2 elements]
+      |  []> [18, 2] DeclVar
+      |  ||  +> [18, 0] Identifier (A)
+      |  ||  +> [18, 2] Identifier (a)
+      |  ||  `> [18, 2] NoInitialization
+      |  []> [19, 2] DeclVar
+      |      +> [19, 0] Identifier (B)
+      |      +> [19, 2] Identifier (b)
+      |      `> [19, 2] NoInitialization
+      `> [20, 0] ListInst [List with 1 elements]
+         []> [20, 0] Assign
+             +> [20, 0] Identifier (a)
+             `> [20, 4] Identifier (b)

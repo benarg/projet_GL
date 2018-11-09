@@ -1,0 +1,12 @@
+// Description:
+//    Wrong parameter type
+//
+// Resultats:
+//    Should throw a Contextual error (rule 2.9)
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    void f(void a) {}
+}

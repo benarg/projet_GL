@@ -1,0 +1,74 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [13, 0] Program
+   +> [13, 0] ListDeclClass [List with 0 elements]
+   `> [13, 0] Main
+      +> [14, 4] ListDeclVar [List with 2 elements]
+      |  []> [14, 10] DeclVar
+      |  ||  +> [14, 4] Identifier (float)
+      |  ||  |  definition: type (builtin), type=float
+      |  ||  +> [14, 10] Identifier (f1)
+      |  ||  |  definition: variable defined at [14, 10], type=float
+      |  ||  `> [14, 10] Initialization
+      |  ||     `> [14, 15] Float (1.9999999)
+      |  ||        type: float
+      |  []> [15, 10] DeclVar
+      |      +> [15, 4] Identifier (float)
+      |      |  definition: type (builtin), type=float
+      |      +> [15, 10] Identifier (f2)
+      |      |  definition: variable defined at [15, 10], type=float
+      |      `> [15, 10] Initialization
+      |         `> [15, 15] Multiply
+      |            type: float
+      |            +> [15, 15] Float (2.0)
+      |            |  type: float
+      |            `> [15, 19] Identifier (f1)
+      |               definition: variable defined at [14, 10], type=float
+      `> [16, 4] ListInst [List with 6 elements]
+         []> [16, 4] Print
+         ||  `> [16, 10] ListExpr [List with 2 elements]
+         ||     []> [16, 10] StringLiteral (f1 = )
+         ||     ||  type: string
+         ||     []> [16, 18] Identifier (f1)
+         ||         definition: variable defined at [14, 10], type=float
+         []> [16, 23] Println
+         ||  `> [16, 32] ListExpr [List with 2 elements]
+         ||     []> [16, 32] StringLiteral (, f1x = )
+         ||     ||  type: string
+         ||     []> [16, 43] Identifier (f1)
+         ||         definition: variable defined at [14, 10], type=float
+         []> [17, 4] Print
+         ||  `> [17, 10] ListExpr [List with 2 elements]
+         ||     []> [17, 10] StringLiteral (f2 = )
+         ||     ||  type: string
+         ||     []> [17, 18] Identifier (f2)
+         ||         definition: variable defined at [15, 10], type=float
+         []> [17, 23] Println
+         ||  `> [17, 32] ListExpr [List with 2 elements]
+         ||     []> [17, 32] StringLiteral (, f2x = )
+         ||     ||  type: string
+         ||     []> [17, 43] Identifier (f2)
+         ||         definition: variable defined at [15, 10], type=float
+         []> [18, 4] Print
+         ||  `> [18, 10] ListExpr [List with 2 elements]
+         ||     []> [18, 10] StringLiteral (f1 + f2 = )
+         ||     ||  type: string
+         ||     []> [18, 24] Plus
+         ||         type: float
+         ||         +> [18, 24] Identifier (f1)
+         ||         |  definition: variable defined at [14, 10], type=float
+         ||         `> [18, 27] Identifier (f2)
+         ||            definition: variable defined at [15, 10], type=float
+         []> [18, 32] Println
+             `> [18, 41] ListExpr [List with 2 elements]
+                []> [18, 41] StringLiteral (, f1x + f2x = )
+                ||  type: string
+                []> [18, 59] Plus
+                    type: float
+                    +> [18, 59] Identifier (f1)
+                    |  definition: variable defined at [14, 10], type=float
+                    `> [18, 62] Identifier (f2)
+                       definition: variable defined at [15, 10], type=float

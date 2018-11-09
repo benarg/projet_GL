@@ -1,0 +1,16 @@
+// Description:
+//    tests de programme incorrect à la génération : OverFlow sur mult de float
+//
+// Resultats:
+//    Error: Overflow during arithmetic operation
+//
+// Historique:
+//    16/01/2017
+
+{
+    float a = 4884005101587500547024850.0425;
+    float b = 8584540548512048251875575.20522;
+    float c;
+    c = a*b;
+    print(c);
+}

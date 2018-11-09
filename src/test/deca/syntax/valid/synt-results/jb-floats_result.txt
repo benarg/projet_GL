@@ -1,0 +1,109 @@
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> [11, 4] ListDeclVar [List with 0 elements]
+      `> [11, 4] ListInst [List with 26 elements]
+         []> [11, 4] Println
+         ||  `> [11, 12] ListExpr [List with 2 elements]
+         ||     []> [11, 12] StringLiteral (0x0.0p0F = )
+         ||     []> [11, 27] Float (0.0)
+         []> [12, 4] Println
+         ||  `> [12, 12] ListExpr [List with 2 elements]
+         ||     []> [12, 12] StringLiteral (0x1.0p0f = )
+         ||     []> [12, 27] Float (1.0)
+         []> [13, 4] Println
+         ||  `> [13, 12] ListExpr [List with 2 elements]
+         ||     []> [13, 12] StringLiteral (0x1.0P0F = )
+         ||     []> [13, 27] Float (1.0)
+         []> [14, 4] Println
+         ||  `> [14, 12] ListExpr [List with 2 elements]
+         ||     []> [14, 12] StringLiteral (0x1.0P0f = )
+         ||     []> [14, 27] Float (1.0)
+         []> [15, 4] Println
+         ||  `> [15, 12] ListExpr [List with 2 elements]
+         ||     []> [15, 12] StringLiteral (0X1.0p0F = )
+         ||     []> [15, 27] Float (1.0)
+         []> [16, 4] Println
+         ||  `> [16, 12] ListExpr [List with 2 elements]
+         ||     []> [16, 12] StringLiteral (0x1.0p+0F = )
+         ||     []> [16, 28] Float (1.0)
+         []> [17, 4] Println
+         ||  `> [17, 12] ListExpr [List with 2 elements]
+         ||     []> [17, 12] StringLiteral (0x1.0p-0F = )
+         ||     []> [17, 28] Float (1.0)
+         []> [18, 4] Println
+         ||  `> [18, 12] ListExpr [List with 2 elements]
+         ||     []> [18, 12] StringLiteral (0x9.0p0F = )
+         ||     []> [18, 27] Float (9.0)
+         []> [19, 4] Println
+         ||  `> [19, 12] ListExpr [List with 2 elements]
+         ||     []> [19, 12] StringLiteral (0xA.0p0F = )
+         ||     []> [19, 27] Float (10.0)
+         []> [20, 4] Println
+         ||  `> [20, 12] ListExpr [List with 2 elements]
+         ||     []> [20, 12] StringLiteral (0xF.0p0F = )
+         ||     []> [20, 27] Float (15.0)
+         []> [21, 4] Println
+         ||  `> [21, 12] ListExpr [List with 2 elements]
+         ||     []> [21, 12] StringLiteral (0x1.9p0F = )
+         ||     []> [21, 27] Float (1.5625)
+         []> [22, 4] Println
+         ||  `> [22, 12] ListExpr [List with 2 elements]
+         ||     []> [22, 12] StringLiteral (0x1.Ap0F = )
+         ||     []> [22, 27] Float (1.625)
+         []> [23, 4] Println
+         ||  `> [23, 12] ListExpr [List with 2 elements]
+         ||     []> [23, 12] StringLiteral (0x1.Fp0F = )
+         ||     []> [23, 27] Float (1.9375)
+         []> [24, 4] Println
+         ||  `> [24, 12] ListExpr [List with 2 elements]
+         ||     []> [24, 12] StringLiteral (0x2.0p9F = )
+         ||     []> [24, 27] Float (1024.0)
+         []> [25, 4] Println
+         ||  `> [25, 12] ListExpr [List with 2 elements]
+         ||     []> [25, 12] StringLiteral (0x2.0p00F = )
+         ||     []> [25, 28] Float (2.0)
+         []> [26, 4] Println
+         ||  `> [26, 12] ListExpr [List with 2 elements]
+         ||     []> [26, 12] StringLiteral (0.0 = )
+         ||     []> [26, 22] Float (0.0)
+         []> [27, 4] Println
+         ||  `> [27, 12] ListExpr [List with 2 elements]
+         ||     []> [27, 12] StringLiteral (9.9 = )
+         ||     []> [27, 22] Float (9.9)
+         []> [28, 4] Println
+         ||  `> [28, 12] ListExpr [List with 2 elements]
+         ||     []> [28, 12] StringLiteral (10.0 = )
+         ||     []> [28, 23] Float (10.0)
+         []> [29, 4] Println
+         ||  `> [29, 12] ListExpr [List with 2 elements]
+         ||     []> [29, 12] StringLiteral (1.1f = )
+         ||     []> [29, 23] Float (1.1)
+         []> [30, 4] Println
+         ||  `> [30, 12] ListExpr [List with 2 elements]
+         ||     []> [30, 12] StringLiteral (1.1F = )
+         ||     []> [30, 23] Float (1.1)
+         []> [31, 4] Println
+         ||  `> [31, 12] ListExpr [List with 2 elements]
+         ||     []> [31, 12] StringLiteral (1.1e0 = )
+         ||     []> [31, 24] Float (1.1)
+         []> [32, 4] Println
+         ||  `> [32, 12] ListExpr [List with 2 elements]
+         ||     []> [32, 12] StringLiteral (1.1E0 = )
+         ||     []> [32, 24] Float (1.1)
+         []> [33, 4] Println
+         ||  `> [33, 12] ListExpr [List with 2 elements]
+         ||     []> [33, 12] StringLiteral (1.1e9 = )
+         ||     []> [33, 24] Float (1.1E9)
+         []> [34, 4] Println
+         ||  `> [34, 12] ListExpr [List with 2 elements]
+         ||     []> [34, 12] StringLiteral (1.1e+1 = )
+         ||     []> [34, 25] Float (11.0)
+         []> [35, 4] Println
+         ||  `> [35, 12] ListExpr [List with 2 elements]
+         ||     []> [35, 12] StringLiteral (1.1e-1 = )
+         ||     []> [35, 25] Float (0.11)
+         []> [36, 4] Println
+             `> [36, 12] ListExpr [List with 2 elements]
+                []> [36, 12] StringLiteral (1.1e10 = )
+                []> [36, 25] Float (1.10000005E10)

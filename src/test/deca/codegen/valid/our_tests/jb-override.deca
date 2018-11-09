@@ -1,0 +1,30 @@
+// Description:
+//    Override with return type that is a subtype
+//
+// Resultats:
+//    Should print SUCCESS
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    A getThis() {
+        return this;
+    }
+}
+
+class B extends A{
+    B getThis() {
+        return this;
+    }
+}
+
+{
+    A a = new A();
+    B b = new B();
+    if ((a == a.getThis()) && (b == b.getThis())) {
+        println("SUCCESS");
+    } else {
+        println("FAIL");
+    }
+}

@@ -1,0 +1,73 @@
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> [11, 4] ListDeclVar [List with 10 elements]
+      |  []> [11, 8] DeclVar
+      |  ||  +> [11, 4] Identifier (int)
+      |  ||  +> [11, 8] Identifier (i1)
+      |  ||  `> [11, 8] Initialization
+      |  ||     `> [11, 13] Int (1)
+      |  []> [12, 8] DeclVar
+      |  ||  +> [12, 4] Identifier (int)
+      |  ||  +> [12, 8] Identifier (i2)
+      |  ||  `> [12, 8] Initialization
+      |  ||     `> [12, 13] Int (2)
+      |  []> [13, 10] DeclVar
+      |  ||  +> [13, 4] Identifier (float)
+      |  ||  +> [13, 10] Identifier (f1)
+      |  ||  `> [13, 10] Initialization
+      |  ||     `> [13, 15] Float (1.1)
+      |  []> [14, 10] DeclVar
+      |  ||  +> [14, 4] Identifier (float)
+      |  ||  +> [14, 10] Identifier (f2)
+      |  ||  `> [14, 10] Initialization
+      |  ||     `> [14, 15] Float (2.2)
+      |  []> [15, 8] DeclVar
+      |  ||  +> [15, 4] Identifier (int)
+      |  ||  +> [15, 8] Identifier (i3)
+      |  ||  `> [15, 8] NoInitialization
+      |  []> [15, 12] DeclVar
+      |  ||  +> [15, 4] Identifier (int)
+      |  ||  +> [15, 12] Identifier (i4)
+      |  ||  `> [15, 12] NoInitialization
+      |  []> [16, 12] DeclVar
+      |  ||  +> [16, 4] Identifier (boolean)
+      |  ||  +> [16, 12] Identifier (b1)
+      |  ||  `> [16, 12] Initialization
+      |  ||     `> [16, 17] BooleanLiteral (true)
+      |  []> [17, 12] DeclVar
+      |  ||  +> [17, 4] Identifier (boolean)
+      |  ||  +> [17, 12] Identifier (b2)
+      |  ||  `> [17, 12] Initialization
+      |  ||     `> [17, 17] BooleanLiteral (false)
+      |  []> [18, 12] DeclVar
+      |  ||  +> [18, 4] Identifier (boolean)
+      |  ||  +> [18, 12] Identifier (b3)
+      |  ||  `> [18, 12] NoInitialization
+      |  []> [18, 16] DeclVar
+      |      +> [18, 4] Identifier (boolean)
+      |      +> [18, 16] Identifier (b4)
+      |      `> [18, 16] NoInitialization
+      `> [19, 4] ListInst [List with 6 elements]
+         []> [19, 4] Assign
+         ||  +> [19, 4] Identifier (b3)
+         ||  `> [19, 9] BooleanLiteral (true)
+         []> [20, 4] Assign
+         ||  +> [20, 4] Identifier (b4)
+         ||  `> [20, 9] BooleanLiteral (false)
+         []> [22, 4] Println
+         ||  `> [22, 12] ListExpr [List with 2 elements]
+         ||     []> [22, 12] StringLiteral (This is i1 : )
+         ||     []> [22, 29] Identifier (i1)
+         []> [23, 4] Println
+         ||  `> [23, 12] ListExpr [List with 2 elements]
+         ||     []> [23, 12] StringLiteral (This is i2 : )
+         ||     []> [23, 29] Identifier (i2)
+         []> [24, 4] Println
+         ||  `> [24, 12] ListExpr [List with 2 elements]
+         ||     []> [24, 12] StringLiteral (This is f1 : )
+         ||     []> [24, 29] Identifier (f1)
+         []> [25, 4] Println
+             `> [25, 12] ListExpr [List with 2 elements]
+                []> [25, 12] StringLiteral (This is f2 : )
+                []> [25, 29] Identifier (f2)

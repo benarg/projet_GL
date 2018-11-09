@@ -1,0 +1,15 @@
+// Description:
+//    Teste le print et println d'un mix addition/division sur entiers
+//
+// Resultats:
+//    - IADD & IDIV : 4 + 8 / 2               = 8
+//    - IDIV & IADD : 8 / 2 + 4               = 8
+// 
+// Historique:
+//    cree le 17/01/2017
+
+{
+    println("- IADD & IDIV : 4 + 8 / 2               = ", 4 + 8 / 2);
+    print("- IDIV & IADD : 8 / 2 + 4               = ", 8 / 2 + 4);
+    println("");
+}

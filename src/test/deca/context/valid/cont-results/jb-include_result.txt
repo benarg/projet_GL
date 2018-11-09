@@ -1,0 +1,16 @@
+DEBUG fr.ensimag.deca.syntax.AbstractDecaLexer.findFile(AbstractDecaLexer.java:172) - Using local file src/test/deca/syntax/valid/our_tests/jb-empty.deca
+DEBUG fr.ensimag.deca.syntax.AbstractDecaLexer.nextToken(AbstractDecaLexer.java:266) - End of file, poping include stack
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 0] ListDeclVar [List with 0 elements]
+      `> [12, 0] ListInst [List with 1 elements]
+         []> [12, 0] Println
+             `> [12, 8] ListExpr [List with 1 elements]
+                []> [12, 8] StringLiteral (This is in the second .deca file)
+                    type: string

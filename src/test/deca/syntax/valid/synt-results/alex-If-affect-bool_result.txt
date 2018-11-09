@@ -1,0 +1,35 @@
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 4] ListDeclVar [List with 2 elements]
+      |  []> [12, 12] DeclVar
+      |  ||  +> [12, 4] Identifier (boolean)
+      |  ||  +> [12, 12] Identifier (a)
+      |  ||  `> [12, 12] NoInitialization
+      |  []> [12, 14] DeclVar
+      |      +> [12, 4] Identifier (boolean)
+      |      +> [12, 14] Identifier (b)
+      |      `> [12, 14] NoInitialization
+      `> [13, 4] ListInst [List with 2 elements]
+         []> [13, 4] IfThenElse
+         ||  +> [13, 7] Assign
+         ||  |  +> [13, 8] Identifier (a)
+         ||  |  `> [13, 12] BooleanLiteral (true)
+         ||  +> [14, 8] ListInst [List with 1 elements]
+         ||  |  []> [14, 8] Println
+         ||  |      `> [14, 16] ListExpr [List with 1 elements]
+         ||  |         []> [14, 16] StringLiteral (1 AFFECT SUCCESS)
+         ||  `> ListInst [List with 0 elements]
+         []> [16, 4] IfThenElse
+             +> [16, 7] And
+             |  +> [16, 7] Assign
+             |  |  +> [16, 8] Identifier (a)
+             |  |  `> [16, 12] BooleanLiteral (true)
+             |  `> [16, 21] Assign
+             |     +> [16, 22] Identifier (b)
+             |     `> [16, 26] BooleanLiteral (true)
+             +> [17, 8] ListInst [List with 1 elements]
+             |  []> [17, 8] Println
+             |      `> [17, 16] ListExpr [List with 1 elements]
+             |         []> [17, 16] StringLiteral (2 AFFECT SUCCESS)
+             `> ListInst [List with 0 elements]

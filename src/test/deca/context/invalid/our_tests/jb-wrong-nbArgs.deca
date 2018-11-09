@@ -1,0 +1,18 @@
+// Description:
+//    Wrong number of arguments
+//
+// Resultats:
+//    Should throw Contextual error (rule 3.73-3.74)
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    void f(int a) {}
+}
+
+{
+    A a = new A();
+    a.f();
+    a.f(1, 2);
+}

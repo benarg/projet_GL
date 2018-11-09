@@ -1,0 +1,50 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 2 elements]
+   |  []> [10, 0] DeclClass
+   |  ||  +> [10, 6] Identifier (A)
+   |  ||  |  definition: type defined at [10, 6], type=A
+   |  ||  +> [10, 8] Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> [11, 0] ListDeclField [List with 1 elements]
+   |  ||  |  []> [11, 4] [Visibility=PUBLIC] DeclField
+   |  ||  |      +> [11, 0] Identifier (int)
+   |  ||  |      |  definition: type (builtin), type=int
+   |  ||  |      +> [11, 4] Identifier (a)
+   |  ||  |      |  definition: field defined at [11, 4], type=int
+   |  ||  |      `> [11, 4] Initialization
+   |  ||  |         `> [11, 8] Int (0)
+   |  ||  |            type: int
+   |  ||  `> [11, 0] ListDeclMethod [List with 0 elements]
+   |  []> [15, 0] DeclClass
+   |      +> [15, 6] Identifier (B)
+   |      |  definition: type defined at [15, 6], type=B
+   |      +> [15, 8] Identifier (A)
+   |      |  definition: type defined at [10, 6], type=A
+   |      +> [15, 19] ListDeclField [List with 0 elements]
+   |      `> [15, 19] ListDeclMethod [List with 0 elements]
+   `> [17, 0] Main
+      +> [18, 0] ListDeclVar [List with 2 elements]
+      |  []> [18, 2] DeclVar
+      |  ||  +> [18, 0] Identifier (A)
+      |  ||  |  definition: type defined at [10, 6], type=A
+      |  ||  +> [18, 2] Identifier (a)
+      |  ||  |  definition: variable defined at [18, 2], type=A
+      |  ||  `> [18, 2] NoInitialization
+      |  []> [19, 2] DeclVar
+      |      +> [19, 0] Identifier (B)
+      |      |  definition: type defined at [15, 6], type=B
+      |      +> [19, 2] Identifier (b)
+      |      |  definition: variable defined at [19, 2], type=B
+      |      `> [19, 2] NoInitialization
+      `> [20, 0] ListInst [List with 1 elements]
+         []> [20, 0] Assign
+             type: A
+             +> [20, 0] Identifier (a)
+             |  definition: variable defined at [18, 2], type=A
+             `> [20, 4] Identifier (b)
+                definition: variable defined at [19, 2], type=B

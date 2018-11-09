@@ -1,0 +1,21 @@
+// Description:
+//    test  de programme correct
+//
+//
+//
+//
+// Historique:
+//    cree le 20/01/2017
+
+class A {
+int a = 0;
+}
+
+
+class B extends A {}
+
+{
+A a;
+B b;
+a = b;
+}

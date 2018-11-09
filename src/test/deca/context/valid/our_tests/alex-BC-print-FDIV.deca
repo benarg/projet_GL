@@ -1,0 +1,15 @@
+// Description:
+//    Teste le print et println d'une division sur un flottant
+//
+// Resultats:
+//    - FDIV1       : 100.0 / 4.0 / 5.0 / 5.0 = 1.0
+//    - FDIV2       : 120.0 / 6.0 / 5.0 / 2.0 = 2.0
+// 
+// Historique:
+//    cree le 17/01/2017
+
+{
+    println("- FDIV1       : 100.0 / 4.0 / 5.0 / 5.0 = ", 100.0 / 4.0 / 5.0 / 5.0);
+    print("- FDIV2       : 120.0 / 6.0 / 5.0 / 2.0 = ", 120.0 / 6.0 / 5.0 / 2.0);
+    println("");
+}

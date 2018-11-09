@@ -1,0 +1,104 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [1, 0] Program
+   +> [1, 0] ListDeclClass [List with 2 elements]
+   |  []> [1, 0] DeclClass
+   |  ||  +> [1, 6] Identifier (A)
+   |  ||  |  definition: type defined at [1, 6], type=A
+   |  ||  +> [1, 8] Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> [3, 4] ListDeclField [List with 1 elements]
+   |  ||  |  []> [3, 6] [Visibility=PUBLIC] DeclField
+   |  ||  |      +> [3, 4] Identifier (B)
+   |  ||  |      |  definition: type defined at [17, 6], type=B
+   |  ||  |      +> [3, 6] Identifier (b)
+   |  ||  |      |  definition: field defined at [3, 6], type=B
+   |  ||  |      `> [3, 6] Initialization
+   |  ||  |         `> [3, 10] New
+   |  ||  |            type: B
+   |  ||  |            `> [3, 14] Identifier (B)
+   |  ||  |               definition: type defined at [17, 6], type=B
+   |  ||  `> [3, 4] ListDeclMethod [List with 2 elements]
+   |  ||     []> [5, 4] DeclMethod
+   |  ||     ||  +> [5, 4] Identifier (void)
+   |  ||     ||  |  definition: type (builtin), type=void
+   |  ||     ||  +> [5, 9] Identifier (hello)
+   |  ||     ||  |  definition: method defined at [5, 4], type=void
+   |  ||     ||  +> [5, 15] ListDeclParam [List with 0 elements]
+   |  ||     ||  `> [5, 17] MethodBody
+   |  ||     ||     +> [5, 17] ListDeclVar [List with 0 elements]
+   |  ||     ||     `> [5, 17] ListInst [List with 2 elements]
+   |  ||     ||        []> [6, 8] Println
+   |  ||     ||        ||  `> [6, 16] ListExpr [List with 1 elements]
+   |  ||     ||        ||     []> [6, 16] StringLiteral (hello)
+   |  ||     ||        ||         type: string
+   |  ||     ||        []> [7, 8] MethodCall
+   |  ||     ||            type: void
+   |  ||     ||            +> [7, 8] This
+   |  ||     ||            |  type: A
+   |  ||     ||            +> [7, 13] Identifier (hello2)
+   |  ||     ||            |  definition: method defined at [10, 4], type=void
+   |  ||     ||            `> [7, 20] ListExpr [List with 0 elements]
+   |  ||     []> [10, 4] DeclMethod
+   |  ||         +> [10, 4] Identifier (void)
+   |  ||         |  definition: type (builtin), type=void
+   |  ||         +> [10, 9] Identifier (hello2)
+   |  ||         |  definition: method defined at [10, 4], type=void
+   |  ||         +> [10, 16] ListDeclParam [List with 0 elements]
+   |  ||         `> [10, 18] MethodBody
+   |  ||            +> [10, 18] ListDeclVar [List with 0 elements]
+   |  ||            `> [10, 18] ListInst [List with 2 elements]
+   |  ||               []> [11, 8] Println
+   |  ||               ||  `> [11, 16] ListExpr [List with 1 elements]
+   |  ||               ||     []> [11, 16] StringLiteral (hello2)
+   |  ||               ||         type: string
+   |  ||               []> [12, 8] MethodCall
+   |  ||                   type: void
+   |  ||                   +> [12, 8] Identifier (b)
+   |  ||                   |  definition: field defined at [3, 6], type=B
+   |  ||                   +> [12, 10] Identifier (hello3)
+   |  ||                   |  definition: method defined at [20, 4], type=void
+   |  ||                   `> [12, 17] ListExpr [List with 0 elements]
+   |  []> [17, 0] DeclClass
+   |      +> [17, 6] Identifier (B)
+   |      |  definition: type defined at [17, 6], type=B
+   |      +> [17, 8] Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> [20, 4] ListDeclField [List with 0 elements]
+   |      `> [20, 4] ListDeclMethod [List with 1 elements]
+   |         []> [20, 4] DeclMethod
+   |             +> [20, 4] Identifier (void)
+   |             |  definition: type (builtin), type=void
+   |             +> [20, 9] Identifier (hello3)
+   |             |  definition: method defined at [20, 4], type=void
+   |             +> [20, 16] ListDeclParam [List with 0 elements]
+   |             `> [20, 18] MethodBody
+   |                +> [20, 18] ListDeclVar [List with 0 elements]
+   |                `> [20, 18] ListInst [List with 1 elements]
+   |                   []> [22, 8] Println
+   |                       `> [22, 16] ListExpr [List with 1 elements]
+   |                          []> [22, 16] StringLiteral (hello3)
+   |                              type: string
+   `> [30, 0] Main
+      +> [32, 4] ListDeclVar [List with 1 elements]
+      |  []> [32, 6] DeclVar
+      |      +> [32, 4] Identifier (A)
+      |      |  definition: type defined at [1, 6], type=A
+      |      +> [32, 6] Identifier (a)
+      |      |  definition: variable defined at [32, 6], type=A
+      |      `> [32, 6] Initialization
+      |         `> [32, 10] New
+      |            type: A
+      |            `> [32, 14] Identifier (A)
+      |               definition: type defined at [1, 6], type=A
+      `> [34, 4] ListInst [List with 1 elements]
+         []> [34, 4] MethodCall
+             type: void
+             +> [34, 4] Identifier (a)
+             |  definition: variable defined at [32, 6], type=A
+             +> [34, 6] Identifier (hello)
+             |  definition: method defined at [5, 4], type=void
+             `> [34, 12] ListExpr [List with 0 elements]

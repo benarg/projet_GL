@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/robin-test8-missSemi.deca:6:0: mismatched input 'float' expecting {COMMA, SEMI}

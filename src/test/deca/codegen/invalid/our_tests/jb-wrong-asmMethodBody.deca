@@ -1,0 +1,26 @@
+// Description:
+//    Bad asm Method Body (missing RTS)
+//
+// Resultats:
+//    Should print SUCCESS twice, seperated by an error message
+//
+// Historique:
+//    cree le 23/01/2017
+
+class A {
+    boolean asmMethod() asm(
+"        WSTR \"SUCCESS\"
+        WNL
+        LOAD #1, R0");
+    void f() {
+        println("Missing RTS in asmMethod's body");
+    }
+}
+
+{
+    if ((new A()).asmMethod()) {
+        println("SUCCESS");
+    } else {
+        println("FAIL");
+    }
+}

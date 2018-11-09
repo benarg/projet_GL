@@ -1,0 +1,42 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 4] ListDeclVar [List with 0 elements]
+      `> [12, 4] ListInst [List with 3 elements]
+         []> [12, 4] Println
+         ||  `> [12, 12] ListExpr [List with 2 elements]
+         ||     []> [12, 12] StringLiteral (- ISUB1       : 9 - 6 - 3               = )
+         ||     ||  type: string
+         ||     []> [12, 58] Minus
+         ||         type: int
+         ||         +> [12, 58] Minus
+         ||         |  type: int
+         ||         |  +> [12, 58] Int (9)
+         ||         |  |  type: int
+         ||         |  `> [12, 62] Int (6)
+         ||         |     type: int
+         ||         `> [12, 66] Int (3)
+         ||            type: int
+         []> [13, 4] Print
+         ||  `> [13, 10] ListExpr [List with 2 elements]
+         ||     []> [13, 10] StringLiteral (- ISUB2       : 365 - 31 - 7            = )
+         ||     ||  type: string
+         ||     []> [13, 56] Minus
+         ||         type: int
+         ||         +> [13, 56] Minus
+         ||         |  type: int
+         ||         |  +> [13, 56] Int (365)
+         ||         |  |  type: int
+         ||         |  `> [13, 62] Int (31)
+         ||         |     type: int
+         ||         `> [13, 67] Int (7)
+         ||            type: int
+         []> [14, 4] Println
+             `> [14, 12] ListExpr [List with 1 elements]
+                []> [14, 12] StringLiteral ()
+                    type: string

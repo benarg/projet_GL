@@ -1,0 +1,15 @@
+// Description:
+//    Teste le print et println de l'opération modulo
+//
+// Resultats:
+//    - REM1        : 100 % 90 % 8            = 2
+//    - REM2        : 100 % 8 % 2             = 0
+// 
+// Historique:
+//    cree le 17/01/2017
+
+{
+    println("- REM1        : 100 % 90 % 8            = ", 100 % 90 % 8);
+    print("- REM2        : 100 % 8 % 2             = ", 100 % 8 % 2);
+    println("");
+}

@@ -1,0 +1,35 @@
+class A {
+
+    int a1;
+    int a2;
+
+}
+
+class B extends A {
+
+    int b1;
+
+}
+
+class C extends B {
+
+    boolean c1 = true;
+
+}
+
+{
+
+    C c = new C();
+
+    c.a1 = 5;
+    c.a2 = 3;
+    c.b1 = 7;
+
+    if (c.c1) {
+        println("c.c1 was initialized to True");
+        c1 = False;
+    } else {
+        println("c.c1 was initialized to False");
+    }
+
+}

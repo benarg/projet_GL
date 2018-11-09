@@ -1,0 +1,15 @@
+// Description:
+//    Test invalide lexicalement : sur les charactères d'échappement
+//
+// Resultats:
+//    OBRACE: [@0,152:152='{',<34>,13:0]
+//    PRINTLN: [@1,158:164='println',<14>,14:4]
+//    OPARENT: [@2,165:165='(',<32>,mv14:11]
+//    ./src/test/deca/syntax/invalid/our_synt_tests/alex-car-echappement2.deca:14:13: l'entrée n'a pas été reconnue -> DEFAULT
+// 
+// Historique:
+//    cree le 20/01/2017
+
+{
+    println("Oups this is an escape char \\\");
+}

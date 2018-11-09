@@ -1,0 +1,178 @@
+`> [1, 0] Program
+   +> [1, 0] ListDeclClass [List with 0 elements]
+   `> [1, 0] Main
+      +> [2, 1] ListDeclVar [List with 9 elements]
+      |  []> [2, 5] DeclVar
+      |  ||  +> [2, 1] Identifier (int)
+      |  ||  +> [2, 5] Identifier (a)
+      |  ||  `> [2, 5] Initialization
+      |  ||     `> [2, 9] Int (1)
+      |  []> [3, 5] DeclVar
+      |  ||  +> [3, 1] Identifier (int)
+      |  ||  +> [3, 5] Identifier (b)
+      |  ||  `> [3, 5] Initialization
+      |  ||     `> [3, 9] Int (2)
+      |  []> [4, 5] DeclVar
+      |  ||  +> [4, 1] Identifier (int)
+      |  ||  +> [4, 5] Identifier (c)
+      |  ||  `> [4, 5] Initialization
+      |  ||     `> [4, 9] Int (2)
+      |  []> [5, 7] DeclVar
+      |  ||  +> [5, 1] Identifier (float)
+      |  ||  +> [5, 7] Identifier (d)
+      |  ||  `> [5, 7] Initialization
+      |  ||     `> [5, 11] Float (1.5)
+      |  []> [6, 7] DeclVar
+      |  ||  +> [6, 1] Identifier (float)
+      |  ||  +> [6, 7] Identifier (e)
+      |  ||  `> [6, 7] Initialization
+      |  ||     `> [6, 11] Float (2.5)
+      |  []> [7, 7] DeclVar
+      |  ||  +> [7, 1] Identifier (float)
+      |  ||  +> [7, 7] Identifier (f)
+      |  ||  `> [7, 7] Initialization
+      |  ||     `> [7, 11] Float (2.5)
+      |  []> [8, 9] DeclVar
+      |  ||  +> [8, 1] Identifier (boolean)
+      |  ||  +> [8, 9] Identifier (g)
+      |  ||  `> [8, 9] Initialization
+      |  ||     `> [8, 13] BooleanLiteral (true)
+      |  []> [9, 9] DeclVar
+      |  ||  +> [9, 1] Identifier (boolean)
+      |  ||  +> [9, 9] Identifier (h)
+      |  ||  `> [9, 9] Initialization
+      |  ||     `> [9, 13] BooleanLiteral (false)
+      |  []> [10, 9] DeclVar
+      |      +> [10, 1] Identifier (boolean)
+      |      +> [10, 9] Identifier (i)
+      |      `> [10, 9] Initialization
+      |         `> [10, 13] Identifier (h)
+      `> [12, 1] ListInst [List with 10 elements]
+         []> [12, 1] IfThenElse
+         ||  +> [12, 4] Equals
+         ||  |  +> [12, 4] Identifier (c)
+         ||  |  `> [12, 7] Identifier (b)
+         ||  +> [13, 2] ListInst [List with 1 elements]
+         ||  |  []> [13, 2] Println
+         ||  |      `> [13, 10] ListExpr [List with 1 elements]
+         ||  |         []> [13, 10] StringLiteral (OK ... c == b)
+         ||  `> [15, 1] ListInst [List with 1 elements]
+         ||     []> [16, 2] Println
+         ||         `> [16, 10] ListExpr [List with 1 elements]
+         ||            []> [16, 10] StringLiteral (ERROR)
+         []> [19, 1] IfThenElse
+         ||  +> [19, 4] Lower
+         ||  |  +> [19, 4] Identifier (a)
+         ||  |  `> [19, 6] Identifier (b)
+         ||  +> [20, 2] ListInst [List with 1 elements]
+         ||  |  []> [20, 2] Println
+         ||  |      `> [20, 10] ListExpr [List with 1 elements]
+         ||  |         []> [20, 10] StringLiteral (OK ... a < b)
+         ||  `> [22, 1] ListInst [List with 1 elements]
+         ||     []> [23, 2] Println
+         ||         `> [23, 10] ListExpr [List with 1 elements]
+         ||            []> [23, 10] StringLiteral (ERROR)
+         []> [26, 1] IfThenElse
+         ||  +> [26, 4] Greater
+         ||  |  +> [26, 4] Identifier (b)
+         ||  |  `> [26, 6] Identifier (a)
+         ||  +> [27, 2] ListInst [List with 1 elements]
+         ||  |  []> [27, 2] Println
+         ||  |      `> [27, 10] ListExpr [List with 1 elements]
+         ||  |         []> [27, 10] StringLiteral (OK ... b > a)
+         ||  `> [29, 1] ListInst [List with 1 elements]
+         ||     []> [30, 2] Println
+         ||         `> [30, 10] ListExpr [List with 1 elements]
+         ||            []> [30, 10] StringLiteral (ERROR)
+         []> [33, 1] IfThenElse
+         ||  +> [33, 4] NotEquals
+         ||  |  +> [33, 4] Identifier (d)
+         ||  |  `> [33, 7] Identifier (e)
+         ||  +> [34, 2] ListInst [List with 1 elements]
+         ||  |  []> [34, 2] Println
+         ||  |      `> [34, 10] ListExpr [List with 1 elements]
+         ||  |         []> [34, 10] StringLiteral (OK ... d != e)
+         ||  `> [36, 1] ListInst [List with 1 elements]
+         ||     []> [37, 2] Println
+         ||         `> [37, 10] ListExpr [List with 1 elements]
+         ||            []> [37, 10] StringLiteral (ERROR)
+         []> [40, 1] IfThenElse
+         ||  +> [40, 4] LowerOrEqual
+         ||  |  +> [40, 4] Identifier (e)
+         ||  |  `> [40, 7] Identifier (f)
+         ||  +> [41, 2] ListInst [List with 1 elements]
+         ||  |  []> [41, 2] Println
+         ||  |      `> [41, 10] ListExpr [List with 1 elements]
+         ||  |         []> [41, 10] StringLiteral (OK ... e <= f)
+         ||  `> [43, 1] ListInst [List with 1 elements]
+         ||     []> [44, 2] Println
+         ||         `> [44, 10] ListExpr [List with 1 elements]
+         ||            []> [44, 10] StringLiteral (ERROR)
+         []> [47, 1] IfThenElse
+         ||  +> [47, 4] GreaterOrEqual
+         ||  |  +> [47, 4] Identifier (e)
+         ||  |  `> [47, 7] Identifier (d)
+         ||  +> [48, 2] ListInst [List with 1 elements]
+         ||  |  []> [48, 2] Println
+         ||  |      `> [48, 10] ListExpr [List with 1 elements]
+         ||  |         []> [48, 10] StringLiteral (OK ... e >= d)
+         ||  `> [50, 1] ListInst [List with 1 elements]
+         ||     []> [51, 2] Println
+         ||         `> [51, 10] ListExpr [List with 1 elements]
+         ||            []> [51, 10] StringLiteral (ERROR)
+         []> [54, 1] IfThenElse
+         ||  +> [54, 4] Or
+         ||  |  +> [54, 4] Identifier (g)
+         ||  |  `> [54, 7] Identifier (h)
+         ||  +> [55, 2] ListInst [List with 1 elements]
+         ||  |  []> [55, 2] Println
+         ||  |      `> [55, 10] ListExpr [List with 1 elements]
+         ||  |         []> [55, 10] StringLiteral (OK ... g || h)
+         ||  `> [57, 1] ListInst [List with 1 elements]
+         ||     []> [58, 2] Println
+         ||         `> [58, 10] ListExpr [List with 1 elements]
+         ||            []> [58, 10] StringLiteral (ERROR)
+         []> [61, 1] IfThenElse
+         ||  +> [61, 4] And
+         ||  |  +> [61, 4] Identifier (g)
+         ||  |  `> [61, 7] Identifier (h)
+         ||  +> [62, 2] ListInst [List with 1 elements]
+         ||  |  []> [62, 2] Println
+         ||  |      `> [62, 10] ListExpr [List with 1 elements]
+         ||  |         []> [62, 10] StringLiteral (ERROR)
+         ||  `> [64, 1] ListInst [List with 1 elements]
+         ||     []> [65, 2] Println
+         ||         `> [65, 10] ListExpr [List with 1 elements]
+         ||            []> [65, 10] StringLiteral (OK ... g && h)
+         []> [68, 1] IfThenElse
+         ||  +> [68, 4] Or
+         ||  |  +> [68, 4] And
+         ||  |  |  +> [68, 4] Identifier (g)
+         ||  |  |  `> [68, 7] Identifier (h)
+         ||  |  `> [68, 10] Identifier (g)
+         ||  +> [69, 2] ListInst [List with 1 elements]
+         ||  |  []> [69, 2] Println
+         ||  |      `> [69, 10] ListExpr [List with 1 elements]
+         ||  |         []> [69, 10] StringLiteral (OK ... g && h || g)
+         ||  `> [71, 1] ListInst [List with 1 elements]
+         ||     []> [72, 2] Println
+         ||         `> [72, 10] ListExpr [List with 1 elements]
+         ||            []> [72, 10] StringLiteral (ERROR)
+         []> [75, 1] IfThenElse
+             +> [75, 4] Or
+             |  +> [75, 4] And
+             |  |  +> [75, 4] Identifier (g)
+             |  |  `> [75, 7] Identifier (h)
+             |  `> [75, 10] LowerOrEqual
+             |     +> [75, 11] Identifier (f)
+             |     `> [75, 14] Multiply
+             |        +> [75, 15] Identifier (d)
+             |        `> [75, 17] Identifier (c)
+             +> [76, 2] ListInst [List with 1 elements]
+             |  []> [76, 2] Println
+             |      `> [76, 10] ListExpr [List with 1 elements]
+             |         []> [76, 10] StringLiteral (OK ... g && h || (f <= (d*c)))
+             `> [78, 1] ListInst [List with 1 elements]
+                []> [79, 2] Println
+                    `> [79, 10] ListExpr [List with 1 elements]
+                       []> [79, 10] StringLiteral (ERROR)

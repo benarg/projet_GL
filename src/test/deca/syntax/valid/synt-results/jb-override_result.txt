@@ -1,0 +1,67 @@
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 2 elements]
+   |  []> [10, 0] DeclClass
+   |  ||  +> [10, 6] Identifier (A)
+   |  ||  +> [10, 8] Identifier (Object)
+   |  ||  +> [11, 4] ListDeclField [List with 0 elements]
+   |  ||  `> [11, 4] ListDeclMethod [List with 1 elements]
+   |  ||     []> [11, 4] DeclMethod
+   |  ||         +> [11, 4] Identifier (A)
+   |  ||         +> [11, 6] Identifier (getThis)
+   |  ||         +> [11, 14] ListDeclParam [List with 0 elements]
+   |  ||         `> [11, 16] MethodBody
+   |  ||            +> [11, 16] ListDeclVar [List with 0 elements]
+   |  ||            `> [11, 16] ListInst [List with 1 elements]
+   |  ||               []> [12, 8] Return
+   |  ||                   `> [12, 15] This
+   |  []> [16, 0] DeclClass
+   |      +> [16, 6] Identifier (B)
+   |      +> [16, 8] Identifier (A)
+   |      +> [17, 4] ListDeclField [List with 0 elements]
+   |      `> [17, 4] ListDeclMethod [List with 1 elements]
+   |         []> [17, 4] DeclMethod
+   |             +> [17, 4] Identifier (B)
+   |             +> [17, 6] Identifier (getThis)
+   |             +> [17, 14] ListDeclParam [List with 0 elements]
+   |             `> [17, 16] MethodBody
+   |                +> [17, 16] ListDeclVar [List with 0 elements]
+   |                `> [17, 16] ListInst [List with 1 elements]
+   |                   []> [18, 8] Return
+   |                       `> [18, 15] This
+   `> [22, 0] Main
+      +> [23, 4] ListDeclVar [List with 2 elements]
+      |  []> [23, 6] DeclVar
+      |  ||  +> [23, 4] Identifier (A)
+      |  ||  +> [23, 6] Identifier (a)
+      |  ||  `> [23, 6] Initialization
+      |  ||     `> [23, 10] New
+      |  ||        `> [23, 14] Identifier (A)
+      |  []> [24, 6] DeclVar
+      |      +> [24, 4] Identifier (B)
+      |      +> [24, 6] Identifier (b)
+      |      `> [24, 6] Initialization
+      |         `> [24, 10] New
+      |            `> [24, 14] Identifier (B)
+      `> [25, 4] ListInst [List with 1 elements]
+         []> [25, 4] IfThenElse
+             +> [25, 8] And
+             |  +> [25, 8] Equals
+             |  |  +> [25, 9] Identifier (a)
+             |  |  `> [25, 14] MethodCall
+             |  |     +> [25, 14] Identifier (a)
+             |  |     +> [25, 16] Identifier (getThis)
+             |  |     `> [25, 24] ListExpr [List with 0 elements]
+             |  `> [25, 30] Equals
+             |     +> [25, 31] Identifier (b)
+             |     `> [25, 36] MethodCall
+             |        +> [25, 36] Identifier (b)
+             |        +> [25, 38] Identifier (getThis)
+             |        `> [25, 46] ListExpr [List with 0 elements]
+             +> [26, 8] ListInst [List with 1 elements]
+             |  []> [26, 8] Println
+             |      `> [26, 16] ListExpr [List with 1 elements]
+             |         []> [26, 16] StringLiteral (SUCCESS)
+             `> [27, 6] ListInst [List with 1 elements]
+                []> [28, 8] Println
+                    `> [28, 16] ListExpr [List with 1 elements]
+                       []> [28, 16] StringLiteral (FAIL)

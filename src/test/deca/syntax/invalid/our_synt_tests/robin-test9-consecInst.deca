@@ -1,0 +1,6 @@
+// Error: trying many consecutive instructions not separated with commas.
+
+{
+float a, b, c;
+println(a b c);
+}

@@ -1,0 +1,8 @@
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 0] ListDeclVar [List with 0 elements]
+      `> [12, 0] ListInst [List with 1 elements]
+         []> [12, 0] Println
+             `> [12, 8] ListExpr [List with 1 elements]
+                []> [12, 8] StringLiteral (This is in the second .deca file)

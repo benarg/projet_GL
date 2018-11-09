@@ -1,0 +1,10 @@
+// Error: error while parsing \" due to \\\ which is
+// 		an invalid string.
+
+{
+boolean a = true;
+boolean b = false;
+if (a!=b) {
+println("true<false\\\"); 
+}
+}

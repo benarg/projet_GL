@@ -1,0 +1,49 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> [11, 4] ListDeclVar [List with 2 elements]
+      |  []> [11, 11] DeclVar
+      |  ||  +> [11, 4] Identifier (Object)
+      |  ||  |  definition: type (builtin), type=Object
+      |  ||  +> [11, 11] Identifier (a)
+      |  ||  |  definition: variable defined at [11, 11], type=Object
+      |  ||  `> [11, 11] Initialization
+      |  ||     `> [11, 15] New
+      |  ||        type: Object
+      |  ||        `> [11, 19] Identifier (Object)
+      |  ||           definition: type (builtin), type=Object
+      |  []> [12, 11] DeclVar
+      |      +> [12, 4] Identifier (Object)
+      |      |  definition: type (builtin), type=Object
+      |      +> [12, 11] Identifier (o)
+      |      |  definition: variable defined at [12, 11], type=Object
+      |      `> [12, 11] NoInitialization
+      `> [13, 4] ListInst [List with 2 elements]
+         []> [13, 4] Assign
+         ||  type: Object
+         ||  +> [13, 4] Identifier (o)
+         ||  |  definition: variable defined at [12, 11], type=Object
+         ||  `> [13, 8] Identifier (a)
+         ||     definition: variable defined at [11, 11], type=Object
+         []> [14, 4] IfThenElse
+             +> [14, 8] Equals
+             |  type: boolean
+             |  +> [14, 8] Identifier (a)
+             |  |  definition: variable defined at [11, 11], type=Object
+             |  `> [14, 13] Identifier (o)
+             |     definition: variable defined at [12, 11], type=Object
+             +> [15, 8] ListInst [List with 1 elements]
+             |  []> [15, 8] Println
+             |      `> [15, 16] ListExpr [List with 1 elements]
+             |         []> [15, 16] StringLiteral (SUCCESS)
+             |             type: string
+             `> [16, 6] ListInst [List with 1 elements]
+                []> [17, 8] Println
+                    `> [17, 16] ListExpr [List with 1 elements]
+                       []> [17, 16] StringLiteral (FAIL)
+                           type: string

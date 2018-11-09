@@ -1,0 +1,19 @@
+// Description:
+//    Programme vérifiant la sémantique de l'opérateur OR
+//    sur trois opérandes 
+//
+// Resultats:
+//    if branch -> expected behavior
+//    exit success
+//
+// Historique:
+//    cree le 18/01/2017
+
+{
+    if(false || true || (1/0 == 0)) {
+        println("if branch -> expected behavior");
+    } else {
+        println("shouldn't happen");
+    }
+    println("exit success");
+}

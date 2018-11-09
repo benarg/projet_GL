@@ -1,0 +1,13 @@
+// Description:
+//    Teste le print et println d'une string
+//
+// Resultats:
+//    - 42: The answer to life, the universe and everything...
+// 
+// Historique:
+//    cree le 17/01/2017
+
+{
+    print("- 42: ");
+    println("The answer to life, the universe and everything...");
+}

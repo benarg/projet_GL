@@ -1,0 +1,5 @@
+// Error: the int type allowed amount of bits is exceeded 
+
+{
+int a = 11111111111;
+}

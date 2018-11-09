@@ -1,0 +1,49 @@
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 1 elements]
+   |  []> [10, 0] DeclClass
+   |      +> [10, 6] Identifier (A)
+   |      +> [10, 8] Identifier (Object)
+   |      +> [11, 0] ListDeclField [List with 0 elements]
+   |      `> [11, 0] ListDeclMethod [List with 0 elements]
+   `> [13, 0] Main
+      +> [14, 4] ListDeclVar [List with 2 elements]
+      |  []> [14, 6] DeclVar
+      |  ||  +> [14, 4] Identifier (A)
+      |  ||  +> [14, 6] Identifier (a)
+      |  ||  `> [14, 6] Initialization
+      |  ||     `> [14, 10] New
+      |  ||        `> [14, 14] Identifier (A)
+      |  []> [15, 11] DeclVar
+      |      +> [15, 4] Identifier (Object)
+      |      +> [15, 11] Identifier (b)
+      |      `> [15, 11] Initialization
+      |         `> [15, 15] Identifier (a)
+      `> [16, 4] ListInst [List with 2 elements]
+         []> [16, 4] IfThenElse
+         ||  +> [16, 8] InstanceOf
+         ||  |  +> [16, 8] Identifier (a)
+         ||  |  `> [16, 21] Identifier (A)
+         ||  +> [17, 8] ListInst [List with 1 elements]
+         ||  |  []> [17, 8] Println
+         ||  |      `> [17, 16] ListExpr [List with 1 elements]
+         ||  |         []> [17, 16] StringLiteral (SUCCESS)
+         ||  `> [18, 6] ListInst [List with 1 elements]
+         ||     []> [19, 8] Println
+         ||         `> [19, 16] ListExpr [List with 1 elements]
+         ||            []> [19, 16] StringLiteral (FAIL)
+         []> [21, 4] IfThenElse
+             +> [21, 8] Or
+             |  +> [21, 8] InstanceOf
+             |  |  +> [21, 9] Null
+             |  |  `> [21, 25] Identifier (Object)
+             |  `> [21, 36] InstanceOf
+             |     +> [21, 37] Null
+             |     `> [21, 53] Identifier (A)
+             +> [22, 8] ListInst [List with 1 elements]
+             |  []> [22, 8] Println
+             |      `> [22, 16] ListExpr [List with 1 elements]
+             |         []> [22, 16] StringLiteral (FAIL)
+             `> [23, 6] ListInst [List with 1 elements]
+                []> [24, 8] Println
+                    `> [24, 16] ListExpr [List with 1 elements]
+                       []> [24, 16] StringLiteral (SUCCESS)

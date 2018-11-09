@@ -1,0 +1,12 @@
+// Description:
+//    cast interdit
+//
+// Resultats:
+//    Ligne 11: Affecte un float a un entier interdit dans un assign.
+//
+// Historique:
+//    cree le 12/01/2017
+
+{
+int a = 3.0;
+}

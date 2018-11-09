@@ -1,0 +1,12 @@
+// Description:
+//    test simple de programme contextuellement incorrect
+//
+// Resultats:
+//    Ligne 11: Expected int or float got boolean (rule 3.33)
+// 
+// Historique:
+//    cree le 12/01/2017
+
+{
+1 + true;
+}

@@ -1,0 +1,16 @@
+// Description:
+//    Simple operations
+//
+// Resultats:
+//    
+//
+// Historique:
+//    cree le 10/01/2017
+
+{
+    int i1 = 1 + 6 + 3 - 5;
+    int i2 = i1 * 2;
+    int i3 = i2 % 7;
+    println("This is the value for i3 : ", i3);
+
+}

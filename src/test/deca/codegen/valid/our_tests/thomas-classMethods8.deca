@@ -1,0 +1,40 @@
+class A {
+
+    int a1;
+    int a2;
+    boolean b;
+
+
+    void toString(boolean b) {
+
+        if (b) {
+            println("a1 parameter : ", this.a1);
+            println("a2 parameter : ", this.a2);
+        } else {
+            println("Sorry but b is set to false");
+        }
+
+    }
+
+    void setParameters(int a1, int a2, boolean b) {
+        this.a1 = a1;
+        this.a2 = a2;
+        this.b = b;
+
+    }
+
+    boolean getB() {
+        return this.b;
+    }
+
+}
+
+
+{
+
+    A a = new A();
+
+    a.setParameters(1,1, false);
+    a.toString(a.getB());
+
+}

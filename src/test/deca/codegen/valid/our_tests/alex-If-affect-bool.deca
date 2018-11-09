@@ -1,0 +1,19 @@
+// Description:
+//    Test valide d'affections de bool dans la condition d'un if
+//
+// Resultats:
+//    1 AFFECT SUCCESS
+//    2 AFFECT SUCCESS
+// 
+// Historique:
+//    20/01/2017
+
+{
+    boolean a,b;
+    if((a = true)) {
+        println("1 AFFECT SUCCESS");
+    }
+    if((a = true) && (b = true)) {
+        println("2 AFFECT SUCCESS");
+    }
+}

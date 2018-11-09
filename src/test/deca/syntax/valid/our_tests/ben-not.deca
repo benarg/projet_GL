@@ -1,0 +1,18 @@
+// Description:
+//    Test the operator not in a if condition
+//
+// Resultats:
+//
+//
+// Historique:
+//    cree le 15/01/2017
+
+{
+boolean a = false;
+if (!a) {
+  println("a est faux");
+  }
+else {
+  println("a est vrai");
+  }
+}

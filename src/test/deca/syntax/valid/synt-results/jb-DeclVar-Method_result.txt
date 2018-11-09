@@ -1,0 +1,70 @@
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 1 elements]
+   |  []> [10, 0] DeclClass
+   |      +> [10, 6] Identifier (A)
+   |      +> [10, 8] Identifier (Object)
+   |      +> [11, 4] ListDeclField [List with 0 elements]
+   |      `> [11, 4] ListDeclMethod [List with 1 elements]
+   |         []> [11, 4] DeclMethod
+   |             +> [11, 4] Identifier (boolean)
+   |             +> [11, 12] Identifier (f)
+   |             +> [11, 14] ListDeclParam [List with 0 elements]
+   |             `> [11, 16] MethodBody
+   |                +> [11, 16] ListDeclVar [List with 4 elements]
+   |                |  []> [12, 12] DeclVar
+   |                |  ||  +> [12, 8] Identifier (int)
+   |                |  ||  +> [12, 12] Identifier (a)
+   |                |  ||  `> [12, 12] Initialization
+   |                |  ||     `> [12, 16] Int (1)
+   |                |  []> [13, 14] DeclVar
+   |                |  ||  +> [13, 8] Identifier (float)
+   |                |  ||  +> [13, 14] Identifier (b)
+   |                |  ||  `> [13, 14] Initialization
+   |                |  ||     `> [13, 18] Float (1.1)
+   |                |  []> [14, 16] DeclVar
+   |                |  ||  +> [14, 8] Identifier (boolean)
+   |                |  ||  +> [14, 16] Identifier (c)
+   |                |  ||  `> [14, 16] Initialization
+   |                |  ||     `> [14, 20] BooleanLiteral (true)
+   |                |  []> [15, 15] DeclVar
+   |                |      +> [15, 8] Identifier (Object)
+   |                |      +> [15, 15] Identifier (o)
+   |                |      `> [15, 15] Initialization
+   |                |         `> [15, 19] Null
+   |                `> [11, 16] ListInst [List with 1 elements]
+   |                   []> [16, 8] Return
+   |                       `> [16, 15] And
+   |                          +> [16, 16] And
+   |                          |  +> [16, 16] And
+   |                          |  |  +> [16, 16] Equals
+   |                          |  |  |  +> [16, 17] Identifier (a)
+   |                          |  |  |  `> [16, 20] Int (1)
+   |                          |  |  `> [16, 26] Equals
+   |                          |  |     +> [16, 27] Identifier (b)
+   |                          |  |     `> [16, 32] Float (1.1)
+   |                          |  `> [16, 40] Identifier (c)
+   |                          `> [16, 45] Equals
+   |                             +> [16, 46] Identifier (o)
+   |                             `> [16, 51] Null
+   `> [20, 0] Main
+      +> [21, 4] ListDeclVar [List with 1 elements]
+      |  []> [21, 6] DeclVar
+      |      +> [21, 4] Identifier (A)
+      |      +> [21, 6] Identifier (a)
+      |      `> [21, 6] Initialization
+      |         `> [21, 10] New
+      |            `> [21, 14] Identifier (A)
+      `> [22, 4] ListInst [List with 1 elements]
+         []> [22, 4] IfThenElse
+             +> [22, 8] MethodCall
+             |  +> [22, 8] Identifier (a)
+             |  +> [22, 10] Identifier (f)
+             |  `> [22, 12] ListExpr [List with 0 elements]
+             +> [23, 8] ListInst [List with 1 elements]
+             |  []> [23, 8] Println
+             |      `> [23, 16] ListExpr [List with 1 elements]
+             |         []> [23, 16] StringLiteral (SUCCESS)
+             `> [24, 6] ListInst [List with 1 elements]
+                []> [25, 8] Println
+                    `> [25, 16] ListExpr [List with 1 elements]
+                       []> [25, 16] StringLiteral (FAIL)

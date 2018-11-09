@@ -1,0 +1,112 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [1, 0] Program
+   +> [1, 0] ListDeclClass [List with 2 elements]
+   |  []> [1, 0] DeclClass
+   |  ||  +> [1, 6] Identifier (A)
+   |  ||  |  definition: type defined at [1, 6], type=A
+   |  ||  +> [1, 8] Identifier (Object)
+   |  ||  |  definition: type (builtin), type=Object
+   |  ||  +> [3, 4] ListDeclField [List with 2 elements]
+   |  ||  |  []> [3, 8] [Visibility=PUBLIC] DeclField
+   |  ||  |  ||  +> [3, 4] Identifier (int)
+   |  ||  |  ||  |  definition: type (builtin), type=int
+   |  ||  |  ||  +> [3, 8] Identifier (a1)
+   |  ||  |  ||  |  definition: field defined at [3, 8], type=int
+   |  ||  |  ||  `> [3, 8] NoInitialization
+   |  ||  |  []> [4, 8] [Visibility=PUBLIC] DeclField
+   |  ||  |      +> [4, 4] Identifier (int)
+   |  ||  |      |  definition: type (builtin), type=int
+   |  ||  |      +> [4, 8] Identifier (a2)
+   |  ||  |      |  definition: field defined at [4, 8], type=int
+   |  ||  |      `> [4, 8] NoInitialization
+   |  ||  `> [3, 4] ListDeclMethod [List with 0 elements]
+   |  []> [8, 0] DeclClass
+   |      +> [8, 6] Identifier (B)
+   |      |  definition: type defined at [8, 6], type=B
+   |      +> [8, 8] Identifier (A)
+   |      |  definition: type defined at [1, 6], type=A
+   |      +> [10, 4] ListDeclField [List with 1 elements]
+   |      |  []> [10, 8] [Visibility=PUBLIC] DeclField
+   |      |      +> [10, 4] Identifier (int)
+   |      |      |  definition: type (builtin), type=int
+   |      |      +> [10, 8] Identifier (b1)
+   |      |      |  definition: field defined at [10, 8], type=int
+   |      |      `> [10, 8] NoInitialization
+   |      `> [10, 4] ListDeclMethod [List with 0 elements]
+   `> [14, 0] Main
+      +> [16, 4] ListDeclVar [List with 1 elements]
+      |  []> [16, 6] DeclVar
+      |      +> [16, 4] Identifier (B)
+      |      |  definition: type defined at [8, 6], type=B
+      |      +> [16, 6] Identifier (b)
+      |      |  definition: variable defined at [16, 6], type=B
+      |      `> [16, 6] Initialization
+      |         `> [16, 10] New
+      |            type: B
+      |            `> [16, 14] Identifier (B)
+      |               definition: type defined at [8, 6], type=B
+      `> [18, 4] ListInst [List with 6 elements]
+         []> [18, 4] Assign
+         ||  type: int
+         ||  +> [18, 4] Selection
+         ||  |  type: int
+         ||  |  +> [18, 4] Identifier (b)
+         ||  |  |  definition: variable defined at [16, 6], type=B
+         ||  |  `> [18, 6] Identifier (a1)
+         ||  |     definition: field defined at [3, 8], type=int
+         ||  `> [18, 11] Int (5)
+         ||     type: int
+         []> [19, 4] Assign
+         ||  type: int
+         ||  +> [19, 4] Selection
+         ||  |  type: int
+         ||  |  +> [19, 4] Identifier (b)
+         ||  |  |  definition: variable defined at [16, 6], type=B
+         ||  |  `> [19, 6] Identifier (a2)
+         ||  |     definition: field defined at [4, 8], type=int
+         ||  `> [19, 11] Int (3)
+         ||     type: int
+         []> [20, 4] Assign
+         ||  type: int
+         ||  +> [20, 4] Selection
+         ||  |  type: int
+         ||  |  +> [20, 4] Identifier (b)
+         ||  |  |  definition: variable defined at [16, 6], type=B
+         ||  |  `> [20, 6] Identifier (b1)
+         ||  |     definition: field defined at [10, 8], type=int
+         ||  `> [20, 11] Int (7)
+         ||     type: int
+         []> [23, 4] Println
+         ||  `> [23, 12] ListExpr [List with 2 elements]
+         ||     []> [23, 12] StringLiteral (Here is b.a1 : )
+         ||     ||  type: string
+         ||     []> [23, 31] Selection
+         ||         type: int
+         ||         +> [23, 31] Identifier (b)
+         ||         |  definition: variable defined at [16, 6], type=B
+         ||         `> [23, 33] Identifier (a1)
+         ||            definition: field defined at [3, 8], type=int
+         []> [24, 4] Println
+         ||  `> [24, 12] ListExpr [List with 2 elements]
+         ||     []> [24, 12] StringLiteral (Here is b.a2 : )
+         ||     ||  type: string
+         ||     []> [24, 31] Selection
+         ||         type: int
+         ||         +> [24, 31] Identifier (b)
+         ||         |  definition: variable defined at [16, 6], type=B
+         ||         `> [24, 33] Identifier (a2)
+         ||            definition: field defined at [4, 8], type=int
+         []> [25, 4] Println
+             `> [25, 12] ListExpr [List with 2 elements]
+                []> [25, 12] StringLiteral (Here is b.b1 : )
+                ||  type: string
+                []> [25, 31] Selection
+                    type: int
+                    +> [25, 31] Identifier (b)
+                    |  definition: variable defined at [16, 6], type=B
+                    `> [25, 33] Identifier (b1)
+                       definition: field defined at [10, 8], type=int

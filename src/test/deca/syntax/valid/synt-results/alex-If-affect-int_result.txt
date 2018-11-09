@@ -1,0 +1,68 @@
+`> [12, 0] Program
+   +> [12, 0] ListDeclClass [List with 0 elements]
+   `> [12, 0] Main
+      +> [13, 4] ListDeclVar [List with 2 elements]
+      |  []> [13, 8] DeclVar
+      |  ||  +> [13, 4] Identifier (int)
+      |  ||  +> [13, 8] Identifier (a)
+      |  ||  `> [13, 8] NoInitialization
+      |  []> [13, 10] DeclVar
+      |      +> [13, 4] Identifier (int)
+      |      +> [13, 10] Identifier (b)
+      |      `> [13, 10] NoInitialization
+      `> [14, 4] ListInst [List with 3 elements]
+         []> [14, 4] IfThenElse
+         ||  +> [14, 7] Greater
+         ||  |  +> [14, 7] Assign
+         ||  |  |  +> [14, 8] Identifier (a)
+         ||  |  |  `> [14, 12] Int (10)
+         ||  |  `> [14, 18] Assign
+         ||  |     +> [14, 19] Identifier (b)
+         ||  |     `> [14, 23] Int (5)
+         ||  +> [15, 8] ListInst [List with 1 elements]
+         ||  |  []> [15, 8] Println
+         ||  |      `> [15, 16] ListExpr [List with 5 elements]
+         ||  |         []> [15, 16] StringLiteral (AFFECT SUCCESS a()
+         ||  |         []> [15, 36] Identifier (a)
+         ||  |         []> [15, 38] StringLiteral () > b()
+         ||  |         []> [15, 47] Identifier (b)
+         ||  |         []> [15, 49] StringLiteral ())
+         ||  `> ListInst [List with 0 elements]
+         []> [17, 4] IfThenElse
+         ||  +> [17, 7] LowerOrEqual
+         ||  |  +> [17, 7] Assign
+         ||  |  |  +> [17, 8] Identifier (a)
+         ||  |  |  `> [17, 12] Int (150)
+         ||  |  `> [17, 20] Assign
+         ||  |     +> [17, 21] Identifier (b)
+         ||  |     `> [17, 25] Int (300)
+         ||  +> [18, 8] ListInst [List with 1 elements]
+         ||  |  []> [18, 8] Println
+         ||  |      `> [18, 16] ListExpr [List with 5 elements]
+         ||  |         []> [18, 16] StringLiteral (AFFECT SUCCESS a()
+         ||  |         []> [18, 36] Identifier (a)
+         ||  |         []> [18, 38] StringLiteral () <= b()
+         ||  |         []> [18, 48] Identifier (b)
+         ||  |         []> [18, 50] StringLiteral ())
+         ||  `> ListInst [List with 0 elements]
+         []> [20, 4] IfThenElse
+             +> [20, 7] Equals
+             |  +> [20, 7] Assign
+             |  |  +> [20, 8] Identifier (a)
+             |  |  `> [20, 12] Divide
+             |  |     +> [20, 13] Identifier (b)
+             |  |     `> [20, 15] Int (3)
+             |  `> [20, 22] Assign
+             |     +> [20, 23] Identifier (b)
+             |     `> [20, 27] Minus
+             |        +> [20, 28] Identifier (b)
+             |        `> [20, 32] Int (200)
+             +> [21, 8] ListInst [List with 1 elements]
+             |  []> [21, 8] Println
+             |      `> [21, 16] ListExpr [List with 5 elements]
+             |         []> [21, 16] StringLiteral (AFFECT SUCCESS a()
+             |         []> [21, 36] Identifier (a)
+             |         []> [21, 38] StringLiteral () == b()
+             |         []> [21, 48] Identifier (b)
+             |         []> [21, 50] StringLiteral ())
+             `> ListInst [List with 0 elements]

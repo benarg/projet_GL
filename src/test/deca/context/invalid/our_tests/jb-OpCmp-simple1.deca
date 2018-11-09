@@ -1,0 +1,12 @@
+// Description:
+//    OpCmp Contextual error
+//
+// Resultats:
+//    Ligne 11: Operation avec autre chose qu'un entier, un flottant, ou un boolean (OpGauche)
+// 
+// Historique:
+//    cree le 18/01/2017
+
+{
+new Object() != 1;
+}

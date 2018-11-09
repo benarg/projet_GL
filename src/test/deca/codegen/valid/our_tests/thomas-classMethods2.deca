@@ -1,0 +1,22 @@
+class A {
+
+    void hello() {
+        println("hello");
+        this.hello2();
+    }
+
+    void hello2() {
+        println("hello2");
+    }
+
+}
+
+
+
+{
+
+    A a = new A();
+
+    a.hello();
+
+}

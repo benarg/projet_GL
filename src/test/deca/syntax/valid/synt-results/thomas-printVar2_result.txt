@@ -1,0 +1,44 @@
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> [11, 4] ListDeclVar [List with 3 elements]
+      |  []> [11, 8] DeclVar
+      |  ||  +> [11, 4] Identifier (int)
+      |  ||  +> [11, 8] Identifier (i1)
+      |  ||  `> [11, 8] Initialization
+      |  ||     `> [11, 13] Int (0)
+      |  []> [12, 8] DeclVar
+      |  ||  +> [12, 4] Identifier (int)
+      |  ||  +> [12, 8] Identifier (i2)
+      |  ||  `> [12, 8] NoInitialization
+      |  []> [12, 12] DeclVar
+      |      +> [12, 4] Identifier (int)
+      |      +> [12, 12] Identifier (i3)
+      |      `> [12, 12] NoInitialization
+      `> [13, 4] ListInst [List with 5 elements]
+         []> [13, 4] Assign
+         ||  +> [13, 4] Identifier (i2)
+         ||  `> [13, 9] Identifier (i1)
+         []> [14, 4] Assign
+         ||  +> [14, 4] Identifier (i3)
+         ||  `> [14, 9] Plus
+         ||     +> [14, 9] Identifier (i2)
+         ||     `> [14, 14] Int (1)
+         []> [16, 4] Println
+         ||  `> [16, 12] ListExpr [List with 2 elements]
+         ||     []> [16, 12] StringLiteral (This is what happens when we add i1 with 3 : )
+         ||     []> [16, 61] Plus
+         ||         +> [16, 61] Identifier (i1)
+         ||         `> [16, 66] Int (3)
+         []> [17, 4] Println
+         ||  `> [17, 12] ListExpr [List with 2 elements]
+         ||     []> [17, 12] StringLiteral (This is what happens when we add i2 and i3 : )
+         ||     []> [17, 61] Plus
+         ||         +> [17, 61] Identifier (i2)
+         ||         `> [17, 66] Identifier (i3)
+         []> [18, 4] Println
+             `> [18, 12] ListExpr [List with 2 elements]
+                []> [18, 12] StringLiteral (This is what happens when we substract i3 from i2 : )
+                []> [18, 68] Minus
+                    +> [18, 68] Identifier (i2)
+                    `> [18, 73] Identifier (i3)

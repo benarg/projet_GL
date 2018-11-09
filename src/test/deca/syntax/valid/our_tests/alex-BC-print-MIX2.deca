@@ -1,0 +1,17 @@
+// Description:
+//    Teste le print et println d'un mix soustraction/multiplication sur
+//    flottants
+//
+// Resultats:
+//    - FSUB & FMUL : 4.0 - 3.0 * 4.0         = -8
+//    - FMUL & FSUB : 4.0 * 3.0 - 4.0         = 8
+// 
+// Historique:
+//    cree le 17/01/2017
+
+{
+    println("- FSUB & FMUL : 4.0 - 3.0 * 4.0         = ", 4.0 - 3.0 * 4.0);
+    print("- FMUL & FSUB : 4.0 * 3.0 - 4.0         = ", 4.0 * 3.0 - 4.0);
+    println("");
+}
+

@@ -1,0 +1,63 @@
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 0] ListDeclVar [List with 4 elements]
+      |  []> [12, 6] DeclVar
+      |  ||  +> [12, 0] Identifier (float)
+      |  ||  +> [12, 6] Identifier (d)
+      |  ||  `> [12, 6] NoInitialization
+      |  []> [13, 4] DeclVar
+      |  ||  +> [13, 0] Identifier (int)
+      |  ||  +> [13, 4] Identifier (a)
+      |  ||  `> [13, 4] Initialization
+      |  ||     `> [13, 8] Int (453)
+      |  []> [14, 6] DeclVar
+      |  ||  +> [14, 0] Identifier (float)
+      |  ||  +> [14, 6] Identifier (b)
+      |  ||  `> [14, 6] Initialization
+      |  ||     `> [14, 10] Float (45.93)
+      |  []> [15, 6] DeclVar
+      |      +> [15, 0] Identifier (float)
+      |      +> [15, 6] Identifier (c)
+      |      `> [15, 6] Initialization
+      |         `> [15, 10] Cast
+      |            +> [15, 11] Identifier (float)
+      |            `> [15, 19] Identifier (a)
+      `> [16, 0] ListInst [List with 7 elements]
+         []> [16, 0] Println
+         ||  `> [16, 8] ListExpr [List with 1 elements]
+         ||     []> [16, 8] Cast
+         ||         +> [16, 9] Identifier (int)
+         ||         `> [16, 15] Identifier (b)
+         []> [17, 0] Println
+         ||  `> [17, 8] ListExpr [List with 1 elements]
+         ||     []> [17, 8] Cast
+         ||         +> [17, 9] Identifier (float)
+         ||         `> [17, 17] Identifier (a)
+         []> [18, 0] Println
+         ||  `> [18, 8] ListExpr [List with 1 elements]
+         ||     []> [18, 8] Identifier (c)
+         []> [19, 0] Assign
+         ||  +> [19, 0] Identifier (d)
+         ||  `> [19, 4] Cast
+         ||     +> [19, 5] Identifier (float)
+         ||     `> [19, 13] Plus
+         ||        +> [19, 13] Cast
+         ||        |  +> [19, 14] Identifier (int)
+         ||        |  `> [19, 19] Identifier (b)
+         ||        `> [19, 24] Int (1)
+         []> [20, 0] Println
+         ||  `> [20, 8] ListExpr [List with 1 elements]
+         ||     []> [20, 8] Identifier (d)
+         []> [21, 0] Assign
+         ||  +> [21, 0] Identifier (d)
+         ||  `> [21, 4] Cast
+         ||     +> [21, 5] Identifier (float)
+         ||     `> [21, 13] Plus
+         ||        +> [21, 13] Cast
+         ||        |  +> [21, 14] Identifier (float)
+         ||        |  `> [21, 21] Identifier (a)
+         ||        `> [21, 26] Float (1.33)
+         []> [22, 0] Println
+             `> [22, 8] ListExpr [List with 1 elements]
+                []> [22, 8] Identifier (d)

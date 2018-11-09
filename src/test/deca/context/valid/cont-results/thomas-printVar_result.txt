@@ -1,0 +1,38 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> [12, 4] ListDeclVar [List with 2 elements]
+      |  []> [12, 8] DeclVar
+      |  ||  +> [12, 4] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [12, 8] Identifier (i)
+      |  ||  |  definition: variable defined at [12, 8], type=int
+      |  ||  `> [12, 8] Initialization
+      |  ||     `> [12, 12] Int (1)
+      |  ||        type: int
+      |  []> [13, 10] DeclVar
+      |      +> [13, 4] Identifier (float)
+      |      |  definition: type (builtin), type=float
+      |      +> [13, 10] Identifier (f)
+      |      |  definition: variable defined at [13, 10], type=float
+      |      `> [13, 10] Initialization
+      |         `> [13, 14] Float (1.1)
+      |            type: float
+      `> [15, 4] ListInst [List with 2 elements]
+         []> [15, 4] Println
+         ||  `> [15, 12] ListExpr [List with 2 elements]
+         ||     []> [15, 12] StringLiteral (here is the integer : )
+         ||     ||  type: string
+         ||     []> [15, 39] Identifier (i)
+         ||         definition: variable defined at [12, 8], type=int
+         []> [16, 4] Println
+             `> [16, 12] ListExpr [List with 2 elements]
+                []> [16, 12] StringLiteral (here is the float : )
+                ||  type: string
+                []> [16, 36] Identifier (f)
+                    definition: variable defined at [13, 10], type=float

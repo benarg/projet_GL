@@ -1,0 +1,82 @@
+{
+	int a = 1;
+	int b = 2;
+	int c = 2;
+	float d = 1.5;
+	float e = 2.5;
+	float f = 2.5;
+	boolean g = true;
+	boolean h = false;
+	boolean i = h;
+
+	if(c==b){
+		println("OK ... c == b");
+	}
+	else{
+		println("ERROR");
+	}
+
+	if(a<b){
+		println("OK ... a < b");
+	}
+	else{
+		println("ERROR");
+	}
+
+	if(b>a){
+		println("OK ... b > a");
+	}
+	else{
+		println("ERROR");
+	}
+
+	if(d!=e){
+		println("OK ... d != e");
+	}
+	else{
+		println("ERROR");
+	}
+
+	if(e<=f){
+		println("OK ... e <= f");
+	}
+	else{
+		println("ERROR");
+	}
+
+	if(e>=d){
+		println("OK ... e >= d");
+	}
+	else{
+		println("ERROR");
+	}
+
+	if(g||h){
+		println("OK ... g || h");
+	}
+	else{
+		println("ERROR");
+	}
+
+	if(g&&h){
+		println("ERROR");
+	}
+	else{
+		println("OK ... g && h");
+	}
+
+	if(g&&h||g){
+		println("OK ... g && h || g");
+	}
+	else{
+		println("ERROR");
+	}	
+
+	if(g&&h||(f<=(d*c))){
+		println("OK ... g && h || (f <= (d*c))");
+	}
+	else{
+		println("ERROR");
+	}	
+
+}

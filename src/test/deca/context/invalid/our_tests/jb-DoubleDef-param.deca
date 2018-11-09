@@ -1,0 +1,12 @@
+// Description:
+//    Two parameters with same name
+//
+// Resultats:
+//    Should throw Contextual error (rule 3.17)
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    void f(int a, float a) {}
+}

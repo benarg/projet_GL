@@ -1,0 +1,20 @@
+// Description:
+//    Programme faisant appel aux opérations de modulo sur les entiers
+//
+// Resultats:
+//    b = a(5)%2 = 1
+//    b = a(327)%42 = 33
+//
+// Historique:
+//    cree le 11/01/2017
+
+{
+    int a = 5;
+    int b = a%2;
+    print("b = a(",a);
+    println(")%2 = ",b);
+    a = 327;
+    b = a%42;
+    print("b = a(",a);
+    println(")%42 = ",b);
+}

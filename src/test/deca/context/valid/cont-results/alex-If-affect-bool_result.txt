@@ -1,0 +1,56 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 4] ListDeclVar [List with 2 elements]
+      |  []> [12, 12] DeclVar
+      |  ||  +> [12, 4] Identifier (boolean)
+      |  ||  |  definition: type (builtin), type=boolean
+      |  ||  +> [12, 12] Identifier (a)
+      |  ||  |  definition: variable defined at [12, 12], type=boolean
+      |  ||  `> [12, 12] NoInitialization
+      |  []> [12, 14] DeclVar
+      |      +> [12, 4] Identifier (boolean)
+      |      |  definition: type (builtin), type=boolean
+      |      +> [12, 14] Identifier (b)
+      |      |  definition: variable defined at [12, 14], type=boolean
+      |      `> [12, 14] NoInitialization
+      `> [13, 4] ListInst [List with 2 elements]
+         []> [13, 4] IfThenElse
+         ||  +> [13, 7] Assign
+         ||  |  type: boolean
+         ||  |  +> [13, 8] Identifier (a)
+         ||  |  |  definition: variable defined at [12, 12], type=boolean
+         ||  |  `> [13, 12] BooleanLiteral (true)
+         ||  |     type: boolean
+         ||  +> [14, 8] ListInst [List with 1 elements]
+         ||  |  []> [14, 8] Println
+         ||  |      `> [14, 16] ListExpr [List with 1 elements]
+         ||  |         []> [14, 16] StringLiteral (1 AFFECT SUCCESS)
+         ||  |             type: string
+         ||  `> ListInst [List with 0 elements]
+         []> [16, 4] IfThenElse
+             +> [16, 7] And
+             |  type: boolean
+             |  +> [16, 7] Assign
+             |  |  type: boolean
+             |  |  +> [16, 8] Identifier (a)
+             |  |  |  definition: variable defined at [12, 12], type=boolean
+             |  |  `> [16, 12] BooleanLiteral (true)
+             |  |     type: boolean
+             |  `> [16, 21] Assign
+             |     type: boolean
+             |     +> [16, 22] Identifier (b)
+             |     |  definition: variable defined at [12, 14], type=boolean
+             |     `> [16, 26] BooleanLiteral (true)
+             |        type: boolean
+             +> [17, 8] ListInst [List with 1 elements]
+             |  []> [17, 8] Println
+             |      `> [17, 16] ListExpr [List with 1 elements]
+             |         []> [17, 16] StringLiteral (2 AFFECT SUCCESS)
+             |             type: string
+             `> ListInst [List with 0 elements]

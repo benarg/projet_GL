@@ -1,0 +1,3 @@
+SUCCESS
+Missing RTS in asmMethod's body
+SUCCESS

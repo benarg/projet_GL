@@ -1,0 +1,14 @@
+// Description:
+//    Print functions for character strings
+//
+// Resultats:
+//    
+//
+// Historique:
+//    cree le 10/01/2017
+
+{
+    print("hello");
+    println("hello");
+    print("hello again");
+}

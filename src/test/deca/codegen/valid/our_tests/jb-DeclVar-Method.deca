@@ -1,0 +1,27 @@
+// Description:
+//    DeclVar in method
+//
+// Resultats:
+//    Should print SUCCESS
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    boolean f() {
+        int a = 1;
+        float b = 1.1;
+        boolean c = true;
+        Object o = null;
+        return ((a==1) && (b == 1.1) && c && (o == null));
+    }
+}
+
+{
+    A a = new A();
+    if (a.f()) {
+        println("SUCCESS");
+    } else {
+        println("FAIL");
+    }
+}

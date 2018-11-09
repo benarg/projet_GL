@@ -1,0 +1,2 @@
+- IADD & IDIV : 4 + 8 / 2               = 8
+- IDIV & IADD : 8 / 2 + 4               = 8

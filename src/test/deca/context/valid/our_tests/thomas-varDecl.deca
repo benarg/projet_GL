@@ -1,0 +1,19 @@
+// Description:
+//    Variable declarations without initialization
+//
+// Resultats:
+//    
+//
+// Historique:
+//    cree le 10/01/2017
+
+{
+    int i1;
+    int i2, i3;
+    boolean b1, b2;
+    boolean b3;
+    float f1, f2;
+    float f3;
+
+    print("There is nothing to see here");
+}

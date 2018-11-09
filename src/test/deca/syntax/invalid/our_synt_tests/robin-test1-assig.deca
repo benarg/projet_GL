@@ -1,0 +1,8 @@
+// Error: trying to do an assignation with a non-value value.
+
+{
+    int a = 0;
+    int b = 1;
+    a = b;
+    b = if;
+}

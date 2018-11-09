@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/alex-null.deca:14:9: extraneous input 'a' expecting {INSTANCEOF, LT, GT, EQUALS, PLUS, MINUS, TIMES, SLASH, PERCENT, DOT, SEMI, EQEQ, NEQ, GEQ, LEQ, OR, AND}

@@ -1,0 +1,4 @@
+OBRACE: [@0,0:0='{',<34>,1:0]
+PRINT: [@1,2:6='print',<13>,2:0]
+OPARENT: [@2,7:7='(',<32>,2:5]
+src/test/deca/syntax/invalid/our_lex_tests/thomas-badString.deca:2:7: l'entrée n'a pas été reconnue -> DEFAULT

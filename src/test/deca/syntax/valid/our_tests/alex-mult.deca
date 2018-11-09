@@ -1,0 +1,17 @@
+// Description:
+//    Programme faisant appel aux opérations de multiplication sur des entiers
+//
+// Resultats:
+//    c = a(3) * b(5) = 15
+//
+// Historique:
+//    cree le 11/01/2017
+
+{
+    int a = 3;
+    int b = 5;
+    int c = a * b;
+    print("c = a(",a);
+    print(") * b(",b);
+    println(") = ",c);
+}

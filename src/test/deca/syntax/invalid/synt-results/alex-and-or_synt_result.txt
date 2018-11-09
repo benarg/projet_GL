@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/alex-and-or_synt.deca:13:12: no viable alternative at input '||'

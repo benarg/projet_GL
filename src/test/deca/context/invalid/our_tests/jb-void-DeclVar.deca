@@ -1,0 +1,12 @@
+// Description:
+//    Declaring void variable
+//
+// Resultats:
+//    Should throw contextual error (rule 3.17)
+//
+// Historique:
+//    cree le 23/01/2017
+
+{
+    void a;
+}

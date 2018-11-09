@@ -1,0 +1,14 @@
+// Description:
+//    tests de programme correct lexicalement et incorrect syntaxiquement pour
+//    OR et AND combinés
+//
+// Resultats:
+//    ./src/test/deca/syntax/invalid/our_tests/alex-and-or_synt.deca:13:12: no
+//    viable alternative at input '||'
+//
+// Historique:
+//    15/01/2017
+
+{
+    true && || false;
+}

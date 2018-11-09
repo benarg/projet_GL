@@ -1,0 +1,23 @@
+// Description:
+//    utilisation du cast dans diverses situations
+//
+// Resultats:
+//
+// Historique:
+//    cree le 12/01/2017
+
+
+
+{
+float d;
+int a = 453;
+float b = 45.93;
+float c = (float) (a);
+println((int) (b));
+println((float) (a));
+println(c);
+d = (float) ((int)(b) + 1);
+println(d);
+d = (float) ((float)(a) + 1.33);
+println(d);
+}

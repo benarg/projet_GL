@@ -1,0 +1,25 @@
+// Description:
+//    Correct Override
+//
+// Resultats:
+//    Should print SUCCESS
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    void f(int a, float b, boolean c, Object d) {
+        println("FAIL");
+    }
+}
+
+class B extends A{
+    void f(int d, float c, boolean b, Object a) {
+        println("SUCCESS");
+    }
+}
+
+{
+    B b = new B();
+    b.f(1, 1.0, true, null);
+}

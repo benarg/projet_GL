@@ -1,0 +1,12 @@
+// Description:
+//    Wrong type to declare a variable
+//
+// Resultats:
+//    Should throw Contextual error (rule 0.2)
+//
+// Historique:
+//    cree le 22/01/2017
+
+{
+    WrongType a;
+}

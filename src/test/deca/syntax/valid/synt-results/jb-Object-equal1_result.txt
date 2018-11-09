@@ -1,0 +1,41 @@
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 0] ListDeclVar [List with 2 elements]
+      |  []> [12, 7] DeclVar
+      |  ||  +> [12, 0] Identifier (Object)
+      |  ||  +> [12, 7] Identifier (a)
+      |  ||  `> [12, 7] Initialization
+      |  ||     `> [12, 11] New
+      |  ||        `> [12, 15] Identifier (Object)
+      |  []> [13, 7] DeclVar
+      |      +> [13, 0] Identifier (Object)
+      |      +> [13, 7] Identifier (b)
+      |      `> [13, 7] Initialization
+      |         `> [13, 11] New
+      |            `> [13, 15] Identifier (Object)
+      `> [14, 0] ListInst [List with 2 elements]
+         []> [14, 0] IfThenElse
+         ||  +> [14, 4] Equals
+         ||  |  +> [14, 4] Identifier (a)
+         ||  |  `> [14, 9] Identifier (b)
+         ||  +> [15, 0] ListInst [List with 1 elements]
+         ||  |  []> [15, 0] Println
+         ||  |      `> [15, 8] ListExpr [List with 1 elements]
+         ||  |         []> [15, 8] StringLiteral (FAIL)
+         ||  `> [16, 2] ListInst [List with 1 elements]
+         ||     []> [17, 0] Println
+         ||         `> [17, 8] ListExpr [List with 1 elements]
+         ||            []> [17, 8] StringLiteral (SUCCESS)
+         []> [20, 0] IfThenElse
+             +> [20, 4] NotEquals
+             |  +> [20, 4] Identifier (a)
+             |  `> [20, 9] Identifier (b)
+             +> [21, 0] ListInst [List with 1 elements]
+             |  []> [21, 0] Println
+             |      `> [21, 8] ListExpr [List with 1 elements]
+             |         []> [21, 8] StringLiteral (SUCCESS)
+             `> [22, 2] ListInst [List with 1 elements]
+                []> [23, 0] Println
+                    `> [23, 8] ListExpr [List with 1 elements]
+                       []> [23, 8] StringLiteral (FAIL)

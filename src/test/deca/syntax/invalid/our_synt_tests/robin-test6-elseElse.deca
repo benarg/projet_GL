@@ -1,0 +1,11 @@
+// Error: else statement directly after else statement
+
+boolean a = true;
+{
+if(a)
+{
+println("Here is OK");
+}
+else {}
+else {} //mistake here
+}

@@ -1,0 +1,15 @@
+// Description:
+//    Teste le print et println d'une division sur un entier
+//
+// Resultats:
+//    - IDIV1       : 100 / 4 / 5 / 5         = 1
+//    - IDIV2       : 120 / 6 / 5 / 2         = 2
+// 
+// Historique:
+//    cree le 17/01/2017
+
+{
+    println("- IDIV1       : 100 / 4 / 5 / 5         = ", 100 / 4 / 5 / 5);
+    print("- IDIV2       : 120 / 6 / 5 / 2         = ", 120 / 6 / 5 / 2);
+    println("");
+}

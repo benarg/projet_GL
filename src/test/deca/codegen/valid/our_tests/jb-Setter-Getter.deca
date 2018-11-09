@@ -1,0 +1,28 @@
+// Description:
+//    use getter and setter to get a protected field
+//
+// Resultats:
+//    Should print SUCCESS
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    protected int x = 2;
+    void setX(int a) {
+        x = a;
+    }
+    int getX() {
+        return x;
+    }
+}
+
+{
+    A a = new A();
+    a.setX(3);
+    if (a.getX() == 3) {
+        println("SUCCESS");
+    } else {
+        println("FAIL");
+    }
+}

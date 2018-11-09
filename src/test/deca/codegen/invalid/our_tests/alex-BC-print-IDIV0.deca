@@ -1,0 +1,12 @@
+// Description:
+//    teste le println sur une division entière par 0
+//
+// Resultats:
+//    Error: you divided by zero!
+//
+// Historique:
+//    17/01/2017
+
+{
+    println("- DIV/0       : 100 / 0                 = ", 100 / 0);
+}

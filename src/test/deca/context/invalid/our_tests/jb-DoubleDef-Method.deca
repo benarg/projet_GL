@@ -1,0 +1,18 @@
+// Description:
+//    Double definition of method, same signature, A is subtype of Object
+//
+// Resultats:
+//    Should throw a Contextual error (rule 2.7)
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    Object getThis(int a) {
+        return this;
+    }
+
+    A getThis(int b) {
+        return this;
+    }
+}

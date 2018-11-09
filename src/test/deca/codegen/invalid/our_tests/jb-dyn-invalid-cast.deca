@@ -1,0 +1,17 @@
+// Description:
+//    Dynamic check for the cast line 15
+//
+// Resultats:
+//    Should print "Cast failed: could not be casted to A"
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+}
+
+{
+    Object a = new Object();
+    A b = (A) (a);
+    println("FAIL");
+}

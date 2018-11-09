@@ -1,0 +1,14 @@
+// Description:
+//    Invalid Selection
+//
+// Resultats:
+//    Should throw Contextual error (rule 3.65)
+//
+// Historique:
+//    cree le 22/01/2017
+
+{
+    1.x;
+    null.x;
+    false.x;
+}

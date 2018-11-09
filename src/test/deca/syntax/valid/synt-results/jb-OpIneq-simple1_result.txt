@@ -1,0 +1,8 @@
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> [11, 0] ListDeclVar [List with 0 elements]
+      `> [11, 0] ListInst [List with 1 elements]
+         []> [11, 0] Lower
+             +> [11, 0] Int (1)
+             `> [11, 4] Float (1.0)

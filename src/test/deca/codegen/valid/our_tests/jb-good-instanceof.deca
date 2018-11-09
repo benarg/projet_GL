@@ -1,0 +1,26 @@
+// Description:
+//    Good instanceof
+//
+// Resultats:
+//    Should print SUCCESS twice
+//
+// Historique:
+//    cree le 23/01/2017
+
+class A {
+}
+
+{
+    A a = new A();
+    Object b = a;
+    if (a instanceof A) {
+        println("SUCCESS");
+    } else {
+        println("FAIL");
+    }
+    if ((null instanceof Object) || (null instanceof A)) {
+        println("FAIL");
+    } else {
+        println("SUCCESS");
+    }
+}

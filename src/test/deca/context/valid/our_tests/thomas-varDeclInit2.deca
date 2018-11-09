@@ -1,0 +1,23 @@
+// Description:
+//    Variable declarations with initializations and assigns
+//
+// Resultats:
+//    
+//
+// Historique:
+//    cree le 10/01/2017
+{
+    int i1;
+    int i2;
+    boolean b1, b2;
+    int i3, i4;
+    i3 = 0;
+    i4 =1;
+    i2 = i4;
+    b1 = true;
+    b2 = b1;
+
+    println("This is i3 : ", i3);
+    println("This is i4 : ", i4);
+
+} 

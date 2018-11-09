@@ -1,0 +1,12 @@
+// Description:
+//    affichage interdit
+//
+// Resultats:
+//    Ligne 11: Print d'un boolean interdit.
+// 
+// Historique:
+//    cree le 12/01/2017
+
+{
+   println(true);
+}

@@ -1,0 +1,7 @@
+//Error: missing ";" at the end of one declaration statement after an Instruction.
+
+{
+String i = "Hello world";
+int x
+float y;
+}

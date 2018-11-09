@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/jb-simple-synt1.deca:13:0: missing CBRACE at '<EOF>'

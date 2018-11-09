@@ -1,0 +1,5 @@
+// Error: special word used as identifier.
+
+{
+boolean protected = true;
+}

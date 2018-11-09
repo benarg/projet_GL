@@ -1,0 +1,20 @@
+// Description:
+//    test  de programme contextuellement incorrect
+//
+// Resultats:
+//    Attribute x is not accessible (rule 3.66)
+// 
+// Historique:
+//    cree le 20/01/2017
+
+
+class A {
+protected int x;
+}
+class X {
+void m()
+{
+A a = new A();
+println(a.x) ;
+}
+}

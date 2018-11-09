@@ -1,0 +1,12 @@
+// Description:
+//    Override with wrong return type
+//
+// Resultats:
+//    Should throw Contextual error (rule 2.7)
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    boolean equals(A o) {}
+}

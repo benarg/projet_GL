@@ -1,0 +1,15 @@
+// Description:
+//    Teste le print et println du moins unaire sur un flottant
+//
+// Resultats:
+//    - FSUB_U1     : -4.0                    = -4.0
+//    - FSUB_U2     : -2.0                    = -2.0
+// 
+// Historique:
+//    cree le 18/01/2017
+
+{
+    println("- FSUB_U1     : -4.0                    = ", -4.0);
+    print(  "- FSUB_U2     : -2.0                    = ", -2.0);
+    println("");
+}

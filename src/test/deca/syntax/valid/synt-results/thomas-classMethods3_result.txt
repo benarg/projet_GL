@@ -1,0 +1,69 @@
+`> [1, 0] Program
+   +> [1, 0] ListDeclClass [List with 2 elements]
+   |  []> [1, 0] DeclClass
+   |  ||  +> [1, 6] Identifier (A)
+   |  ||  +> [1, 8] Identifier (Object)
+   |  ||  +> [3, 4] ListDeclField [List with 1 elements]
+   |  ||  |  []> [3, 6] [Visibility=PUBLIC] DeclField
+   |  ||  |      +> [3, 4] Identifier (B)
+   |  ||  |      +> [3, 6] Identifier (b)
+   |  ||  |      `> [3, 6] Initialization
+   |  ||  |         `> [3, 10] New
+   |  ||  |            `> [3, 14] Identifier (B)
+   |  ||  `> [3, 4] ListDeclMethod [List with 2 elements]
+   |  ||     []> [5, 4] DeclMethod
+   |  ||     ||  +> [5, 4] Identifier (void)
+   |  ||     ||  +> [5, 9] Identifier (hello)
+   |  ||     ||  +> [5, 15] ListDeclParam [List with 0 elements]
+   |  ||     ||  `> [5, 17] MethodBody
+   |  ||     ||     +> [5, 17] ListDeclVar [List with 0 elements]
+   |  ||     ||     `> [5, 17] ListInst [List with 2 elements]
+   |  ||     ||        []> [6, 8] Println
+   |  ||     ||        ||  `> [6, 16] ListExpr [List with 1 elements]
+   |  ||     ||        ||     []> [6, 16] StringLiteral (hello)
+   |  ||     ||        []> [7, 8] MethodCall
+   |  ||     ||            +> [7, 8] This
+   |  ||     ||            +> [7, 13] Identifier (hello2)
+   |  ||     ||            `> [7, 20] ListExpr [List with 0 elements]
+   |  ||     []> [10, 4] DeclMethod
+   |  ||         +> [10, 4] Identifier (void)
+   |  ||         +> [10, 9] Identifier (hello2)
+   |  ||         +> [10, 16] ListDeclParam [List with 0 elements]
+   |  ||         `> [10, 18] MethodBody
+   |  ||            +> [10, 18] ListDeclVar [List with 0 elements]
+   |  ||            `> [10, 18] ListInst [List with 2 elements]
+   |  ||               []> [11, 8] Println
+   |  ||               ||  `> [11, 16] ListExpr [List with 1 elements]
+   |  ||               ||     []> [11, 16] StringLiteral (hello2)
+   |  ||               []> [12, 8] MethodCall
+   |  ||                   +> [12, 8] Identifier (b)
+   |  ||                   +> [12, 10] Identifier (hello3)
+   |  ||                   `> [12, 17] ListExpr [List with 0 elements]
+   |  []> [17, 0] DeclClass
+   |      +> [17, 6] Identifier (B)
+   |      +> [17, 8] Identifier (Object)
+   |      +> [20, 4] ListDeclField [List with 0 elements]
+   |      `> [20, 4] ListDeclMethod [List with 1 elements]
+   |         []> [20, 4] DeclMethod
+   |             +> [20, 4] Identifier (void)
+   |             +> [20, 9] Identifier (hello3)
+   |             +> [20, 16] ListDeclParam [List with 0 elements]
+   |             `> [20, 18] MethodBody
+   |                +> [20, 18] ListDeclVar [List with 0 elements]
+   |                `> [20, 18] ListInst [List with 1 elements]
+   |                   []> [22, 8] Println
+   |                       `> [22, 16] ListExpr [List with 1 elements]
+   |                          []> [22, 16] StringLiteral (hello3)
+   `> [30, 0] Main
+      +> [32, 4] ListDeclVar [List with 1 elements]
+      |  []> [32, 6] DeclVar
+      |      +> [32, 4] Identifier (A)
+      |      +> [32, 6] Identifier (a)
+      |      `> [32, 6] Initialization
+      |         `> [32, 10] New
+      |            `> [32, 14] Identifier (A)
+      `> [34, 4] ListInst [List with 1 elements]
+         []> [34, 4] MethodCall
+             +> [34, 4] Identifier (a)
+             +> [34, 6] Identifier (hello)
+             `> [34, 12] ListExpr [List with 0 elements]

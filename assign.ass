@@ -1,0 +1,121 @@
+	TSTO #8
+	BOV stack_overflow_error
+	ADDSP #7
+; start main program
+	LOAD #null, R0
+	STORE R0, 1(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 2(GB)
+; Code de la table des méthodes de A
+	LEA 1(GB), R0
+	STORE R0, 3(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 4(GB)
+	LOAD code.A.getX, R0
+	STORE R0, 5(GB)
+; Main program
+; Beginning declaration of main variables:
+	NEW #2, R2
+	BOV stack_overflow_error
+	LEA 3(GB), R0
+	STORE R0, 0(R2)
+	PUSH R2
+	BSR init.A
+	POP R2
+	STORE R2, 6(GB)
+; A a is defined and stored in 6(GB)
+; int b is defined and stored in 7(GB)
+; Beginning of main instructions:
+	LOAD 6(GB), R2
+	PUSH R2
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	BSR code.A.getX
+	SUBSP #1
+	PUSH R0
+	LOAD 6(GB), R2
+	PUSH R2
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	BSR code.A.getX
+	SUBSP #1
+	PUSH R0
+	POP R3
+	POP R2
+	ADD R3, R2
+	PUSH R2
+	POP R2
+	STORE R2, 7(GB)
+	PUSH R2
+	SUBSP #1
+	LOAD 7(GB), R2
+	PUSH R2
+	POP R1
+	WINT
+	HALT
+; End main program
+; Method codes of classes
+; -------Object-------
+code.Object.equals:
+	TSTO #2
+	BOV stack_overflow_error
+	PUSH R2
+	PUSH R3
+	LOAD -2(LB), R2
+	LOAD -3(LB), R3
+	CMP R3, R2
+	SEQ R0
+	POP R3
+	POP R2
+; Restauration des registres
+; -------A-------
+init.A:
+	LOAD -2(LB), R1
+; Initialisation de l'attribut x
+	LOAD #0, R0
+	STORE R0, 1(R1)
+	RTS
+code.A.getX:
+	TSTO #2
+; Sauvegarde des registres
+	PUSH R2
+	PUSH R3
+	BOV stack_overflow_error
+; Corps de la méthode
+	LOAD -2(LB), R2
+	PUSH R2
+	POP R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	LOAD 1(R2), R2
+	PUSH R2
+	POP R0
+	BRA fin.A.getX
+; Restauration des registres
+	POP R3
+	POP R2
+	WSTR "Error : exit of method getX without return"
+	WNL
+	ERROR
+fin.A.getX:
+	RTS
+; Messages d'erreurs
+overflow_error:
+	WSTR "Error: Overflow during arithmetic operation"
+	WNL
+	ERROR
+stack_overflow_error:
+	WSTR "Error: Stack Overflow"
+	WNL
+	ERROR
+dereferencement.null:
+	WSTR "Error : dereferencement de null"
+	WNL
+	ERROR
+divide_by_zero:
+	WSTR "Error : you divided by zero"
+	WNL
+	ERROR
+; end main program

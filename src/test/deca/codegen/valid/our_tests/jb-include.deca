@@ -1,0 +1,13 @@
+// Description:
+//    Includes an empty file
+//
+// Resultats:
+//    Should print a line
+//
+// Historique:
+//    cree le 10/01/2017
+
+#include "jb-empty.deca"
+{
+println("This is in the second .deca file");
+}

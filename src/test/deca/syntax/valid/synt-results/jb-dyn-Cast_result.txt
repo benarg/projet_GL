@@ -1,0 +1,31 @@
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 1 elements]
+   |  []> [10, 0] DeclClass
+   |      +> [10, 6] Identifier (A)
+   |      +> [10, 8] Identifier (Object)
+   |      +> [11, 0] ListDeclField [List with 0 elements]
+   |      `> [11, 0] ListDeclMethod [List with 0 elements]
+   `> [13, 0] Main
+      +> [14, 4] ListDeclVar [List with 3 elements]
+      |  []> [14, 6] DeclVar
+      |  ||  +> [14, 4] Identifier (A)
+      |  ||  +> [14, 6] Identifier (a)
+      |  ||  `> [14, 6] Initialization
+      |  ||     `> [14, 10] New
+      |  ||        `> [14, 14] Identifier (A)
+      |  []> [15, 11] DeclVar
+      |  ||  +> [15, 4] Identifier (Object)
+      |  ||  +> [15, 11] Identifier (b)
+      |  ||  `> [15, 11] Initialization
+      |  ||     `> [15, 15] Identifier (a)
+      |  []> [16, 6] DeclVar
+      |      +> [16, 4] Identifier (A)
+      |      +> [16, 6] Identifier (c)
+      |      `> [16, 6] Initialization
+      |         `> [16, 10] Cast
+      |            +> [16, 11] Identifier (A)
+      |            `> [16, 15] Identifier (b)
+      `> [17, 4] ListInst [List with 1 elements]
+         []> [17, 4] Println
+             `> [17, 12] ListExpr [List with 1 elements]
+                []> [17, 12] StringLiteral (SUCCESS)

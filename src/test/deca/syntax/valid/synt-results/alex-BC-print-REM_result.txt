@@ -1,0 +1,24 @@
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 4] ListDeclVar [List with 0 elements]
+      `> [12, 4] ListInst [List with 3 elements]
+         []> [12, 4] Println
+         ||  `> [12, 12] ListExpr [List with 2 elements]
+         ||     []> [12, 12] StringLiteral (- REM1        : 100 % 90 % 8            = )
+         ||     []> [12, 58] Modulo
+         ||         +> [12, 58] Modulo
+         ||         |  +> [12, 58] Int (100)
+         ||         |  `> [12, 64] Int (90)
+         ||         `> [12, 69] Int (8)
+         []> [13, 4] Print
+         ||  `> [13, 10] ListExpr [List with 2 elements]
+         ||     []> [13, 10] StringLiteral (- REM2        : 100 % 8 % 2             = )
+         ||     []> [13, 56] Modulo
+         ||         +> [13, 56] Modulo
+         ||         |  +> [13, 56] Int (100)
+         ||         |  `> [13, 62] Int (8)
+         ||         `> [13, 66] Int (2)
+         []> [14, 4] Println
+             `> [14, 12] ListExpr [List with 1 elements]
+                []> [14, 12] StringLiteral ()

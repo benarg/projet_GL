@@ -1,0 +1,27 @@
+class Fibonacci {
+
+    int Fibo(int n) {
+        
+        if ( n < 1) {
+            println("n must be greater than or equal to 1");
+            return -1;
+        }
+        if (n == 1) {
+            return 1;
+        }
+        if (n == 2) {
+            return 1;
+        }
+        return (Fibo(n-1) + Fibo(n-2));
+
+    }
+}
+
+{
+
+    Fibonacci f = new Fibonacci();
+
+    println("Fibo(20) = ", f.Fibo(20));
+
+
+}

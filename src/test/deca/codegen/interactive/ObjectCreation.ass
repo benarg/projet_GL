@@ -1,0 +1,396 @@
+	TSTO #38
+	BOV stack_overflow_error
+	ADDSP #19
+; start main program
+	LOAD #null, R0
+	STORE R0, 1(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 2(GB)
+; Code de la table des méthodes de Rabbit
+	LEA 1(GB), R0
+	STORE R0, 3(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 4(GB)
+	LOAD code.Rabbit.hello, R0
+	STORE R0, 5(GB)
+	LOAD code.Rabbit.eating, R0
+	STORE R0, 6(GB)
+; Code de la table des méthodes de Bear
+	LEA 1(GB), R0
+	STORE R0, 7(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 8(GB)
+	LOAD code.Bear.hello, R0
+	STORE R0, 9(GB)
+	LOAD code.Bear.eating, R0
+	STORE R0, 10(GB)
+; Code de la table des méthodes de Cow
+	LEA 1(GB), R0
+	STORE R0, 11(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 12(GB)
+	LOAD code.Cow.hello, R0
+	STORE R0, 13(GB)
+	LOAD code.Cow.eating, R0
+	STORE R0, 14(GB)
+; Main program
+; Beginning declaration of main variables:
+; Rabbit rabbit is defined and stored in 15(GB)
+; Bear bear is defined and stored in 16(GB)
+; Cow cow is defined and stored in 17(GB)
+; int choice is defined and stored in 18(GB)
+; int feed is defined and stored in 19(GB)
+; Beginning of main instructions:
+	WSTR "1 => create a rabbit"
+	WNL
+	WSTR "2 => create a bear"
+	WNL
+	WSTR "3 => create a cow"
+	WNL
+	RINT
+	PUSH R1
+	POP R2
+	STORE R2, 18(GB)
+	PUSH R2
+	SUBSP #1
+	LOAD 18(GB), R2
+	PUSH R2
+	LOAD #1, R2
+	PUSH R2
+	POP R3
+	POP R2
+	CMP R3, R2
+	SEQ R2
+	PUSH R2
+	POP R2
+	CMP #0, R2
+	BEQ endLabel_1
+	NEW #1, R2
+	BOV stack_overflow_error
+	LEA 3(GB), R0
+	STORE R0, 0(R2)
+	PUSH R2
+	BSR init.Rabbit
+	POP R2
+	STORE R2, 15(GB)
+	PUSH R2
+	SUBSP #1
+	LOAD 15(GB), R2
+	PUSH R2
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	BSR code.Rabbit.hello
+	SUBSP #1
+	RINT
+	PUSH R1
+	POP R2
+	STORE R2, 19(GB)
+	PUSH R2
+	SUBSP #1
+	LOAD 19(GB), R2
+	PUSH R2
+	LOAD #1, R2
+	PUSH R2
+	POP R3
+	POP R2
+	CMP R3, R2
+	SEQ R2
+	PUSH R2
+	POP R2
+	CMP #0, R2
+	BEQ else_2
+	LOAD 15(GB), R2
+	PUSH R2
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	BSR code.Rabbit.eating
+	SUBSP #1
+	BRA endLabel_2
+else_2:
+	WSTR "You don't want to feed me, I am sad"
+	WNL
+endLabel_2:
+endLabel_1:
+	LOAD 18(GB), R2
+	PUSH R2
+	LOAD #2, R2
+	PUSH R2
+	POP R3
+	POP R2
+	CMP R3, R2
+	SEQ R2
+	PUSH R2
+	POP R2
+	CMP #0, R2
+	BEQ endLabel_3
+	NEW #1, R2
+	BOV stack_overflow_error
+	LEA 7(GB), R0
+	STORE R0, 0(R2)
+	PUSH R2
+	BSR init.Bear
+	POP R2
+	STORE R2, 16(GB)
+	PUSH R2
+	SUBSP #1
+	LOAD 16(GB), R2
+	PUSH R2
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	BSR code.Bear.hello
+	SUBSP #1
+	RINT
+	PUSH R1
+	POP R2
+	STORE R2, 19(GB)
+	PUSH R2
+	SUBSP #1
+	LOAD 19(GB), R2
+	PUSH R2
+	LOAD #1, R2
+	PUSH R2
+	POP R3
+	POP R2
+	CMP R3, R2
+	SEQ R2
+	PUSH R2
+	POP R2
+	CMP #0, R2
+	BEQ else_4
+	LOAD 16(GB), R2
+	PUSH R2
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	BSR code.Bear.eating
+	SUBSP #1
+	BRA endLabel_4
+else_4:
+	WSTR "You don't want to feed me, I am sad"
+	WNL
+endLabel_4:
+endLabel_3:
+	LOAD 18(GB), R2
+	PUSH R2
+	LOAD #3, R2
+	PUSH R2
+	POP R3
+	POP R2
+	CMP R3, R2
+	SEQ R2
+	PUSH R2
+	POP R2
+	CMP #0, R2
+	BEQ endLabel_5
+	NEW #1, R2
+	BOV stack_overflow_error
+	LEA 11(GB), R0
+	STORE R0, 0(R2)
+	PUSH R2
+	BSR init.Cow
+	POP R2
+	STORE R2, 17(GB)
+	PUSH R2
+	SUBSP #1
+	LOAD 17(GB), R2
+	PUSH R2
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	BSR code.Cow.hello
+	SUBSP #1
+	RINT
+	PUSH R1
+	POP R2
+	STORE R2, 19(GB)
+	PUSH R2
+	SUBSP #1
+	LOAD 19(GB), R2
+	PUSH R2
+	LOAD #1, R2
+	PUSH R2
+	POP R3
+	POP R2
+	CMP R3, R2
+	SEQ R2
+	PUSH R2
+	POP R2
+	CMP #0, R2
+	BEQ else_6
+	LOAD 17(GB), R2
+	PUSH R2
+	LOAD 0(SP), R2
+	CMP #null, R2
+	BEQ dereferencement.null
+	BSR code.Cow.eating
+	SUBSP #1
+	BRA endLabel_6
+else_6:
+	WSTR "You don't want to feed me, I am sad"
+endLabel_6:
+endLabel_5:
+	LOAD 18(GB), R2
+	PUSH R2
+	LOAD #3, R2
+	PUSH R2
+	POP R3
+	POP R2
+	CMP R3, R2
+	SGT R2
+	PUSH R2
+	POP R2
+	CMP #1, R2
+	BEQ or_true_1
+	LOAD 18(GB), R2
+	PUSH R2
+	LOAD #0, R2
+	PUSH R2
+	POP R3
+	POP R2
+	CMP R3, R2
+	SLT R2
+	PUSH R2
+	POP R2
+	CMP #1, R2
+	BEQ or_true_1
+	BRA or_end_1
+or_true_1:
+	LOAD #1, R2
+or_end_1:
+	PUSH R2
+	POP R2
+	CMP #0, R2
+	BEQ endLabel_7
+	WSTR "I guess you don't want to create any animals"
+	WNL
+endLabel_7:
+	HALT
+; End main program
+; Method codes of classes
+; -------Object-------
+init.Object:
+	RTS
+code.Object.equals:
+	TSTO #2
+	BOV stack_overflow_error
+	PUSH R2
+	PUSH R3
+	LOAD -2(LB), R2
+	LOAD -3(LB), R3
+	CMP R3, R2
+	SEQ R0
+; Restauration des registres
+	POP R3
+	POP R2
+	RTS
+; -------Rabbit-------
+init.Rabbit:
+	LOAD -2(LB), R1
+	RTS
+code.Rabbit.hello:
+	TSTO #2
+; Sauvegarde des registres
+	PUSH R2
+	PUSH R3
+	BOV stack_overflow_error
+; Corps de la méthode
+	WSTR "I am a rabbit. Press 1 to feed me carrots"
+	WNL
+; Restauration des registres
+	POP R3
+	POP R2
+	RTS
+code.Rabbit.eating:
+	TSTO #2
+; Sauvegarde des registres
+	PUSH R2
+	PUSH R3
+	BOV stack_overflow_error
+; Corps de la méthode
+	WSTR "I love eating carrots"
+	WNL
+; Restauration des registres
+	POP R3
+	POP R2
+	RTS
+; -------Bear-------
+init.Bear:
+	LOAD -2(LB), R1
+	RTS
+code.Bear.hello:
+	TSTO #2
+; Sauvegarde des registres
+	PUSH R2
+	PUSH R3
+	BOV stack_overflow_error
+; Corps de la méthode
+	WSTR "I am a bear. Press 1 to feed me salmon"
+	WNL
+; Restauration des registres
+	POP R3
+	POP R2
+	RTS
+code.Bear.eating:
+	TSTO #2
+; Sauvegarde des registres
+	PUSH R2
+	PUSH R3
+	BOV stack_overflow_error
+; Corps de la méthode
+	WSTR "I love eating salmon"
+	WNL
+; Restauration des registres
+	POP R3
+	POP R2
+	RTS
+; -------Cow-------
+init.Cow:
+	LOAD -2(LB), R1
+	RTS
+code.Cow.hello:
+	TSTO #2
+; Sauvegarde des registres
+	PUSH R2
+	PUSH R3
+	BOV stack_overflow_error
+; Corps de la méthode
+	WSTR "I am a cow. Press 1 to feed me grass"
+	WNL
+; Restauration des registres
+	POP R3
+	POP R2
+	RTS
+code.Cow.eating:
+	TSTO #2
+; Sauvegarde des registres
+	PUSH R2
+	PUSH R3
+	BOV stack_overflow_error
+; Corps de la méthode
+	WSTR "I love eating grass"
+	WNL
+; Restauration des registres
+	POP R3
+	POP R2
+	RTS
+; Messages d'erreurs
+overflow_error:
+	WSTR "Error: Overflow during arithmetic operation"
+	WNL
+	ERROR
+stack_overflow_error:
+	WSTR "Error: Stack Overflow"
+	WNL
+	ERROR
+dereferencement.null:
+	WSTR "Error : dereferencement de null"
+	WNL
+	ERROR
+divide_by_zero:
+	WSTR "Error : you divided by zero"
+	WNL
+	ERROR
+; end main program

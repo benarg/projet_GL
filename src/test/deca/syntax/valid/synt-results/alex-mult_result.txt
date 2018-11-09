@@ -1,0 +1,34 @@
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> [11, 4] ListDeclVar [List with 3 elements]
+      |  []> [11, 8] DeclVar
+      |  ||  +> [11, 4] Identifier (int)
+      |  ||  +> [11, 8] Identifier (a)
+      |  ||  `> [11, 8] Initialization
+      |  ||     `> [11, 12] Int (3)
+      |  []> [12, 8] DeclVar
+      |  ||  +> [12, 4] Identifier (int)
+      |  ||  +> [12, 8] Identifier (b)
+      |  ||  `> [12, 8] Initialization
+      |  ||     `> [12, 12] Int (5)
+      |  []> [13, 8] DeclVar
+      |      +> [13, 4] Identifier (int)
+      |      +> [13, 8] Identifier (c)
+      |      `> [13, 8] Initialization
+      |         `> [13, 12] Multiply
+      |            +> [13, 12] Identifier (a)
+      |            `> [13, 16] Identifier (b)
+      `> [14, 4] ListInst [List with 3 elements]
+         []> [14, 4] Print
+         ||  `> [14, 10] ListExpr [List with 2 elements]
+         ||     []> [14, 10] StringLiteral (c = a()
+         ||     []> [14, 19] Identifier (a)
+         []> [15, 4] Print
+         ||  `> [15, 10] ListExpr [List with 2 elements]
+         ||     []> [15, 10] StringLiteral () * b()
+         ||     []> [15, 19] Identifier (b)
+         []> [16, 4] Println
+             `> [16, 12] ListExpr [List with 2 elements]
+                []> [16, 12] StringLiteral () = )
+                []> [16, 19] Identifier (c)

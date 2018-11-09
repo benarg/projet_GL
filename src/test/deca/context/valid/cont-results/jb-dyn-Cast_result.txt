@@ -1,0 +1,51 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 1 elements]
+   |  []> [10, 0] DeclClass
+   |      +> [10, 6] Identifier (A)
+   |      |  definition: type defined at [10, 6], type=A
+   |      +> [10, 8] Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> [11, 0] ListDeclField [List with 0 elements]
+   |      `> [11, 0] ListDeclMethod [List with 0 elements]
+   `> [13, 0] Main
+      +> [14, 4] ListDeclVar [List with 3 elements]
+      |  []> [14, 6] DeclVar
+      |  ||  +> [14, 4] Identifier (A)
+      |  ||  |  definition: type defined at [10, 6], type=A
+      |  ||  +> [14, 6] Identifier (a)
+      |  ||  |  definition: variable defined at [14, 6], type=A
+      |  ||  `> [14, 6] Initialization
+      |  ||     `> [14, 10] New
+      |  ||        type: A
+      |  ||        `> [14, 14] Identifier (A)
+      |  ||           definition: type defined at [10, 6], type=A
+      |  []> [15, 11] DeclVar
+      |  ||  +> [15, 4] Identifier (Object)
+      |  ||  |  definition: type (builtin), type=Object
+      |  ||  +> [15, 11] Identifier (b)
+      |  ||  |  definition: variable defined at [15, 11], type=Object
+      |  ||  `> [15, 11] Initialization
+      |  ||     `> [15, 15] Identifier (a)
+      |  ||        definition: variable defined at [14, 6], type=A
+      |  []> [16, 6] DeclVar
+      |      +> [16, 4] Identifier (A)
+      |      |  definition: type defined at [10, 6], type=A
+      |      +> [16, 6] Identifier (c)
+      |      |  definition: variable defined at [16, 6], type=A
+      |      `> [16, 6] Initialization
+      |         `> [16, 10] Cast
+      |            type: A
+      |            +> [16, 11] Identifier (A)
+      |            |  definition: type defined at [10, 6], type=A
+      |            `> [16, 15] Identifier (b)
+      |               definition: variable defined at [15, 11], type=Object
+      `> [17, 4] ListInst [List with 1 elements]
+         []> [17, 4] Println
+             `> [17, 12] ListExpr [List with 1 elements]
+                []> [17, 12] StringLiteral (SUCCESS)
+                    type: string

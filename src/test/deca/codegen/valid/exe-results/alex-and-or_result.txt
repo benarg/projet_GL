@@ -1,0 +1,2 @@
+SUCCESS: true or true or true or true and true
+SUCCESS: ( true and false ) or true

@@ -1,0 +1,15 @@
+// Description:
+//    Test syntaxiquement invalide sur null
+//
+// Resultats:
+//    ./src/test/deca/context/invalid/our_tests/alex-null.deca:14:9: extraneous
+//    input 'a' expecting {INSTANCEOF, LT, GT, EQUALS, PLUS, MINUS, TIMES,
+//    SLASH, PERCENT, DOT, SEMI, EQEQ, NEQ, GEQ, LEQ, OR, AND}
+//
+// Historique:
+//    20/01/2017
+
+
+{
+    null a;
+}

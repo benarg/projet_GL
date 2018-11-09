@@ -1,0 +1,70 @@
+`> [1, 0] Program
+   +> [1, 0] ListDeclClass [List with 3 elements]
+   |  []> [1, 0] DeclClass
+   |  ||  +> [1, 6] Identifier (A)
+   |  ||  +> [1, 8] Identifier (Object)
+   |  ||  +> [3, 4] ListDeclField [List with 2 elements]
+   |  ||  |  []> [3, 8] [Visibility=PUBLIC] DeclField
+   |  ||  |  ||  +> [3, 4] Identifier (int)
+   |  ||  |  ||  +> [3, 8] Identifier (a1)
+   |  ||  |  ||  `> [3, 8] NoInitialization
+   |  ||  |  []> [4, 8] [Visibility=PUBLIC] DeclField
+   |  ||  |      +> [4, 4] Identifier (int)
+   |  ||  |      +> [4, 8] Identifier (a2)
+   |  ||  |      `> [4, 8] NoInitialization
+   |  ||  `> [3, 4] ListDeclMethod [List with 0 elements]
+   |  []> [8, 0] DeclClass
+   |  ||  +> [8, 6] Identifier (B)
+   |  ||  +> [8, 8] Identifier (A)
+   |  ||  +> [10, 4] ListDeclField [List with 1 elements]
+   |  ||  |  []> [10, 8] [Visibility=PUBLIC] DeclField
+   |  ||  |      +> [10, 4] Identifier (int)
+   |  ||  |      +> [10, 8] Identifier (b1)
+   |  ||  |      `> [10, 8] NoInitialization
+   |  ||  `> [10, 4] ListDeclMethod [List with 0 elements]
+   |  []> [14, 0] DeclClass
+   |      +> [14, 6] Identifier (C)
+   |      +> [14, 8] Identifier (B)
+   |      +> [16, 4] ListDeclField [List with 1 elements]
+   |      |  []> [16, 12] [Visibility=PUBLIC] DeclField
+   |      |      +> [16, 4] Identifier (boolean)
+   |      |      +> [16, 12] Identifier (c1)
+   |      |      `> [16, 12] Initialization
+   |      |         `> [16, 17] BooleanLiteral (true)
+   |      `> [16, 4] ListDeclMethod [List with 0 elements]
+   `> [20, 0] Main
+      +> [22, 4] ListDeclVar [List with 1 elements]
+      |  []> [22, 6] DeclVar
+      |      +> [22, 4] Identifier (C)
+      |      +> [22, 6] Identifier (c)
+      |      `> [22, 6] Initialization
+      |         `> [22, 10] New
+      |            `> [22, 14] Identifier (C)
+      `> [24, 4] ListInst [List with 4 elements]
+         []> [24, 4] Assign
+         ||  +> [24, 4] Selection
+         ||  |  +> [24, 4] Identifier (c)
+         ||  |  `> [24, 6] Identifier (a1)
+         ||  `> [24, 11] Int (5)
+         []> [25, 4] Assign
+         ||  +> [25, 4] Selection
+         ||  |  +> [25, 4] Identifier (c)
+         ||  |  `> [25, 6] Identifier (a2)
+         ||  `> [25, 11] Int (3)
+         []> [26, 4] Assign
+         ||  +> [26, 4] Selection
+         ||  |  +> [26, 4] Identifier (c)
+         ||  |  `> [26, 6] Identifier (b1)
+         ||  `> [26, 11] Int (7)
+         []> [28, 4] IfThenElse
+             +> [28, 8] Selection
+             |  +> [28, 8] Identifier (c)
+             |  `> [28, 10] Identifier (c1)
+             +> [29, 8] ListInst [List with 1 elements]
+             |  []> [29, 8] Println
+             |      `> [29, 16] ListExpr [List with 1 elements]
+             |         []> [29, 16] StringLiteral (c.c1 was initialized to True)
+             `> [30, 6] ListInst [List with 1 elements]
+                []> [31, 8] Println
+                    `> [31, 16] ListExpr [List with 1 elements]
+                       []> [31, 16] StringLiteral (c.c1 was initialized to False)

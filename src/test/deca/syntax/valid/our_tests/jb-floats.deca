@@ -1,0 +1,37 @@
+// Description:
+//    Valid Floats
+//
+// Resultats:
+//    Should print a list of floats
+//
+// Historique:
+//    cree le 23/01/2017
+
+{
+    println("0x0.0p0F = ", 0x0.0p0F);
+    println("0x1.0p0f = ", 0x1.0p0f);
+    println("0x1.0P0F = ", 0x1.0P0F);
+    println("0x1.0P0f = ", 0x1.0P0f);
+    println("0X1.0p0F = ", 0X1.0p0F);
+    println("0x1.0p+0F = ", 0x1.0p+0F);
+    println("0x1.0p-0F = ", 0x1.0p-0F);
+    println("0x9.0p0F = ", 0x9.0p0F);
+    println("0xA.0p0F = ", 0xA.0p0F);
+    println("0xF.0p0F = ", 0xF.0p0F);
+    println("0x1.9p0F = ", 0x1.9p0F);
+    println("0x1.Ap0F = ", 0x1.Ap0F);
+    println("0x1.Fp0F = ", 0x1.Fp0F);
+    println("0x2.0p9F = ", 0x2.0p9F);
+    println("0x2.0p00F = ", 0x2.0p00F);
+    println("0.0 = ", 0.0);
+    println("9.9 = ", 9.9);
+    println("10.0 = ", 10.0);
+    println("1.1f = ", 1.1f);
+    println("1.1F = ", 1.1F);
+    println("1.1e0 = ", 1.1e0);
+    println("1.1E0 = ", 1.1E0);
+    println("1.1e9 = ", 1.1e9);
+    println("1.1e+1 = ", 1.1e+1);
+    println("1.1e-1 = ", 1.1e-1);
+    println("1.1e10 = ", 1.1e10);
+}

@@ -1,0 +1,76 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> [11, 4] ListDeclVar [List with 3 elements]
+      |  []> [11, 8] DeclVar
+      |  ||  +> [11, 4] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [11, 8] Identifier (i1)
+      |  ||  |  definition: variable defined at [11, 8], type=int
+      |  ||  `> [11, 8] Initialization
+      |  ||     `> [11, 13] Int (0)
+      |  ||        type: int
+      |  []> [12, 8] DeclVar
+      |  ||  +> [12, 4] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [12, 8] Identifier (i2)
+      |  ||  |  definition: variable defined at [12, 8], type=int
+      |  ||  `> [12, 8] NoInitialization
+      |  []> [12, 12] DeclVar
+      |      +> [12, 4] Identifier (int)
+      |      |  definition: type (builtin), type=int
+      |      +> [12, 12] Identifier (i3)
+      |      |  definition: variable defined at [12, 12], type=int
+      |      `> [12, 12] NoInitialization
+      `> [13, 4] ListInst [List with 5 elements]
+         []> [13, 4] Assign
+         ||  type: int
+         ||  +> [13, 4] Identifier (i2)
+         ||  |  definition: variable defined at [12, 8], type=int
+         ||  `> [13, 9] Identifier (i1)
+         ||     definition: variable defined at [11, 8], type=int
+         []> [14, 4] Assign
+         ||  type: int
+         ||  +> [14, 4] Identifier (i3)
+         ||  |  definition: variable defined at [12, 12], type=int
+         ||  `> [14, 9] Plus
+         ||     type: int
+         ||     +> [14, 9] Identifier (i2)
+         ||     |  definition: variable defined at [12, 8], type=int
+         ||     `> [14, 14] Int (1)
+         ||        type: int
+         []> [16, 4] Println
+         ||  `> [16, 12] ListExpr [List with 2 elements]
+         ||     []> [16, 12] StringLiteral (This is what happens when we add i1 with 3 : )
+         ||     ||  type: string
+         ||     []> [16, 61] Plus
+         ||         type: int
+         ||         +> [16, 61] Identifier (i1)
+         ||         |  definition: variable defined at [11, 8], type=int
+         ||         `> [16, 66] Int (3)
+         ||            type: int
+         []> [17, 4] Println
+         ||  `> [17, 12] ListExpr [List with 2 elements]
+         ||     []> [17, 12] StringLiteral (This is what happens when we add i2 and i3 : )
+         ||     ||  type: string
+         ||     []> [17, 61] Plus
+         ||         type: int
+         ||         +> [17, 61] Identifier (i2)
+         ||         |  definition: variable defined at [12, 8], type=int
+         ||         `> [17, 66] Identifier (i3)
+         ||            definition: variable defined at [12, 12], type=int
+         []> [18, 4] Println
+             `> [18, 12] ListExpr [List with 2 elements]
+                []> [18, 12] StringLiteral (This is what happens when we substract i3 from i2 : )
+                ||  type: string
+                []> [18, 68] Minus
+                    type: int
+                    +> [18, 68] Identifier (i2)
+                    |  definition: variable defined at [12, 8], type=int
+                    `> [18, 73] Identifier (i3)
+                       definition: variable defined at [12, 12], type=int

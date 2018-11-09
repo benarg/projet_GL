@@ -1,0 +1,12 @@
+// Description:
+//    tests de programme incorrect lexicalement (chaine non terminee)
+//
+// Resultats:
+//    ligne 11 : Erreur, mauvais nom de variable
+//
+// Historique:
+//    cree le 05/01/2017
+
+{
+	int 3x;
+}

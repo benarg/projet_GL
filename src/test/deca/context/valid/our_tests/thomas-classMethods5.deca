@@ -1,0 +1,20 @@
+class A {
+
+    int x = 0;
+
+    void add() {
+        this.x = this.x + 1;
+    }
+
+}
+
+
+{
+
+    A a = new A();
+
+    println(a.x);
+    a.add();
+    println(a.x);
+
+}

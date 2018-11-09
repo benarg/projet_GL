@@ -1,0 +1,4 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+src/test/deca/context/invalid/our_tests/jb-wrong-override1.deca:11:19: Signature is different from the one declared here: [builtin] (rule 2.7)

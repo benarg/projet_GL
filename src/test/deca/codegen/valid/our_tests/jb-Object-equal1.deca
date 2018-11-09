@@ -1,0 +1,25 @@
+// Description:
+//    check if 2 Objects are equal
+//
+// Resultats:
+//    Should print SUCCESS twice
+//
+// Historique:
+//    cree le 22/01/2017
+
+
+{
+Object a = new Object();
+Object b = new Object();
+if (a == b) {
+println("FAIL");
+} else {
+println("SUCCESS");
+}
+
+if (a != b) {
+println("SUCCESS");
+} else {
+println("FAIL");
+}
+}

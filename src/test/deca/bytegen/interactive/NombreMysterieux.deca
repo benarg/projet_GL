@@ -1,0 +1,58 @@
+{
+    // le nombre d'essais permi
+    int nbEssais;
+    // Le nombre entre par le joueur
+    int nbUtilisateur;
+    // Nombre genere aleatoirement par l'ordinateur
+    int nbOrdinateur = 522;
+    // caractère permettant le choix final
+    int choix = 1;
+    // constantes permettant de limiter le choix par l'ordinateurfinal double  BORNE_INF 1, BORNE_SUP 1000;
+    // Le nombre maximum de coups 
+    int nbMaxDeCoups = 10; 
+    // Methode pour permettre de refaire ou de quitter, boucle do while
+    while (choix == 1) {
+        // Initialiser le nombre d'essais a 1
+        nbEssais = 1;
+        // Afficher la règle du jeu
+        println("J'ai choisi un nombre entre 1 et 1000. Trouvez le en 10 essais ! ");
+        
+        // Saisir le nombre choisit par l'utilisateur
+        print("Entrez un nombre: ");
+        nbUtilisateur = readInt();
+        // Tant que l'utilisateur n'a pas trouve le nombre  
+        while ((nbUtilisateur < nbOrdinateur || nbUtilisateur > nbOrdinateur)  && nbEssais < nbMaxDeCoups   ) {
+            if ( nbUtilisateur < nbOrdinateur ) {
+                println("Essai #", nbEssais, " Le nombre choisi est trop petit: ");
+            } else {
+                println("Essai #", nbEssais, "  Le nombre choisi est trop grand: ");
+            }
+            // Saisir le nombre choisit par l'utilisateur
+            print("Entrez un nombre: ");
+            nbUtilisateur = readInt();
+
+            nbEssais = nbEssais + 1 ;   
+        }
+        if ( nbEssais  ==  nbMaxDeCoups ){
+            // verifier si le 10eme essai ne soit le bon ou pas
+            if ( nbUtilisateur == nbOrdinateur) {
+                println("Bravo vous avez trouve le nombre ", nbOrdinateur, 
+                    " apres ", nbEssais, " essai(s)");
+            } else {
+                println("Desole vous avez epuisez votre nombre d'essais ");
+            }
+        } else {
+            // Afficher un message de felicitation
+            println("Bravo vous avez trouve le nombre ", nbOrdinateur, 
+                " apres ", nbEssais, " essai(s)");
+        }
+             
+        
+        print("Voulez vous recommencer(1/0)?   ");
+             
+        choix = readInt();
+        }
+        if ( choix == 0) {
+            println("Au revoir!  ");
+        }   
+}

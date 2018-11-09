@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/jb-simple_lex4.deca:13:2: missing OBRACE at 'println'

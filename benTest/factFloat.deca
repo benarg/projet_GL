@@ -1,0 +1,18 @@
+class A {
+  float fact (float a) {
+    if (a == 0.0) {
+      return 1.0;
+    }
+    else {
+      return a * fact(a-1.0);
+    }
+  }
+}
+
+{
+  float b;
+  A a = new A();
+  println("Entrer un floattant : ");
+  b = readFloat();
+  println(a.fact(b));
+}

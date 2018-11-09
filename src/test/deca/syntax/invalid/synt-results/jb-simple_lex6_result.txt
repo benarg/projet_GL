@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/jb-simple_lex6.deca:14:1: extraneous input 'else' expecting {IF, FALSE, NEW, NULL, READINT, READFLOAT, PRINT, PRINTLN, PRINTLNX, PRINTX, RETURN, THIS, TRUE, WHILE, MINUS, OPARENT, CBRACE, EXCLAM, SEMI, IDENT, INT, FLOAT, STRING}

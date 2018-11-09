@@ -1,0 +1,51 @@
+`> [1, 0] Program
+   +> [1, 0] ListDeclClass [List with 1 elements]
+   |  []> [1, 0] DeclClass
+   |      +> [1, 6] Identifier (A)
+   |      +> [1, 8] Identifier (Object)
+   |      +> [3, 4] ListDeclField [List with 1 elements]
+   |      |  []> [3, 8] [Visibility=PUBLIC] DeclField
+   |      |      +> [3, 4] Identifier (int)
+   |      |      +> [3, 8] Identifier (x)
+   |      |      `> [3, 8] Initialization
+   |      |         `> [3, 12] Int (0)
+   |      `> [3, 4] ListDeclMethod [List with 1 elements]
+   |         []> [5, 4] DeclMethod
+   |             +> [5, 4] Identifier (void)
+   |             +> [5, 9] Identifier (add)
+   |             +> [5, 13] ListDeclParam [List with 0 elements]
+   |             `> [5, 15] MethodBody
+   |                +> [5, 15] ListDeclVar [List with 0 elements]
+   |                `> [5, 15] ListInst [List with 1 elements]
+   |                   []> [6, 8] Assign
+   |                       +> [6, 8] Selection
+   |                       |  +> [6, 8] This
+   |                       |  `> [6, 13] Identifier (x)
+   |                       `> [6, 17] Plus
+   |                          +> [6, 17] Selection
+   |                          |  +> [6, 17] This
+   |                          |  `> [6, 22] Identifier (x)
+   |                          `> [6, 26] Int (1)
+   `> [12, 0] Main
+      +> [14, 4] ListDeclVar [List with 1 elements]
+      |  []> [14, 6] DeclVar
+      |      +> [14, 4] Identifier (A)
+      |      +> [14, 6] Identifier (a)
+      |      `> [14, 6] Initialization
+      |         `> [14, 10] New
+      |            `> [14, 14] Identifier (A)
+      `> [16, 4] ListInst [List with 3 elements]
+         []> [16, 4] Println
+         ||  `> [16, 12] ListExpr [List with 1 elements]
+         ||     []> [16, 12] Selection
+         ||         +> [16, 12] Identifier (a)
+         ||         `> [16, 14] Identifier (x)
+         []> [17, 4] MethodCall
+         ||  +> [17, 4] Identifier (a)
+         ||  +> [17, 6] Identifier (add)
+         ||  `> [17, 10] ListExpr [List with 0 elements]
+         []> [18, 4] Println
+             `> [18, 12] ListExpr [List with 1 elements]
+                []> [18, 12] Selection
+                    +> [18, 12] Identifier (a)
+                    `> [18, 14] Identifier (x)

@@ -1,0 +1,19 @@
+// Description:
+//    Assigning an object to another
+//
+// Resultats:
+//    Should print SUCCESS
+//
+// Historique:
+//    cree le 22/01/2017
+
+{
+    Object a = new Object();
+    Object o;
+    o = a;
+    if (a == o) {
+        println("SUCCESS");
+    } else {
+        println("FAIL");
+    }
+}

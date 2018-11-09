@@ -1,0 +1,64 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 0] ListDeclVar [List with 2 elements]
+      |  []> [12, 7] DeclVar
+      |  ||  +> [12, 0] Identifier (Object)
+      |  ||  |  definition: type (builtin), type=Object
+      |  ||  +> [12, 7] Identifier (a)
+      |  ||  |  definition: variable defined at [12, 7], type=Object
+      |  ||  `> [12, 7] Initialization
+      |  ||     `> [12, 11] New
+      |  ||        type: Object
+      |  ||        `> [12, 15] Identifier (Object)
+      |  ||           definition: type (builtin), type=Object
+      |  []> [13, 7] DeclVar
+      |      +> [13, 0] Identifier (Object)
+      |      |  definition: type (builtin), type=Object
+      |      +> [13, 7] Identifier (b)
+      |      |  definition: variable defined at [13, 7], type=Object
+      |      `> [13, 7] Initialization
+      |         `> [13, 11] New
+      |            type: Object
+      |            `> [13, 15] Identifier (Object)
+      |               definition: type (builtin), type=Object
+      `> [14, 0] ListInst [List with 2 elements]
+         []> [14, 0] IfThenElse
+         ||  +> [14, 4] Equals
+         ||  |  type: boolean
+         ||  |  +> [14, 4] Identifier (a)
+         ||  |  |  definition: variable defined at [12, 7], type=Object
+         ||  |  `> [14, 9] Identifier (b)
+         ||  |     definition: variable defined at [13, 7], type=Object
+         ||  +> [15, 0] ListInst [List with 1 elements]
+         ||  |  []> [15, 0] Println
+         ||  |      `> [15, 8] ListExpr [List with 1 elements]
+         ||  |         []> [15, 8] StringLiteral (FAIL)
+         ||  |             type: string
+         ||  `> [16, 2] ListInst [List with 1 elements]
+         ||     []> [17, 0] Println
+         ||         `> [17, 8] ListExpr [List with 1 elements]
+         ||            []> [17, 8] StringLiteral (SUCCESS)
+         ||                type: string
+         []> [20, 0] IfThenElse
+             +> [20, 4] NotEquals
+             |  type: boolean
+             |  +> [20, 4] Identifier (a)
+             |  |  definition: variable defined at [12, 7], type=Object
+             |  `> [20, 9] Identifier (b)
+             |     definition: variable defined at [13, 7], type=Object
+             +> [21, 0] ListInst [List with 1 elements]
+             |  []> [21, 0] Println
+             |      `> [21, 8] ListExpr [List with 1 elements]
+             |         []> [21, 8] StringLiteral (SUCCESS)
+             |             type: string
+             `> [22, 2] ListInst [List with 1 elements]
+                []> [23, 0] Println
+                    `> [23, 8] ListExpr [List with 1 elements]
+                       []> [23, 8] StringLiteral (FAIL)
+                           type: string

@@ -1,0 +1,60 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> [11, 4] ListDeclVar [List with 3 elements]
+      |  []> [11, 8] DeclVar
+      |  ||  +> [11, 4] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [11, 8] Identifier (i1)
+      |  ||  |  definition: variable defined at [11, 8], type=int
+      |  ||  `> [11, 8] Initialization
+      |  ||     `> [11, 13] Minus
+      |  ||        type: int
+      |  ||        +> [11, 13] Plus
+      |  ||        |  type: int
+      |  ||        |  +> [11, 13] Plus
+      |  ||        |  |  type: int
+      |  ||        |  |  +> [11, 13] Int (1)
+      |  ||        |  |  |  type: int
+      |  ||        |  |  `> [11, 17] Int (6)
+      |  ||        |  |     type: int
+      |  ||        |  `> [11, 21] Int (3)
+      |  ||        |     type: int
+      |  ||        `> [11, 25] Int (5)
+      |  ||           type: int
+      |  []> [12, 8] DeclVar
+      |  ||  +> [12, 4] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [12, 8] Identifier (i2)
+      |  ||  |  definition: variable defined at [12, 8], type=int
+      |  ||  `> [12, 8] Initialization
+      |  ||     `> [12, 13] Multiply
+      |  ||        type: int
+      |  ||        +> [12, 13] Identifier (i1)
+      |  ||        |  definition: variable defined at [11, 8], type=int
+      |  ||        `> [12, 18] Int (2)
+      |  ||           type: int
+      |  []> [13, 8] DeclVar
+      |      +> [13, 4] Identifier (int)
+      |      |  definition: type (builtin), type=int
+      |      +> [13, 8] Identifier (i3)
+      |      |  definition: variable defined at [13, 8], type=int
+      |      `> [13, 8] Initialization
+      |         `> [13, 13] Modulo
+      |            type: int
+      |            +> [13, 13] Identifier (i2)
+      |            |  definition: variable defined at [12, 8], type=int
+      |            `> [13, 18] Int (7)
+      |               type: int
+      `> [14, 4] ListInst [List with 1 elements]
+         []> [14, 4] Println
+             `> [14, 12] ListExpr [List with 2 elements]
+                []> [14, 12] StringLiteral (This is the value for i3 : )
+                ||  type: string
+                []> [14, 43] Identifier (i3)
+                    definition: variable defined at [13, 8], type=int

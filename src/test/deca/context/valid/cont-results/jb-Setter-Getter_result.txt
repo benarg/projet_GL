@@ -1,0 +1,98 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 1 elements]
+   |  []> [10, 0] DeclClass
+   |      +> [10, 6] Identifier (A)
+   |      |  definition: type defined at [10, 6], type=A
+   |      +> [10, 8] Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> [11, 4] ListDeclField [List with 1 elements]
+   |      |  []> [11, 18] [Visibility=PROTECTED] DeclField
+   |      |      +> [11, 14] Identifier (int)
+   |      |      |  definition: type (builtin), type=int
+   |      |      +> [11, 18] Identifier (x)
+   |      |      |  definition: field defined at [11, 18], type=int
+   |      |      `> [11, 18] Initialization
+   |      |         `> [11, 22] Int (2)
+   |      |            type: int
+   |      `> [11, 4] ListDeclMethod [List with 2 elements]
+   |         []> [12, 4] DeclMethod
+   |         ||  +> [12, 4] Identifier (void)
+   |         ||  |  definition: type (builtin), type=void
+   |         ||  +> [12, 9] Identifier (setX)
+   |         ||  |  definition: method defined at [12, 4], type=void
+   |         ||  +> [12, 14] ListDeclParam [List with 1 elements]
+   |         ||  |  []> [12, 14] DeclParam
+   |         ||  |      +> [12, 14] Identifier (int)
+   |         ||  |      |  definition: type (builtin), type=int
+   |         ||  |      `> [12, 18] Identifier (a)
+   |         ||  |         definition: parameter defined at [12, 18], type=int
+   |         ||  `> [12, 21] MethodBody
+   |         ||     +> [12, 21] ListDeclVar [List with 0 elements]
+   |         ||     `> [12, 21] ListInst [List with 1 elements]
+   |         ||        []> [13, 8] Assign
+   |         ||            type: int
+   |         ||            +> [13, 8] Identifier (x)
+   |         ||            |  definition: field defined at [11, 18], type=int
+   |         ||            `> [13, 12] Identifier (a)
+   |         ||               definition: parameter defined at [12, 18], type=int
+   |         []> [15, 4] DeclMethod
+   |             +> [15, 4] Identifier (int)
+   |             |  definition: type (builtin), type=int
+   |             +> [15, 8] Identifier (getX)
+   |             |  definition: method defined at [15, 4], type=int
+   |             +> [15, 13] ListDeclParam [List with 0 elements]
+   |             `> [15, 15] MethodBody
+   |                +> [15, 15] ListDeclVar [List with 0 elements]
+   |                `> [15, 15] ListInst [List with 1 elements]
+   |                   []> [16, 8] Return
+   |                       `> [16, 15] Identifier (x)
+   |                          definition: field defined at [11, 18], type=int
+   `> [20, 0] Main
+      +> [21, 4] ListDeclVar [List with 1 elements]
+      |  []> [21, 6] DeclVar
+      |      +> [21, 4] Identifier (A)
+      |      |  definition: type defined at [10, 6], type=A
+      |      +> [21, 6] Identifier (a)
+      |      |  definition: variable defined at [21, 6], type=A
+      |      `> [21, 6] Initialization
+      |         `> [21, 10] New
+      |            type: A
+      |            `> [21, 14] Identifier (A)
+      |               definition: type defined at [10, 6], type=A
+      `> [22, 4] ListInst [List with 2 elements]
+         []> [22, 4] MethodCall
+         ||  type: void
+         ||  +> [22, 4] Identifier (a)
+         ||  |  definition: variable defined at [21, 6], type=A
+         ||  +> [22, 6] Identifier (setX)
+         ||  |  definition: method defined at [12, 4], type=void
+         ||  `> [22, 11] ListExpr [List with 1 elements]
+         ||     []> [22, 11] Int (3)
+         ||         type: int
+         []> [23, 4] IfThenElse
+             +> [23, 8] Equals
+             |  type: boolean
+             |  +> [23, 8] MethodCall
+             |  |  type: int
+             |  |  +> [23, 8] Identifier (a)
+             |  |  |  definition: variable defined at [21, 6], type=A
+             |  |  +> [23, 10] Identifier (getX)
+             |  |  |  definition: method defined at [15, 4], type=int
+             |  |  `> [23, 15] ListExpr [List with 0 elements]
+             |  `> [23, 20] Int (3)
+             |     type: int
+             +> [24, 8] ListInst [List with 1 elements]
+             |  []> [24, 8] Println
+             |      `> [24, 16] ListExpr [List with 1 elements]
+             |         []> [24, 16] StringLiteral (SUCCESS)
+             |             type: string
+             `> [25, 6] ListInst [List with 1 elements]
+                []> [26, 8] Println
+                    `> [26, 16] ListExpr [List with 1 elements]
+                       []> [26, 16] StringLiteral (FAIL)
+                           type: string

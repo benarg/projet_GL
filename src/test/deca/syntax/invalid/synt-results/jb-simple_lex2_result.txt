@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/jb-simple_lex2.deca:12:7: extraneous input ';' expecting CPARENT

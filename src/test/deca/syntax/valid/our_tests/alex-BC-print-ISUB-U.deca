@@ -1,0 +1,15 @@
+// Description:
+//    Teste le print et println du moins unaire sur un entier
+//
+// Resultats:
+//    - ISUB_U1     : -4                      = -4
+//    - ISUB_U2     : -2                      = -2
+// 
+// Historique:
+//    cree le 18/01/2017
+
+{
+    println("- ISUB_U1     : -4                      = ", -4);
+    print("- ISUB_U2     : -2                      = ", -2);
+    println("");
+}

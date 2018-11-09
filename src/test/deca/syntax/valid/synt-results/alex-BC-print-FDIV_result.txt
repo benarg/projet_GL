@@ -1,0 +1,28 @@
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 4] ListDeclVar [List with 0 elements]
+      `> [12, 4] ListInst [List with 3 elements]
+         []> [12, 4] Println
+         ||  `> [12, 12] ListExpr [List with 2 elements]
+         ||     []> [12, 12] StringLiteral (- FDIV1       : 100.0 / 4.0 / 5.0 / 5.0 = )
+         ||     []> [12, 58] Divide
+         ||         +> [12, 58] Divide
+         ||         |  +> [12, 58] Divide
+         ||         |  |  +> [12, 58] Float (100.0)
+         ||         |  |  `> [12, 66] Float (4.0)
+         ||         |  `> [12, 72] Float (5.0)
+         ||         `> [12, 78] Float (5.0)
+         []> [13, 4] Print
+         ||  `> [13, 10] ListExpr [List with 2 elements]
+         ||     []> [13, 10] StringLiteral (- FDIV2       : 120.0 / 6.0 / 5.0 / 2.0 = )
+         ||     []> [13, 56] Divide
+         ||         +> [13, 56] Divide
+         ||         |  +> [13, 56] Divide
+         ||         |  |  +> [13, 56] Float (120.0)
+         ||         |  |  `> [13, 64] Float (6.0)
+         ||         |  `> [13, 70] Float (5.0)
+         ||         `> [13, 76] Float (2.0)
+         []> [14, 4] Println
+             `> [14, 12] ListExpr [List with 1 elements]
+                []> [14, 12] StringLiteral ()

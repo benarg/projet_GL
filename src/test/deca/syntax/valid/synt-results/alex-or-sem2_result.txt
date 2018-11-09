@@ -1,0 +1,26 @@
+`> [12, 0] Program
+   +> [12, 0] ListDeclClass [List with 0 elements]
+   `> [12, 0] Main
+      +> [13, 4] ListDeclVar [List with 0 elements]
+      `> [13, 4] ListInst [List with 2 elements]
+         []> [13, 4] IfThenElse
+         ||  +> [13, 7] Or
+         ||  |  +> [13, 7] Or
+         ||  |  |  +> [13, 7] BooleanLiteral (false)
+         ||  |  |  `> [13, 16] BooleanLiteral (true)
+         ||  |  `> [13, 24] Equals
+         ||  |     +> [13, 25] Divide
+         ||  |     |  +> [13, 25] Int (1)
+         ||  |     |  `> [13, 27] Int (0)
+         ||  |     `> [13, 32] Int (0)
+         ||  +> [14, 8] ListInst [List with 1 elements]
+         ||  |  []> [14, 8] Println
+         ||  |      `> [14, 16] ListExpr [List with 1 elements]
+         ||  |         []> [14, 16] StringLiteral (if branch -> expected behavior)
+         ||  `> [15, 6] ListInst [List with 1 elements]
+         ||     []> [16, 8] Println
+         ||         `> [16, 16] ListExpr [List with 1 elements]
+         ||            []> [16, 16] StringLiteral (shouldn't happen)
+         []> [18, 4] Println
+             `> [18, 12] ListExpr [List with 1 elements]
+                []> [18, 12] StringLiteral (exit success)

@@ -1,0 +1,15 @@
+// Description:
+//    Teste le print et println d'une multiplication sur un flottant
+//
+// Resultats:
+//    - FMUL1       : 5.0 * 5.0 * 4.0         = 100.0
+//    - FMUL2       : 50.0 * 5.0 * 4.0        = 1000.0
+
+// Historique:
+//    cree le 17/01/2017
+
+{
+    println("- FMUL1       : 5.0 * 5.0 * 4.0         = ", 5.0 * 5.0 * 4.0);
+    print("- FMUL2       : 50.0 * 5.0 * 4.0        = ", 50.0 * 5.0 * 4.0);
+    println("");
+}

@@ -1,0 +1,49 @@
+class Animal {
+    protected int nbPattes;
+
+    void crier() {
+        println("Un animal crie...");
+    }
+
+    int getNbPattes() {
+        return this.nbPattes;
+    }
+}
+
+class Canard extends Animal {
+    
+    //@Override
+    void crier() {
+       nbPattes = 2;
+       println("Un canard a ", getNbPattes(), " pattes crie: coin coin!");
+    }
+
+}
+
+class Vache extends Animal {
+    
+    //@Override
+    void crier() {
+        nbPattes = 4;
+        println("Une vache a ", getNbPattes(), " pattes crie: meuh!");
+    }
+}
+
+class Chien extends Animal {
+    
+    //@Override
+    void crier() {
+        nbPattes = 4;
+        println("Un chien a ", getNbPattes(), " pattes crie: ouaf!");
+    }
+}
+
+{
+    Animal a1 = new Canard();
+    Animal a2 = new Vache();
+    Animal a3 = new Chien();
+
+    a1.crier();
+    a2.crier();
+    a3.crier();
+}

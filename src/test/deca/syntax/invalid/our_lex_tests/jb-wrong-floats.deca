@@ -1,0 +1,19 @@
+// Description:
+//    Invalid Floats
+//
+// Resultats:
+//    Shouldn't be FLOAT tokens
+//
+// Historique:
+//    cree le 23/01/2017
+
+{
+    println("1x0.0p0F = ", 1x0.0p0F);
+    println("0x1.0pAf = ", 0x1.0pAf);
+    println("0.A = ", 0.A);
+    println("A.9 = ", A.9);
+    println("1.1eA = ", 1.1eA);
+    println("1.1a0 = ", 1.1a0);
+    println("1.1e*1 = ", 1.1e*1);
+    println("1.1.1 = ", 1.1.1);
+}

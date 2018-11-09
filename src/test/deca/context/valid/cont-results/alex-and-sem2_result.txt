@@ -1,0 +1,43 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [12, 0] Program
+   +> [12, 0] ListDeclClass [List with 0 elements]
+   `> [12, 0] Main
+      +> [13, 4] ListDeclVar [List with 0 elements]
+      `> [13, 4] ListInst [List with 2 elements]
+         []> [13, 4] IfThenElse
+         ||  +> [13, 7] And
+         ||  |  type: boolean
+         ||  |  +> [13, 7] And
+         ||  |  |  type: boolean
+         ||  |  |  +> [13, 7] BooleanLiteral (true)
+         ||  |  |  |  type: boolean
+         ||  |  |  `> [13, 15] BooleanLiteral (false)
+         ||  |  |     type: boolean
+         ||  |  `> [13, 24] Equals
+         ||  |     type: boolean
+         ||  |     +> [13, 25] Divide
+         ||  |     |  type: int
+         ||  |     |  +> [13, 25] Int (1)
+         ||  |     |  |  type: int
+         ||  |     |  `> [13, 27] Int (0)
+         ||  |     |     type: int
+         ||  |     `> [13, 32] Int (0)
+         ||  |        type: int
+         ||  +> [14, 8] ListInst [List with 1 elements]
+         ||  |  []> [14, 8] Println
+         ||  |      `> [14, 16] ListExpr [List with 1 elements]
+         ||  |         []> [14, 16] StringLiteral (shouldn't happen)
+         ||  |             type: string
+         ||  `> [15, 6] ListInst [List with 1 elements]
+         ||     []> [16, 8] Println
+         ||         `> [16, 16] ListExpr [List with 1 elements]
+         ||            []> [16, 16] StringLiteral (else branch -> expected behavior)
+         ||                type: string
+         []> [18, 4] Println
+             `> [18, 12] ListExpr [List with 1 elements]
+                []> [18, 12] StringLiteral (exit success)
+                    type: string

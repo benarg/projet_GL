@@ -1,0 +1,44 @@
+// Description:
+//    Override equals method
+//
+// Resultats:
+//    Should print SUCCESS three times
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    int x;
+    boolean equals(Object o) {
+        if (o instanceof A) {
+            return this.x == ((A) (o)).x; 
+        } else {
+            return false;
+        }
+    }
+}
+
+{
+    A a = new A();
+    A b = new A();
+    Object o = b;
+    a.x = 2;
+    b.x = 2;
+    if (a == b) {
+        println("SUCCESS");
+    } else {
+        println("FAIL");
+    }
+
+    if (a == o) {
+        println("SUCCESS");
+    } else {
+        println("FAIL");
+    }
+
+    if (o == a) {
+        println("FAIL");
+    } else {
+        println("SUCCESS");
+    }
+}

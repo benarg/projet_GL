@@ -1,0 +1,17 @@
+// Description:
+//    Programme faisant appel aux opérations de division sur des entiers
+//
+// Resultats:
+//    a = c(15) / b(5) = 3
+//
+// Historique:
+//    cree le 11/01/2017
+
+{
+    int b = 5;
+    int c = 15;
+    int a = c / b;
+    print("a = c(",c);
+    print(") / b(",b);
+    println(") = ",a);
+}

@@ -1,0 +1,22 @@
+// Description:
+//    Bad left operand for instanceof
+//
+// Resultats:
+//    Should throw contextual error (rule 3.40)
+//
+// Historique:
+//    cree le 23/01/2017
+
+{
+    if (null instanceof int) {
+        println("FAIL");
+    } else if (null instanceof void) {
+        println("FAIL");
+    } else if (null instanceof float) {
+        println("FAIL");
+    } else if (null instanceof boolean) {
+        println("FAIL");
+    } else {
+        println("FAIL");
+    }
+}

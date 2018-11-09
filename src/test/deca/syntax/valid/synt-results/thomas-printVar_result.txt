@@ -1,0 +1,23 @@
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> [12, 4] ListDeclVar [List with 2 elements]
+      |  []> [12, 8] DeclVar
+      |  ||  +> [12, 4] Identifier (int)
+      |  ||  +> [12, 8] Identifier (i)
+      |  ||  `> [12, 8] Initialization
+      |  ||     `> [12, 12] Int (1)
+      |  []> [13, 10] DeclVar
+      |      +> [13, 4] Identifier (float)
+      |      +> [13, 10] Identifier (f)
+      |      `> [13, 10] Initialization
+      |         `> [13, 14] Float (1.1)
+      `> [15, 4] ListInst [List with 2 elements]
+         []> [15, 4] Println
+         ||  `> [15, 12] ListExpr [List with 2 elements]
+         ||     []> [15, 12] StringLiteral (here is the integer : )
+         ||     []> [15, 39] Identifier (i)
+         []> [16, 4] Println
+             `> [16, 12] ListExpr [List with 2 elements]
+                []> [16, 12] StringLiteral (here is the float : )
+                []> [16, 36] Identifier (f)

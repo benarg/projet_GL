@@ -1,0 +1,17 @@
+// Description:
+//    Programme faisant appel aux opérations de division sur des flottants
+//
+// Resultats:
+//    a = c(2.10330e+02) / b(8.56500e+01) = 2.45569e+00
+//
+// Historique:
+//    cree le 11/01/2017
+
+{
+    float b = 85.65;
+    float c = 210.33;
+    float a = c / b;
+    print("a = c(",c);
+    print(") / b(",b);
+    println(") = ",a);
+}

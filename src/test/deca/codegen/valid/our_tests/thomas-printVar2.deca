@@ -1,0 +1,21 @@
+// Description:
+//    Print functions of character strings, variables and simple operations
+//
+// Resultats:
+//    
+//
+// Historique:
+//    cree le 10/01/2017
+
+{
+    int i1 = 0;
+    int i2, i3;
+    i2 = i1;
+    i3 = i2 + 1;
+
+    println("This is what happens when we add i1 with 3 : ", i1 + 3);
+    println("This is what happens when we add i2 and i3 : ", i2 + i3);
+    println("This is what happens when we substract i3 from i2 : ", i2 - i3);
+
+
+}

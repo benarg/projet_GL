@@ -1,0 +1,12 @@
+class A {
+protected int x ;
+int getX() {
+return x ;
+}
+}
+{
+A a = new A() ;
+int b;
+b = a.getX() + a.getX();
+print(b);
+}

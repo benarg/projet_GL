@@ -1,0 +1,12 @@
+// Description:
+//    tests de programme lexicalement correct
+//
+// Resultats:
+//    ligne 12: Erreur de syntax. Mais sert a un fichier qui va l'includer
+//    test_lex ne doit pas donner d'erreur.
+//
+// Historique:
+//    cree le 12/01/2017
+
+{
+println("This is in the first .deca file");

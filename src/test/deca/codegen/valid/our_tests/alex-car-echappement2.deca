@@ -1,0 +1,12 @@
+// Description:
+//    Test valide lexicalement : sur les charactères d'échappement
+//
+// Resultats:
+//    Oups this is an escape char \\ but it works!
+//    
+// Historique:
+//    cree le 20/01/2017
+
+{
+    println("Oups this is an escape char \\\\"," but it works!");
+}

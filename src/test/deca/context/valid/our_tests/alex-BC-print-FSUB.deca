@@ -1,0 +1,15 @@
+// Description:
+//    Teste le print et println d'une soustraction sur un flottant
+//
+// Resultats:
+//    - FSUB1       : 9.0 - 6.0 - 3.0         = 0.0
+//    - FSUB2       : 365.0 - 31.0 - 7.0      = 327.0
+// 
+// Historique:
+//    cree le 17/01/2017
+
+{
+    println("- FSUB1       : 9.0 - 6.0 - 3.0         = ", 9.0 - 6.0 - 3.0);
+    print("- FSUB2       : 365.0 - 31.0 - 7.0      = ", 365.0 - 31.0 - 7.0);
+    println("");
+}

@@ -1,0 +1,9 @@
+DEBUG fr.ensimag.deca.syntax.AbstractDecaLexer.findFile(AbstractDecaLexer.java:172) - Using local file src/test/deca/syntax/valid/our_tests/jb-empty.deca
+DEBUG fr.ensimag.deca.syntax.AbstractDecaLexer.nextToken(AbstractDecaLexer.java:266) - End of file, poping include stack
+OBRACE: [@0,157:157='{',<34>,11:0]
+PRINTLN: [@1,159:165='println',<14>,12:0]
+OPARENT: [@2,166:166='(',<32>,12:7]
+STRING: [@3,167:200='This is in the second .deca file',<47>,12:8]
+CPARENT: [@4,201:201=')',<33>,12:42]
+SEMI: [@5,202:202=';',<37>,12:43]
+CBRACE: [@6,204:204='}',<35>,13:0]

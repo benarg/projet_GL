@@ -1,0 +1,16 @@
+// Description:
+//    tests de programme correct lexicalement et incorrect syntaxiquement pour
+//    OR
+//
+// Resultats:
+//    ./src/test/deca/syntax/invalid/our_tests/alex-or_synt.deca:15:4:
+//    extraneous input '||' expecting {IF, FALSE, NEW, NULL, READINT, READFLOAT,
+//    PRINT, PRINTLN, PRINTLNX, PRINTX, RETURN, THIS, TRUE, WHILE, MINUS,
+//    OPARENT, CBRACE, EXCLAM, SEMI, IDENT, INT, FLOAT, STRING}
+//
+// Historique:
+//    12/01/2017
+
+{
+    ||
+}

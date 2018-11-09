@@ -1,0 +1,113 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 1 elements]
+   |  []> [10, 0] DeclClass
+   |      +> [10, 6] Identifier (A)
+   |      |  definition: type defined at [10, 6], type=A
+   |      +> [10, 8] Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> [11, 4] ListDeclField [List with 0 elements]
+   |      `> [11, 4] ListDeclMethod [List with 1 elements]
+   |         []> [11, 4] DeclMethod
+   |             +> [11, 4] Identifier (boolean)
+   |             |  definition: type (builtin), type=boolean
+   |             +> [11, 12] Identifier (f)
+   |             |  definition: method defined at [11, 4], type=boolean
+   |             +> [11, 14] ListDeclParam [List with 0 elements]
+   |             `> [11, 16] MethodBody
+   |                +> [11, 16] ListDeclVar [List with 4 elements]
+   |                |  []> [12, 12] DeclVar
+   |                |  ||  +> [12, 8] Identifier (int)
+   |                |  ||  |  definition: type (builtin), type=int
+   |                |  ||  +> [12, 12] Identifier (a)
+   |                |  ||  |  definition: variable defined at [12, 12], type=int
+   |                |  ||  `> [12, 12] Initialization
+   |                |  ||     `> [12, 16] Int (1)
+   |                |  ||        type: int
+   |                |  []> [13, 14] DeclVar
+   |                |  ||  +> [13, 8] Identifier (float)
+   |                |  ||  |  definition: type (builtin), type=float
+   |                |  ||  +> [13, 14] Identifier (b)
+   |                |  ||  |  definition: variable defined at [13, 14], type=float
+   |                |  ||  `> [13, 14] Initialization
+   |                |  ||     `> [13, 18] Float (1.1)
+   |                |  ||        type: float
+   |                |  []> [14, 16] DeclVar
+   |                |  ||  +> [14, 8] Identifier (boolean)
+   |                |  ||  |  definition: type (builtin), type=boolean
+   |                |  ||  +> [14, 16] Identifier (c)
+   |                |  ||  |  definition: variable defined at [14, 16], type=boolean
+   |                |  ||  `> [14, 16] Initialization
+   |                |  ||     `> [14, 20] BooleanLiteral (true)
+   |                |  ||        type: boolean
+   |                |  []> [15, 15] DeclVar
+   |                |      +> [15, 8] Identifier (Object)
+   |                |      |  definition: type (builtin), type=Object
+   |                |      +> [15, 15] Identifier (o)
+   |                |      |  definition: variable defined at [15, 15], type=Object
+   |                |      `> [15, 15] Initialization
+   |                |         `> [15, 19] Null
+   |                |            type: null
+   |                `> [11, 16] ListInst [List with 1 elements]
+   |                   []> [16, 8] Return
+   |                       `> [16, 15] And
+   |                          type: boolean
+   |                          +> [16, 16] And
+   |                          |  type: boolean
+   |                          |  +> [16, 16] And
+   |                          |  |  type: boolean
+   |                          |  |  +> [16, 16] Equals
+   |                          |  |  |  type: boolean
+   |                          |  |  |  +> [16, 17] Identifier (a)
+   |                          |  |  |  |  definition: variable defined at [12, 12], type=int
+   |                          |  |  |  `> [16, 20] Int (1)
+   |                          |  |  |     type: int
+   |                          |  |  `> [16, 26] Equals
+   |                          |  |     type: boolean
+   |                          |  |     +> [16, 27] Identifier (b)
+   |                          |  |     |  definition: variable defined at [13, 14], type=float
+   |                          |  |     `> [16, 32] Float (1.1)
+   |                          |  |        type: float
+   |                          |  `> [16, 40] Identifier (c)
+   |                          |     definition: variable defined at [14, 16], type=boolean
+   |                          `> [16, 45] Equals
+   |                             type: boolean
+   |                             +> [16, 46] Identifier (o)
+   |                             |  definition: variable defined at [15, 15], type=Object
+   |                             `> [16, 51] Null
+   |                                type: null
+   `> [20, 0] Main
+      +> [21, 4] ListDeclVar [List with 1 elements]
+      |  []> [21, 6] DeclVar
+      |      +> [21, 4] Identifier (A)
+      |      |  definition: type defined at [10, 6], type=A
+      |      +> [21, 6] Identifier (a)
+      |      |  definition: variable defined at [21, 6], type=A
+      |      `> [21, 6] Initialization
+      |         `> [21, 10] New
+      |            type: A
+      |            `> [21, 14] Identifier (A)
+      |               definition: type defined at [10, 6], type=A
+      `> [22, 4] ListInst [List with 1 elements]
+         []> [22, 4] IfThenElse
+             +> [22, 8] MethodCall
+             |  type: boolean
+             |  +> [22, 8] Identifier (a)
+             |  |  definition: variable defined at [21, 6], type=A
+             |  +> [22, 10] Identifier (f)
+             |  |  definition: method defined at [11, 4], type=boolean
+             |  `> [22, 12] ListExpr [List with 0 elements]
+             +> [23, 8] ListInst [List with 1 elements]
+             |  []> [23, 8] Println
+             |      `> [23, 16] ListExpr [List with 1 elements]
+             |         []> [23, 16] StringLiteral (SUCCESS)
+             |             type: string
+             `> [24, 6] ListInst [List with 1 elements]
+                []> [25, 8] Println
+                    `> [25, 16] ListExpr [List with 1 elements]
+                       []> [25, 16] StringLiteral (FAIL)
+                           type: string

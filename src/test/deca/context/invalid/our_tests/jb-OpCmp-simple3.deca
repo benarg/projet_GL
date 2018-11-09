@@ -1,0 +1,12 @@
+// Description:
+//    OpCmp Contextual error
+//
+// Resultats:
+//    Ligne 11: Operation avec OpGauche boolean et OpDroit int ou float
+// 
+// Historique:
+//    cree le 18/01/2017
+
+{
+true == 1;
+}

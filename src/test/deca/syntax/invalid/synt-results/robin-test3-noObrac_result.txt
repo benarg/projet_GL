@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/robin-test3-noObrac.deca:4:4: mismatched input 'println' expecting {<EOF>, CLASS, OBRACE}

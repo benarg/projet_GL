@@ -1,0 +1,10 @@
+OK ... c == b
+OK ... a < b
+OK ... b > a
+OK ... d != e
+OK ... e <= f
+OK ... e >= d
+OK ... g || h
+OK ... g && h
+OK ... g && h || g
+OK ... g && h || (f <= (d*c))

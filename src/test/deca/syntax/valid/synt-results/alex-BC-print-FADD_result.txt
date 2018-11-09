@@ -1,0 +1,28 @@
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 4] ListDeclVar [List with 0 elements]
+      `> [12, 4] ListInst [List with 3 elements]
+         []> [12, 4] Println
+         ||  `> [12, 12] ListExpr [List with 2 elements]
+         ||     []> [12, 12] StringLiteral (- FADD1       : 1.0 + 2.0 + 3.0 + 4.0   = )
+         ||     []> [12, 58] Plus
+         ||         +> [12, 58] Plus
+         ||         |  +> [12, 58] Plus
+         ||         |  |  +> [12, 58] Float (1.0)
+         ||         |  |  `> [12, 64] Float (2.0)
+         ||         |  `> [12, 70] Float (3.0)
+         ||         `> [12, 76] Float (4.0)
+         []> [13, 4] Print
+         ||  `> [13, 10] ListExpr [List with 2 elements]
+         ||     []> [13, 10] StringLiteral (- FADD2       : 5.0 + 6.0 + 7.0 + 8.0   = )
+         ||     []> [13, 56] Plus
+         ||         +> [13, 56] Plus
+         ||         |  +> [13, 56] Plus
+         ||         |  |  +> [13, 56] Float (5.0)
+         ||         |  |  `> [13, 62] Float (6.0)
+         ||         |  `> [13, 68] Float (7.0)
+         ||         `> [13, 74] Float (8.0)
+         []> [14, 4] Println
+             `> [14, 12] ListExpr [List with 1 elements]
+                []> [14, 12] StringLiteral ()

@@ -1,0 +1,15 @@
+// Description:
+//    Teste le print et println d'un flottant
+//
+// Resultats:
+//    - FLOAT1      : PI                      = 3.14159265
+//    - FLOAT2      : 3/2                     = 1.5
+// 
+// Historique:
+//    cree le 17/01/2017
+
+{
+    println("- FLOAT1      : PI                      = ", 3.14159265359);
+    print("- FLOAT2      : 3/2                     = ", 1.5);
+    println("");
+}

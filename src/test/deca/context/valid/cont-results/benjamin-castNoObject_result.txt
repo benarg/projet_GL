@@ -1,0 +1,120 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 0] ListDeclVar [List with 4 elements]
+      |  []> [12, 6] DeclVar
+      |  ||  +> [12, 0] Identifier (float)
+      |  ||  |  definition: type (builtin), type=float
+      |  ||  +> [12, 6] Identifier (d)
+      |  ||  |  definition: variable defined at [12, 6], type=float
+      |  ||  `> [12, 6] NoInitialization
+      |  []> [13, 4] DeclVar
+      |  ||  +> [13, 0] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [13, 4] Identifier (a)
+      |  ||  |  definition: variable defined at [13, 4], type=int
+      |  ||  `> [13, 4] Initialization
+      |  ||     `> [13, 8] Int (453)
+      |  ||        type: int
+      |  []> [14, 6] DeclVar
+      |  ||  +> [14, 0] Identifier (float)
+      |  ||  |  definition: type (builtin), type=float
+      |  ||  +> [14, 6] Identifier (b)
+      |  ||  |  definition: variable defined at [14, 6], type=float
+      |  ||  `> [14, 6] Initialization
+      |  ||     `> [14, 10] Float (45.93)
+      |  ||        type: float
+      |  []> [15, 6] DeclVar
+      |      +> [15, 0] Identifier (float)
+      |      |  definition: type (builtin), type=float
+      |      +> [15, 6] Identifier (c)
+      |      |  definition: variable defined at [15, 6], type=float
+      |      `> [15, 6] Initialization
+      |         `> [15, 10] Cast
+      |            type: float
+      |            +> [15, 11] Identifier (float)
+      |            |  definition: type (builtin), type=float
+      |            `> ConvFloat
+      |               type: int
+      |               `> [15, 19] Identifier (a)
+      |                  definition: variable defined at [13, 4], type=int
+      `> [16, 0] ListInst [List with 7 elements]
+         []> [16, 0] Println
+         ||  `> [16, 8] ListExpr [List with 1 elements]
+         ||     []> [16, 8] Cast
+         ||         type: int
+         ||         +> [16, 9] Identifier (int)
+         ||         |  definition: type (builtin), type=int
+         ||         `> ConvInt
+         ||            type: int
+         ||            `> [16, 15] Identifier (b)
+         ||               definition: variable defined at [14, 6], type=float
+         []> [17, 0] Println
+         ||  `> [17, 8] ListExpr [List with 1 elements]
+         ||     []> [17, 8] Cast
+         ||         type: float
+         ||         +> [17, 9] Identifier (float)
+         ||         |  definition: type (builtin), type=float
+         ||         `> ConvFloat
+         ||            type: int
+         ||            `> [17, 17] Identifier (a)
+         ||               definition: variable defined at [13, 4], type=int
+         []> [18, 0] Println
+         ||  `> [18, 8] ListExpr [List with 1 elements]
+         ||     []> [18, 8] Identifier (c)
+         ||         definition: variable defined at [15, 6], type=float
+         []> [19, 0] Assign
+         ||  type: float
+         ||  +> [19, 0] Identifier (d)
+         ||  |  definition: variable defined at [12, 6], type=float
+         ||  `> [19, 4] Cast
+         ||     type: float
+         ||     +> [19, 5] Identifier (float)
+         ||     |  definition: type (builtin), type=float
+         ||     `> ConvFloat
+         ||        type: int
+         ||        `> [19, 13] Plus
+         ||           type: int
+         ||           +> [19, 13] Cast
+         ||           |  type: int
+         ||           |  +> [19, 14] Identifier (int)
+         ||           |  |  definition: type (builtin), type=int
+         ||           |  `> ConvInt
+         ||           |     type: int
+         ||           |     `> [19, 19] Identifier (b)
+         ||           |        definition: variable defined at [14, 6], type=float
+         ||           `> [19, 24] Int (1)
+         ||              type: int
+         []> [20, 0] Println
+         ||  `> [20, 8] ListExpr [List with 1 elements]
+         ||     []> [20, 8] Identifier (d)
+         ||         definition: variable defined at [12, 6], type=float
+         []> [21, 0] Assign
+         ||  type: float
+         ||  +> [21, 0] Identifier (d)
+         ||  |  definition: variable defined at [12, 6], type=float
+         ||  `> [21, 4] Cast
+         ||     type: float
+         ||     +> [21, 5] Identifier (float)
+         ||     |  definition: type (builtin), type=float
+         ||     `> [21, 13] Plus
+         ||        type: float
+         ||        +> [21, 13] Cast
+         ||        |  type: float
+         ||        |  +> [21, 14] Identifier (float)
+         ||        |  |  definition: type (builtin), type=float
+         ||        |  `> ConvFloat
+         ||        |     type: int
+         ||        |     `> [21, 21] Identifier (a)
+         ||        |        definition: variable defined at [13, 4], type=int
+         ||        `> [21, 26] Float (1.33)
+         ||           type: float
+         []> [22, 0] Println
+             `> [22, 8] ListExpr [List with 1 elements]
+                []> [22, 8] Identifier (d)
+                    definition: variable defined at [12, 6], type=float

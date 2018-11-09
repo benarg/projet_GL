@@ -1,0 +1,24 @@
+// Description:
+//    Good asmMethodBody
+//
+// Resultats:
+//    Should print SUCCESS twice
+//
+// Historique:
+//    cree le 23/01/2017
+
+class A {
+    boolean asmMethod() asm(
+"        WSTR \"SUCCESS\"
+        WNL
+        LOAD #1, R0
+        RTS");
+}
+
+{
+    if ((new A()).asmMethod()) {
+        println("SUCCESS");
+    } else {
+        println("FAIL");
+    }
+}

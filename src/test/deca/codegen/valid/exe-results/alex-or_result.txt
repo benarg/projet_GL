@@ -1,0 +1,4 @@
+SUCCESS: false or false
+SUCCESS: false or true
+SUCCESS: true  or false
+SUCCESS: true  or true

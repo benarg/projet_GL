@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/jb-simple_lex1.deca:14:5: extraneous input 'b' expecting {INSTANCEOF, LT, GT, EQUALS, PLUS, MINUS, TIMES, SLASH, PERCENT, DOT, SEMI, EQEQ, NEQ, GEQ, LEQ, OR, AND}

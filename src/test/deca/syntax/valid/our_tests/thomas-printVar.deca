@@ -1,0 +1,18 @@
+// Description:
+//    Print functions for character strings and variables
+//
+// Resultats:
+//    
+//
+// Historique:
+//    cree le 10/01/2017
+
+{
+
+    int i = 1;
+    float f = 1.1;
+
+    println("here is the integer : ",  i);
+    println("here is the float : ", f);
+
+}

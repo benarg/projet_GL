@@ -1,0 +1,24 @@
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 4] ListDeclVar [List with 0 elements]
+      `> [12, 4] ListInst [List with 3 elements]
+         []> [12, 4] Println
+         ||  `> [12, 12] ListExpr [List with 2 elements]
+         ||     []> [12, 12] StringLiteral (- IMUL1       : 5 * 5 * 4               = )
+         ||     []> [12, 58] Multiply
+         ||         +> [12, 58] Multiply
+         ||         |  +> [12, 58] Int (5)
+         ||         |  `> [12, 62] Int (5)
+         ||         `> [12, 66] Int (4)
+         []> [13, 4] Print
+         ||  `> [13, 10] ListExpr [List with 2 elements]
+         ||     []> [13, 10] StringLiteral (- IMUL2       : 50 * 5 * 4              = )
+         ||     []> [13, 56] Multiply
+         ||         +> [13, 56] Multiply
+         ||         |  +> [13, 56] Int (50)
+         ||         |  `> [13, 61] Int (5)
+         ||         `> [13, 65] Int (4)
+         []> [14, 4] Println
+             `> [14, 12] ListExpr [List with 1 elements]
+                []> [14, 12] StringLiteral ()

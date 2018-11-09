@@ -1,0 +1,13 @@
+// Description:
+//    Invalid - this in a main
+//
+// Resultats:
+//    Should throw Contextual error : "Cannot use 'this' outside of a class"
+//
+// Historique:
+//    cree le 23/01/2017
+
+
+{
+this;
+}

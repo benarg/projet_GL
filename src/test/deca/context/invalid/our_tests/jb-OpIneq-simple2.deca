@@ -1,0 +1,12 @@
+// Description:
+//    OpIneq Contextual error
+//
+// Resultats:
+//    Ligne 11: Operation avec OpDroit boolean et OpGauche int ou float
+// 
+// Historique:
+//    cree le 18/01/2017
+
+{
+1.0 < false;
+}

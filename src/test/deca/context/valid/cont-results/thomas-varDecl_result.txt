@@ -1,0 +1,68 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 0 elements]
+   `> [10, 0] Main
+      +> [11, 4] ListDeclVar [List with 9 elements]
+      |  []> [11, 8] DeclVar
+      |  ||  +> [11, 4] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [11, 8] Identifier (i1)
+      |  ||  |  definition: variable defined at [11, 8], type=int
+      |  ||  `> [11, 8] NoInitialization
+      |  []> [12, 8] DeclVar
+      |  ||  +> [12, 4] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [12, 8] Identifier (i2)
+      |  ||  |  definition: variable defined at [12, 8], type=int
+      |  ||  `> [12, 8] NoInitialization
+      |  []> [12, 12] DeclVar
+      |  ||  +> [12, 4] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [12, 12] Identifier (i3)
+      |  ||  |  definition: variable defined at [12, 12], type=int
+      |  ||  `> [12, 12] NoInitialization
+      |  []> [13, 12] DeclVar
+      |  ||  +> [13, 4] Identifier (boolean)
+      |  ||  |  definition: type (builtin), type=boolean
+      |  ||  +> [13, 12] Identifier (b1)
+      |  ||  |  definition: variable defined at [13, 12], type=boolean
+      |  ||  `> [13, 12] NoInitialization
+      |  []> [13, 16] DeclVar
+      |  ||  +> [13, 4] Identifier (boolean)
+      |  ||  |  definition: type (builtin), type=boolean
+      |  ||  +> [13, 16] Identifier (b2)
+      |  ||  |  definition: variable defined at [13, 16], type=boolean
+      |  ||  `> [13, 16] NoInitialization
+      |  []> [14, 12] DeclVar
+      |  ||  +> [14, 4] Identifier (boolean)
+      |  ||  |  definition: type (builtin), type=boolean
+      |  ||  +> [14, 12] Identifier (b3)
+      |  ||  |  definition: variable defined at [14, 12], type=boolean
+      |  ||  `> [14, 12] NoInitialization
+      |  []> [15, 10] DeclVar
+      |  ||  +> [15, 4] Identifier (float)
+      |  ||  |  definition: type (builtin), type=float
+      |  ||  +> [15, 10] Identifier (f1)
+      |  ||  |  definition: variable defined at [15, 10], type=float
+      |  ||  `> [15, 10] NoInitialization
+      |  []> [15, 14] DeclVar
+      |  ||  +> [15, 4] Identifier (float)
+      |  ||  |  definition: type (builtin), type=float
+      |  ||  +> [15, 14] Identifier (f2)
+      |  ||  |  definition: variable defined at [15, 14], type=float
+      |  ||  `> [15, 14] NoInitialization
+      |  []> [16, 10] DeclVar
+      |      +> [16, 4] Identifier (float)
+      |      |  definition: type (builtin), type=float
+      |      +> [16, 10] Identifier (f3)
+      |      |  definition: variable defined at [16, 10], type=float
+      |      `> [16, 10] NoInitialization
+      `> [18, 4] ListInst [List with 1 elements]
+         []> [18, 4] Print
+             `> [18, 10] ListExpr [List with 1 elements]
+                []> [18, 10] StringLiteral (There is nothing to see here)
+                    type: string

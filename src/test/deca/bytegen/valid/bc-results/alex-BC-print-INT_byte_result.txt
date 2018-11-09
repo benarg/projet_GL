@@ -1,0 +1,2 @@
+- INT1        : Quarante-Deux           = 42
+- INT2        : Treize                  = 13

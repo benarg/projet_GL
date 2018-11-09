@@ -1,0 +1,60 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [9, 0] Program
+   +> [9, 0] ListDeclClass [List with 0 elements]
+   `> [9, 0] Main
+      +> [11, 4] ListDeclVar [List with 0 elements]
+      `> [11, 4] ListInst [List with 2 elements]
+         []> [11, 4] IfThenElse
+         ||  +> [11, 9] Or
+         ||  |  type: boolean
+         ||  |  +> [11, 9] Or
+         ||  |  |  type: boolean
+         ||  |  |  +> [11, 9] Or
+         ||  |  |  |  type: boolean
+         ||  |  |  |  +> [11, 9] BooleanLiteral (true)
+         ||  |  |  |  |  type: boolean
+         ||  |  |  |  `> [11, 17] BooleanLiteral (true)
+         ||  |  |  |     type: boolean
+         ||  |  |  `> [11, 25] BooleanLiteral (true)
+         ||  |  |     type: boolean
+         ||  |  `> [11, 33] And
+         ||  |     type: boolean
+         ||  |     +> [11, 33] BooleanLiteral (true)
+         ||  |     |  type: boolean
+         ||  |     `> [11, 41] BooleanLiteral (true)
+         ||  |        type: boolean
+         ||  +> [12, 8] ListInst [List with 1 elements]
+         ||  |  []> [12, 8] Println
+         ||  |      `> [12, 16] ListExpr [List with 1 elements]
+         ||  |         []> [12, 16] StringLiteral (SUCCESS: true or true or true or true and true)
+         ||  |             type: string
+         ||  `> [14, 4] ListInst [List with 1 elements]
+         ||     []> [15, 8] Println
+         ||         `> [15, 16] ListExpr [List with 1 elements]
+         ||            []> [15, 16] StringLiteral (ERROR: true or true or true or true and true)
+         ||                type: string
+         []> [18, 4] IfThenElse
+             +> [18, 9] Or
+             |  type: boolean
+             |  +> [18, 9] And
+             |  |  type: boolean
+             |  |  +> [18, 11] BooleanLiteral (true)
+             |  |  |  type: boolean
+             |  |  `> [18, 19] BooleanLiteral (false)
+             |  |     type: boolean
+             |  `> [18, 30] BooleanLiteral (true)
+             |     type: boolean
+             +> [19, 8] ListInst [List with 1 elements]
+             |  []> [19, 8] Println
+             |      `> [19, 16] ListExpr [List with 1 elements]
+             |         []> [19, 16] StringLiteral (SUCCESS: ( true and false ) or true)
+             |             type: string
+             `> [21, 4] ListInst [List with 1 elements]
+                []> [22, 8] Println
+                    `> [22, 16] ListExpr [List with 1 elements]
+                       []> [22, 16] StringLiteral (ERROR: ( true and false ) or true)
+                           type: string

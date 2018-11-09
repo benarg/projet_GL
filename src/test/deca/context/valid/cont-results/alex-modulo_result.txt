@@ -1,0 +1,70 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 4] ListDeclVar [List with 2 elements]
+      |  []> [12, 8] DeclVar
+      |  ||  +> [12, 4] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [12, 8] Identifier (a)
+      |  ||  |  definition: variable defined at [12, 8], type=int
+      |  ||  `> [12, 8] Initialization
+      |  ||     `> [12, 12] Int (5)
+      |  ||        type: int
+      |  []> [13, 8] DeclVar
+      |      +> [13, 4] Identifier (int)
+      |      |  definition: type (builtin), type=int
+      |      +> [13, 8] Identifier (b)
+      |      |  definition: variable defined at [13, 8], type=int
+      |      `> [13, 8] Initialization
+      |         `> [13, 12] Modulo
+      |            type: int
+      |            +> [13, 12] Identifier (a)
+      |            |  definition: variable defined at [12, 8], type=int
+      |            `> [13, 14] Int (2)
+      |               type: int
+      `> [14, 4] ListInst [List with 6 elements]
+         []> [14, 4] Print
+         ||  `> [14, 10] ListExpr [List with 2 elements]
+         ||     []> [14, 10] StringLiteral (b = a()
+         ||     ||  type: string
+         ||     []> [14, 19] Identifier (a)
+         ||         definition: variable defined at [12, 8], type=int
+         []> [15, 4] Println
+         ||  `> [15, 12] ListExpr [List with 2 elements]
+         ||     []> [15, 12] StringLiteral ()%2 = )
+         ||     ||  type: string
+         ||     []> [15, 21] Identifier (b)
+         ||         definition: variable defined at [13, 8], type=int
+         []> [16, 4] Assign
+         ||  type: int
+         ||  +> [16, 4] Identifier (a)
+         ||  |  definition: variable defined at [12, 8], type=int
+         ||  `> [16, 8] Int (327)
+         ||     type: int
+         []> [17, 4] Assign
+         ||  type: int
+         ||  +> [17, 4] Identifier (b)
+         ||  |  definition: variable defined at [13, 8], type=int
+         ||  `> [17, 8] Modulo
+         ||     type: int
+         ||     +> [17, 8] Identifier (a)
+         ||     |  definition: variable defined at [12, 8], type=int
+         ||     `> [17, 10] Int (42)
+         ||        type: int
+         []> [18, 4] Print
+         ||  `> [18, 10] ListExpr [List with 2 elements]
+         ||     []> [18, 10] StringLiteral (b = a()
+         ||     ||  type: string
+         ||     []> [18, 19] Identifier (a)
+         ||         definition: variable defined at [12, 8], type=int
+         []> [19, 4] Println
+             `> [19, 12] ListExpr [List with 2 elements]
+                []> [19, 12] StringLiteral ()%42 = )
+                ||  type: string
+                []> [19, 22] Identifier (b)
+                    definition: variable defined at [13, 8], type=int

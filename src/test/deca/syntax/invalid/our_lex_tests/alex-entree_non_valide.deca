@@ -1,0 +1,14 @@
+// Description:
+//    tests de programme incorrect lexicalement (entrée non reconnue)
+//
+// Resultats:
+//    OBRACE: [@0,306:306='{',<34>,12:0]
+//    src/test/deca/syntax/invalid/our_tests/alex-entree_non_valide.deca:13:5:
+//    l'entrée n'a pas été reconnue -> DEFAULT
+//
+// Historique:
+//    12/01/2017
+
+{
+    @
+}

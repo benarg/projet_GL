@@ -1,0 +1,12 @@
+// Description:
+//    OpArith valid
+//
+// Resultats:
+//    Ligne 11: Operation avec OpGauche int et OpDroit flaot
+// 
+// Historique:
+//    cree le 18/01/2017
+
+{
+println(1 + 1.2);
+}

@@ -1,0 +1,24 @@
+`> [12, 0] Program
+   +> [12, 0] ListDeclClass [List with 0 elements]
+   `> [12, 0] Main
+      +> [13, 4] ListDeclVar [List with 0 elements]
+      `> [13, 4] ListInst [List with 3 elements]
+         []> [13, 4] Println
+         ||  `> [13, 12] ListExpr [List with 2 elements]
+         ||     []> [13, 12] StringLiteral (- FSUB & FMUL : 4.0 - 3.0 * 4.0         = )
+         ||     []> [13, 58] Minus
+         ||         +> [13, 58] Float (4.0)
+         ||         `> [13, 64] Multiply
+         ||            +> [13, 64] Float (3.0)
+         ||            `> [13, 70] Float (4.0)
+         []> [14, 4] Print
+         ||  `> [14, 10] ListExpr [List with 2 elements]
+         ||     []> [14, 10] StringLiteral (- FMUL & FSUB : 4.0 * 3.0 - 4.0         = )
+         ||     []> [14, 56] Minus
+         ||         +> [14, 56] Multiply
+         ||         |  +> [14, 56] Float (4.0)
+         ||         |  `> [14, 62] Float (3.0)
+         ||         `> [14, 68] Float (4.0)
+         []> [15, 4] Println
+             `> [15, 12] ListExpr [List with 1 elements]
+                []> [15, 12] StringLiteral ()

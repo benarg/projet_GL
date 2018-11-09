@@ -1,0 +1,14 @@
+// Description:
+//    Calling a method on something else than an Object
+//
+// Resultats:
+//    Sould throw Contextual Error (rule 3.71)
+//
+// Historique:
+//    cree le 22/01/2017
+
+{
+    null.getValue();
+    1.getValue();
+    true.getValue();
+}

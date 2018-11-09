@@ -1,0 +1,19 @@
+// Description:
+//    Missing return statement
+//
+// Resultats:
+//    Should say missing a return statement
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    protected int x = 1;
+    int getX() {}
+}
+
+{
+    A a = new A();
+    println(a.getX());
+    println("FAIL");
+}

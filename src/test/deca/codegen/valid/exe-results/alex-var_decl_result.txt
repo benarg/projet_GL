@@ -1,0 +1,3 @@
+f1 = 2.00000e+00, f1x = 0x1.fffffep+0
+f2 = 4.00000e+00, f2x = 0x1.fffffep+1
+f1 + f2 = 6.00000e+00, f1x + f2x = 0x1.7ffffep+2

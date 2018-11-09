@@ -1,0 +1,27 @@
+class A {
+
+    int a1;
+    int a2;
+
+}
+
+class B extends A {
+
+    int b1;
+
+}
+
+{
+
+    B b = new B();
+
+    b.a1 = 5;
+    b.a2 = 3;
+    b.b1 = 7;
+
+
+    println("Here is b.a1 : ", b.a1);
+    println("Here is b.a2 : ", b.a2);
+    println("Here is b.b1 : ", b.b1);
+    
+}

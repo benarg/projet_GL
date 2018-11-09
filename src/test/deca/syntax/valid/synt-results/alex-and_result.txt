@@ -1,0 +1,53 @@
+`> [13, 0] Program
+   +> [13, 0] ListDeclClass [List with 0 elements]
+   `> [13, 0] Main
+      +> [14, 4] ListDeclVar [List with 0 elements]
+      `> [14, 4] ListInst [List with 4 elements]
+         []> [14, 4] IfThenElse
+         ||  +> [14, 9] And
+         ||  |  +> [14, 9] BooleanLiteral (false)
+         ||  |  `> [14, 18] BooleanLiteral (false)
+         ||  +> [15, 8] ListInst [List with 1 elements]
+         ||  |  []> [15, 8] Println
+         ||  |      `> [15, 16] ListExpr [List with 1 elements]
+         ||  |         []> [15, 16] StringLiteral (ERROR: false and false)
+         ||  `> [17, 4] ListInst [List with 1 elements]
+         ||     []> [18, 8] Println
+         ||         `> [18, 16] ListExpr [List with 1 elements]
+         ||            []> [18, 16] StringLiteral (SUCCESS: false and false)
+         []> [21, 4] IfThenElse
+         ||  +> [21, 9] And
+         ||  |  +> [21, 9] BooleanLiteral (false)
+         ||  |  `> [21, 18] BooleanLiteral (true)
+         ||  +> [22, 8] ListInst [List with 1 elements]
+         ||  |  []> [22, 8] Println
+         ||  |      `> [22, 16] ListExpr [List with 1 elements]
+         ||  |         []> [22, 16] StringLiteral (ERROR: false and true)
+         ||  `> [24, 4] ListInst [List with 1 elements]
+         ||     []> [25, 8] Println
+         ||         `> [25, 16] ListExpr [List with 1 elements]
+         ||            []> [25, 16] StringLiteral (SUCCESS: false and true)
+         []> [28, 4] IfThenElse
+         ||  +> [28, 9] And
+         ||  |  +> [28, 9] BooleanLiteral (true)
+         ||  |  `> [28, 17] BooleanLiteral (false)
+         ||  +> [29, 8] ListInst [List with 1 elements]
+         ||  |  []> [29, 8] Println
+         ||  |      `> [29, 16] ListExpr [List with 1 elements]
+         ||  |         []> [29, 16] StringLiteral (ERROR: true  and false)
+         ||  `> [31, 4] ListInst [List with 1 elements]
+         ||     []> [32, 8] Println
+         ||         `> [32, 16] ListExpr [List with 1 elements]
+         ||            []> [32, 16] StringLiteral (SUCCESS: true  and false)
+         []> [35, 4] IfThenElse
+             +> [35, 9] And
+             |  +> [35, 9] BooleanLiteral (true)
+             |  `> [35, 17] BooleanLiteral (true)
+             +> [36, 8] ListInst [List with 1 elements]
+             |  []> [36, 8] Println
+             |      `> [36, 16] ListExpr [List with 1 elements]
+             |         []> [36, 16] StringLiteral (SUCCESS: true  and true)
+             `> [38, 4] ListInst [List with 1 elements]
+                []> [39, 8] Println
+                    `> [39, 16] ListExpr [List with 1 elements]
+                       []> [39, 16] StringLiteral (ERROR: true  and true)

@@ -1,0 +1,23 @@
+// Description:
+//    ReadInt and Read float
+//
+// Resultats:
+//    Prints the entered integer, 
+//    then the 2 representations of the entered float
+//
+// Historique:
+//    cree le 23/01/2017
+
+{
+    int x;
+    float y;
+    print("Enter an integer x = ");
+    x = readInt();
+    print("Enter a float y = ");
+    y = readFloat();
+
+    println("The entered integer is : ", x);
+    println("The entered float is :");
+    println("- decimal representation : ", y);
+    printlnx("- hexadecimal representation : ", y);
+}

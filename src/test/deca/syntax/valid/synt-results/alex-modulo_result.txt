@@ -1,0 +1,41 @@
+`> [11, 0] Program
+   +> [11, 0] ListDeclClass [List with 0 elements]
+   `> [11, 0] Main
+      +> [12, 4] ListDeclVar [List with 2 elements]
+      |  []> [12, 8] DeclVar
+      |  ||  +> [12, 4] Identifier (int)
+      |  ||  +> [12, 8] Identifier (a)
+      |  ||  `> [12, 8] Initialization
+      |  ||     `> [12, 12] Int (5)
+      |  []> [13, 8] DeclVar
+      |      +> [13, 4] Identifier (int)
+      |      +> [13, 8] Identifier (b)
+      |      `> [13, 8] Initialization
+      |         `> [13, 12] Modulo
+      |            +> [13, 12] Identifier (a)
+      |            `> [13, 14] Int (2)
+      `> [14, 4] ListInst [List with 6 elements]
+         []> [14, 4] Print
+         ||  `> [14, 10] ListExpr [List with 2 elements]
+         ||     []> [14, 10] StringLiteral (b = a()
+         ||     []> [14, 19] Identifier (a)
+         []> [15, 4] Println
+         ||  `> [15, 12] ListExpr [List with 2 elements]
+         ||     []> [15, 12] StringLiteral ()%2 = )
+         ||     []> [15, 21] Identifier (b)
+         []> [16, 4] Assign
+         ||  +> [16, 4] Identifier (a)
+         ||  `> [16, 8] Int (327)
+         []> [17, 4] Assign
+         ||  +> [17, 4] Identifier (b)
+         ||  `> [17, 8] Modulo
+         ||     +> [17, 8] Identifier (a)
+         ||     `> [17, 10] Int (42)
+         []> [18, 4] Print
+         ||  `> [18, 10] ListExpr [List with 2 elements]
+         ||     []> [18, 10] StringLiteral (b = a()
+         ||     []> [18, 19] Identifier (a)
+         []> [19, 4] Println
+             `> [19, 12] ListExpr [List with 2 elements]
+                []> [19, 12] StringLiteral ()%42 = )
+                []> [19, 22] Identifier (b)

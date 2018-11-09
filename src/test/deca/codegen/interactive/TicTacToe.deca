@@ -1,0 +1,291 @@
+class Grid {
+	int a1, a2, a3, b1, b2, b3, c1, c2, c3;
+	float a11 = 1.1;
+	float a12 = 1.2;
+	float a13 = 1.3;
+	float b21 = 2.1;
+	float b22 = 2.2;
+	float b23 = 2.3;
+	float c31 = 3.1;
+	float c32 = 3.2;
+	float c33 = 3.3;
+
+	void printGrid(){
+
+	    println("    1    2    3  ");
+	    println(" |----|----|----|");
+
+	    if(a1 == 1){
+			print("1|  o ");
+		} else if(a1 == 2){
+			print("1|  X "); 
+		}else {
+			print("1|    ");
+		}
+
+		if(a2 == 1){
+			print("|  o ");
+		} else if(a2 == 2){
+			print("|  X "); 
+		}else {
+			print("|    ");
+		}
+
+		if(a3 == 1){
+			println("|  o |");
+		} else if(a3 == 2){
+			println("|  X |"); 
+		}else {
+			println("|    |   ");
+		}
+
+	    println(" |____|____|____|");
+
+	    if(b1 == 1){
+			print("2|  o ");
+		} else if(b1 == 2){
+			print("2|  X "); 
+		}else {
+			print("2|    ");
+		}
+
+		if(b2 == 1){
+			print("|  o ");
+		} else if(b2 == 2){
+			print("|  X "); 
+		}else {
+			print("|    ");
+		}
+
+		if(b3 == 1){
+			println("|  o |");
+		} else if(b3 == 2){
+			println("|  X |"); 
+		}else {
+			println("|    |   ");
+		}
+
+	    println(" |____|____|____|");
+
+	    if(c1 == 1){
+			print("3|  o ");
+		} else if(c1 == 2){
+			print("3|  X "); 
+		}else {
+			print("3|    ");
+		}
+
+		if(c2 == 1){
+			print("|  o ");
+		} else if(c2 == 2){
+			print("|  X "); 
+		}else {
+			print("|    ");
+		}
+
+		if(c3 == 1){
+			println("|  o |");
+		} else if(c3 == 2){
+			println("|  X |"); 
+		}else {
+			println("|    |   ");
+		}
+
+	    println(" |____|____|____|");
+	    println("  ");
+	}
+
+	boolean checkUsed(){
+		boolean check = false;
+		if(a1!=0 || a2!=0 || a3!=0 || b1!=0 || b2!=0 || b3!=0 || c1!=0 || c2!=0 || c3!=0){
+			check = false;
+		}
+		return check;
+	}
+
+	boolean verifyCase(float case){
+		boolean ok = true;
+
+		if(	case != this.a11 && case != this.a12 && case != this.a13 && 
+			case != this.b21 && case != this.b22 && case != this.b23 && 
+			case != this.c31 && case != this.c32 && case != this.c33	){
+			ok = false;
+		}
+		if(case == this.a11 && (a1 == 1 || a1 == 2)) {
+			println("The case selected is already taken!");
+			ok = false;
+		}
+		if(case == this.a12 && (a2 == 1 || a2 == 2)) {
+			println("The case selected is already taken!");
+			ok = false;
+		}
+		if(case == this.a13 && (a3 == 1 || a3 == 2)) {
+			println("The case selected is already taken!");
+			ok = false;
+		}
+		if(case == this.b21 && (b1 == 1 || b1 == 2)) {
+			println("The case selected is already taken!");
+			ok = false;
+		}
+		if(case == this.b22 && (b2 == 1 || b2 == 2)) {
+			println("The case selected is already taken!");
+			ok = false;
+		}
+		if(case == this.b23 && (b3 == 1 || b3 == 2)) {
+			println("The case selected is already taken!");
+			ok = false;
+		}
+		if(case == this.c31 && (c1 == 1 || c1 == 2)) {
+			println("The case selected is already taken!");
+			ok = false;
+		}
+		if(case == this.c32 && (c2 == 1 || c2 == 2)) {
+			println("The case selected is already taken!");
+			ok = false;
+		}
+		if(case == this.c33 && (c3 == 1 || c3 == 2)) {
+			println("The case selected is already taken!");
+			ok = false;
+		}
+		return ok;
+	}
+
+	void setCase(float case, int player){
+		if(case == this.a11){
+			this.a1 = player;
+		}
+		if(case == this.a12){
+			this.a2 = player;
+		}
+		if(case == this.a13){
+			this.a3 = player;
+		}
+		if(case == this.b21){
+			this.b1 = player;
+		}
+		if(case == this.b22){
+			this.b2 = player;
+		}
+		if(case == this.b23){
+			this.b3 = player;
+		}
+		if(case == this.c31){
+			this.c1 = player;
+		}
+		if(case == this.c32){
+			this.c2 = player;
+		}
+		if(case == this.c33){
+			this.c3 = player;
+		}
+	}
+
+	boolean checkWin(int player){
+		boolean winner = false;
+
+		if (player == 1 &&((a1==1 && a2==1 && a3==1) ||
+			(b1==1 && b2==1 && b3==1) ||
+			(c1==1 && c2==1 && c3==1) ||
+			(a1==1 && b1==1 && c1==1) ||
+			(a2==1 && b2==1 && c2==1) ||
+			(a3==1 && b3==1 && c3==1) ||
+			(a1==1 && b2==1 && c3==1) ||
+			(a3==1 && b2==1 && c1==1) )){
+			winner = true;
+		}
+		if (player == 2 &&(
+			(a1==2 && a2==2 && a3==2) ||
+			(b1==2 && b2==2 && b3==2) ||
+			(c1==2 && c2==2 && c3==2) ||
+			(a1==2 && b1==2 && c1==2) ||
+			(a2==2 && b2==2 && c2==2) ||
+			(a3==2 && b3==2 && c3==2) ||
+			(a1==2 && b2==2 && c3==2) ||
+			(a3==2 && b2==2 && c1==2) )){
+			winner = true;
+		}
+		return winner;
+	}
+
+	boolean newGame(){
+		boolean next; 
+		print("New game? (1 yes / other no): ");
+			if (readInt()== 1) {
+				next = true;
+				this.a1 = 0;
+				this.a2 = 0;
+				this.a3 = 0;
+				this.b1 = 0;
+				this.b2 = 0;
+				this.b3 = 0;
+				this.c1 = 0;
+				this.c2 = 0;
+				this.c3 = 0;
+				println(" ");
+			} else {
+				next = false;	
+			}
+		return next;
+	}
+}
+
+
+
+{
+	Grid gameGrid = new Grid();
+	int cont = 1;
+	int player = 1;
+	float turn;
+	boolean next = gameGrid.newGame();
+	if (next) {
+		println("  ");
+		println("*************************************************************");
+		println("	****************TIC TAC TOE******************");
+		println("*************************************************************");
+		println("	 Welcome, This is GL56 Team TIC TAC TOE game"); 
+		println("	To play, each player should insert a valid case ");
+		println("	  with the following structure: row.column "); 
+		println("	 for example, 2.2 isthe center case. Enjoy!");
+		println("*************************************************************");
+		println("*************************************************************");
+		println("*************************************************************");
+		println("  ");
+	}
+	gameGrid.printGrid();
+	while(next){
+		if(cont%2 == 0){
+			player = 2;
+		}else{
+			player = 1;
+		}
+		print("Player",player," Insert your move case: ");
+		turn = readFloat();
+		println("  ");
+		while(gameGrid.verifyCase(turn) == false){
+			print("Insert valid Case: ");
+			turn = readFloat();
+		}		
+		gameGrid.setCase(turn, player);
+		gameGrid.printGrid();
+		cont = cont + 1;
+		if(gameGrid.checkWin(player)){
+			println("***********************");
+			println("**** Player ",player, " wins! ****");
+			println("***********************");
+			println(" ");
+			cont =10;
+			next = false;
+		}
+		if (cont == 10 && !gameGrid.checkWin(player)) {
+			println("***********************");
+			println("****  Tie  Game!  ****");
+			println("***********************");
+			println(" ");
+		}
+		if(cont == 10 && gameGrid.newGame()){
+			next = true;
+			gameGrid.printGrid();
+			cont = 1;
+		}
+	}
+}

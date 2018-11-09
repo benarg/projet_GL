@@ -1,0 +1,40 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [1, 0] Program
+   +> [1, 0] ListDeclClass [List with 0 elements]
+   `> [1, 0] Main
+      +> [2, 0] ListDeclVar [List with 1 elements]
+      |  []> [2, 4] DeclVar
+      |      +> [2, 0] Identifier (int)
+      |      |  definition: type (builtin), type=int
+      |      +> [2, 4] Identifier (a)
+      |      |  definition: variable defined at [2, 4], type=int
+      |      `> [2, 4] Initialization
+      |         `> [2, 8] Int (0)
+      |            type: int
+      `> [3, 0] ListInst [List with 1 elements]
+         []> [3, 0] While
+             +> [3, 7] Lower
+             |  type: boolean
+             |  +> [3, 7] Identifier (a)
+             |  |  definition: variable defined at [2, 4], type=int
+             |  `> [3, 11] Int (2)
+             |     type: int
+             `> [4, 0] ListInst [List with 2 elements]
+                []> [4, 0] Assign
+                ||  type: int
+                ||  +> [4, 0] Identifier (a)
+                ||  |  definition: variable defined at [2, 4], type=int
+                ||  `> [4, 4] Plus
+                ||     type: int
+                ||     +> [4, 4] Identifier (a)
+                ||     |  definition: variable defined at [2, 4], type=int
+                ||     `> [4, 6] Int (1)
+                ||        type: int
+                []> [5, 0] Print
+                    `> [5, 6] ListExpr [List with 1 elements]
+                       []> [5, 6] Identifier (a)
+                           definition: variable defined at [2, 4], type=int

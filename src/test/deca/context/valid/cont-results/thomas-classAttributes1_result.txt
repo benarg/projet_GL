@@ -1,0 +1,75 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [1, 0] Program
+   +> [1, 0] ListDeclClass [List with 1 elements]
+   |  []> [1, 0] DeclClass
+   |      +> [1, 6] Identifier (A)
+   |      |  definition: type defined at [1, 6], type=A
+   |      +> [1, 8] Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> [3, 4] ListDeclField [List with 2 elements]
+   |      |  []> [3, 8] [Visibility=PUBLIC] DeclField
+   |      |  ||  +> [3, 4] Identifier (int)
+   |      |  ||  |  definition: type (builtin), type=int
+   |      |  ||  +> [3, 8] Identifier (a1)
+   |      |  ||  |  definition: field defined at [3, 8], type=int
+   |      |  ||  `> [3, 8] NoInitialization
+   |      |  []> [4, 8] [Visibility=PUBLIC] DeclField
+   |      |      +> [4, 4] Identifier (int)
+   |      |      |  definition: type (builtin), type=int
+   |      |      +> [4, 8] Identifier (a2)
+   |      |      |  definition: field defined at [4, 8], type=int
+   |      |      `> [4, 8] NoInitialization
+   |      `> [3, 4] ListDeclMethod [List with 0 elements]
+   `> [8, 0] Main
+      +> [10, 4] ListDeclVar [List with 1 elements]
+      |  []> [10, 6] DeclVar
+      |      +> [10, 4] Identifier (A)
+      |      |  definition: type defined at [1, 6], type=A
+      |      +> [10, 6] Identifier (a)
+      |      |  definition: variable defined at [10, 6], type=A
+      |      `> [10, 6] Initialization
+      |         `> [10, 10] New
+      |            type: A
+      |            `> [10, 14] Identifier (A)
+      |               definition: type defined at [1, 6], type=A
+      `> [11, 4] ListInst [List with 3 elements]
+         []> [11, 4] Assign
+         ||  type: int
+         ||  +> [11, 4] Selection
+         ||  |  type: int
+         ||  |  +> [11, 4] Identifier (a)
+         ||  |  |  definition: variable defined at [10, 6], type=A
+         ||  |  `> [11, 6] Identifier (a1)
+         ||  |     definition: field defined at [3, 8], type=int
+         ||  `> [11, 11] Int (3)
+         ||     type: int
+         []> [12, 4] Assign
+         ||  type: int
+         ||  +> [12, 4] Selection
+         ||  |  type: int
+         ||  |  +> [12, 4] Identifier (a)
+         ||  |  |  definition: variable defined at [10, 6], type=A
+         ||  |  `> [12, 6] Identifier (a2)
+         ||  |     definition: field defined at [4, 8], type=int
+         ||  `> [12, 11] Int (4)
+         ||     type: int
+         []> [13, 4] Println
+             `> [13, 12] ListExpr [List with 1 elements]
+                []> [13, 12] Plus
+                    type: int
+                    +> [13, 12] Selection
+                    |  type: int
+                    |  +> [13, 12] Identifier (a)
+                    |  |  definition: variable defined at [10, 6], type=A
+                    |  `> [13, 14] Identifier (a1)
+                    |     definition: field defined at [3, 8], type=int
+                    `> [13, 19] Selection
+                       type: int
+                       +> [13, 19] Identifier (a)
+                       |  definition: variable defined at [10, 6], type=A
+                       `> [13, 21] Identifier (a2)
+                          definition: field defined at [4, 8], type=int

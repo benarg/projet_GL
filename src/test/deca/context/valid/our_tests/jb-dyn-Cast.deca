@@ -1,0 +1,18 @@
+// Description:
+//    Dynamic check for the cast line 19
+//
+// Resultats:
+//    Should print SUCCESS
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+}
+
+{
+    A a = new A();
+    Object b = a;
+    A c = (A) (b);
+    println("SUCCESS");
+}

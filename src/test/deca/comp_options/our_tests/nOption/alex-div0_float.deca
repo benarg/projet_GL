@@ -1,0 +1,15 @@
+// Description:
+//    tests de programme incorrect à la génération : division par 0 sur float
+//
+// Resultats:
+//    Error: you divided by zero!
+//
+// Historique:
+//    16/01/2017
+
+{
+    float a = 1.0;
+    float b = 0.0;
+    float c = a / b;
+    print(c);
+}

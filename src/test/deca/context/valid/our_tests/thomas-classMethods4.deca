@@ -1,0 +1,35 @@
+class A {
+
+    protected B b = new B();
+
+    void hello() {
+        println("hello");
+        this.hello2();
+    }
+
+    void hello2() {
+        println("hello2");
+        b.hello3();
+    }
+
+}
+
+class B {
+
+
+    void hello3() {
+
+        println("hello3");
+
+    }
+
+}
+
+
+{
+
+    A a = new A();
+
+    a.hello();
+
+}

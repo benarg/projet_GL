@@ -1,0 +1,47 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [1, 0] Program
+   +> [1, 0] ListDeclClass [List with 1 elements]
+   |  []> [1, 0] DeclClass
+   |      +> [1, 6] Identifier (A)
+   |      |  definition: type defined at [1, 6], type=A
+   |      +> [1, 8] Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> [3, 4] ListDeclField [List with 0 elements]
+   |      `> [3, 4] ListDeclMethod [List with 1 elements]
+   |         []> [3, 4] DeclMethod
+   |             +> [3, 4] Identifier (void)
+   |             |  definition: type (builtin), type=void
+   |             +> [3, 9] Identifier (hello)
+   |             |  definition: method defined at [3, 4], type=void
+   |             +> [3, 15] ListDeclParam [List with 0 elements]
+   |             `> [3, 17] MethodBody
+   |                +> [3, 17] ListDeclVar [List with 0 elements]
+   |                `> [3, 17] ListInst [List with 1 elements]
+   |                   []> [4, 8] Println
+   |                       `> [4, 16] ListExpr [List with 1 elements]
+   |                          []> [4, 16] StringLiteral (hello)
+   |                              type: string
+   `> [9, 0] Main
+      +> [11, 4] ListDeclVar [List with 1 elements]
+      |  []> [11, 6] DeclVar
+      |      +> [11, 4] Identifier (A)
+      |      |  definition: type defined at [1, 6], type=A
+      |      +> [11, 6] Identifier (a)
+      |      |  definition: variable defined at [11, 6], type=A
+      |      `> [11, 6] Initialization
+      |         `> [11, 10] New
+      |            type: A
+      |            `> [11, 14] Identifier (A)
+      |               definition: type defined at [1, 6], type=A
+      `> [13, 4] ListInst [List with 1 elements]
+         []> [13, 4] MethodCall
+             type: void
+             +> [13, 4] Identifier (a)
+             |  definition: variable defined at [11, 6], type=A
+             +> [13, 6] Identifier (hello)
+             |  definition: method defined at [3, 4], type=void
+             `> [13, 12] ListExpr [List with 0 elements]

@@ -1,0 +1,4 @@
+{
+  float a=1000000.0;
+  print(a*a*a*a*a*a*a);
+}

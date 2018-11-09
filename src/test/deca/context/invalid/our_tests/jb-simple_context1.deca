@@ -1,0 +1,12 @@
+// Description:
+//    test simple de programme contextuellement incorrect
+//
+// Resultats:
+//    Ligne 11: affectation interdite.
+// 
+// Historique:
+//    cree le 12/01/2017
+
+{
+   a = 2;
+}

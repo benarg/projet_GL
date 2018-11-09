@@ -1,0 +1,18 @@
+class A {
+  int fact(int a) {
+    if (a == 0) {
+      return 1;
+    }
+    else {
+      return a * fact(a-1);
+    }
+  }
+}
+
+{
+  int b;
+  A a = new A();
+  println("Entrer un entier : ");
+  b = readInt();
+  println(a.fact(b));
+}

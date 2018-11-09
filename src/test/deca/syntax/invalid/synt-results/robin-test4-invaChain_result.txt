@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/robin-test4-invaChain.deca:8:9: l'entrée n'a pas été reconnue -> DEFAULT

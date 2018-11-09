@@ -1,0 +1,19 @@
+// Description:
+//    Programme faisant appel aux déclarations de variables de type float
+//    en hexa
+//
+// Resultats:
+//    f1 = 2.00000e+00, f1x = 0x1.fffffep+0
+//    f2 = 4.00000e+00, f2x = 0x1.fffffep+1
+//    f1 + f2 = 6.00000e+00, f1x + f2x = 0x1.7ffffep+2
+//
+// Historique:
+//    cree le 10/01/2017
+
+{
+    float f1 = 0x1.FFFFFEp+0;
+    float f2 = 2.0*f1;
+    print("f1 = ",f1); printlnx(", f1x = ",f1);
+    print("f2 = ",f2); printlnx(", f2x = ",f2);
+    print("f1 + f2 = ", f1+f2); printlnx(", f1x + f2x = ", f1+f2);
+}

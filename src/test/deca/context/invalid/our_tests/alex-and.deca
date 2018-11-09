@@ -1,0 +1,18 @@
+// Description:
+//    tests de programme correct syntaxiquement et incorrect contextuellement
+//    pour AND
+//
+// Resultats:
+//    DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:42) -
+//    verify program: start
+//    DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:37) - verify Main:
+//    start
+//    ./src/test/deca/context/invalid/our_tests/alex-and_cont.deca:17:4:
+//    Expected boolean got int (rule 3.29)
+//
+// Historique:
+//    15/01/2017
+
+{
+    4 && 4;
+}

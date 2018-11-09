@@ -1,0 +1,108 @@
+// Description:
+//    ReadInt and Objects
+//
+// Resultats:
+//    Creates Objects depending on input 
+//    Prints strings depending on input
+//
+// Historique:
+//    cree le 23/01/2017
+
+class Rabbit {
+
+    void hello() {
+        println("I am a rabbit. Press 1 to feed me carrots");
+    }
+
+    void eating() {
+        println("I love eating carrots");
+    }
+    
+}
+
+class Bear {
+
+    void hello() {
+        println("I am a bear. Press 1 to feed me salmon");
+    }
+
+    void eating() {
+        println("I love eating salmon");
+    }
+}
+
+class Cow {
+
+    void hello() {
+        println("I am a cow. Press 1 to feed me grass");
+    }
+
+    void eating() {
+        println("I love eating grass");
+    }
+
+}
+
+{
+
+    Rabbit rabbit;
+    Bear bear;
+    Cow cow;
+    int choice;
+    int feed;
+
+    println("1 => create a rabbit");
+    println("2 => create a bear");
+    println("3 => create a cow");
+
+    choice = readInt();
+
+    if (choice == 1) {
+
+        rabbit = new Rabbit();
+        rabbit.hello();
+        
+        feed = readInt();
+
+        if (feed == 1) {
+            rabbit.eating();
+        } else {
+            println("You don't want to feed me, I am sad");
+        }
+    }
+
+    if (choice == 2) {
+
+        bear = new Bear();
+        bear.hello();
+        
+        feed = readInt();
+
+        if (feed == 1) {
+            bear.eating();
+        } else {
+            println("You don't want to feed me, I am sad");
+        }
+    }
+
+    if (choice == 3) {
+
+        cow = new Cow();
+        cow.hello();
+        
+        feed = readInt();
+
+        if (feed == 1) {
+            cow.eating();
+        } else {
+            print("You don't want to feed me, I am sad");
+        }
+    }
+
+    if ((choice > 3) || (choice < 0)) {
+
+        println("I guess you don't want to create any animals");
+
+    }
+
+}

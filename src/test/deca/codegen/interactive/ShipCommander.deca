@@ -1,0 +1,63 @@
+// Description:
+//    ReadInt and Objects
+//
+// Resultats:
+//    Creates Objects depending on input 
+//    Prints strings depending on input
+//
+// Historique:
+//    cree le 23/01/2017
+
+class Ship {
+
+    int currentPosition = 2;
+
+    void position() {
+
+        if (currentPosition == 1) {
+            println("=====        ");
+        }
+        if (currentPosition == 2) {
+            println("    =====    ");
+        }
+        if (currentPosition == 3) {
+            println("hello");
+            println("               =====");
+        }
+
+    }
+
+
+
+}
+
+{
+
+    Ship ship = new Ship();
+    int choice;
+
+
+    println("1 => Start commanding the ship");
+    println("2 => Quit");
+
+    choice = readInt();
+
+    while (choice == 1) {
+        
+        println("1 => Go left");
+        println("2 => Go to the Center");
+        println("3 => Go to the right");
+    
+        ship.currentPosition = readInt();
+
+        ship.position();
+
+        println("1 => Continue the game");
+
+        choice = readInt();
+
+
+    }
+
+
+}

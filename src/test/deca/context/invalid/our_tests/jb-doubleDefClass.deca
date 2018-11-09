@@ -1,0 +1,14 @@
+// Description:
+//    Double definition of a class
+//
+// Resultats:
+//    Should throw a contextual error (rule 1.3)
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+}
+
+class A extends A {
+}

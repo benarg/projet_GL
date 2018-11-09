@@ -1,0 +1,117 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [12, 0] Program
+   +> [12, 0] ListDeclClass [List with 0 elements]
+   `> [12, 0] Main
+      +> [13, 4] ListDeclVar [List with 2 elements]
+      |  []> [13, 8] DeclVar
+      |  ||  +> [13, 4] Identifier (int)
+      |  ||  |  definition: type (builtin), type=int
+      |  ||  +> [13, 8] Identifier (a)
+      |  ||  |  definition: variable defined at [13, 8], type=int
+      |  ||  `> [13, 8] NoInitialization
+      |  []> [13, 10] DeclVar
+      |      +> [13, 4] Identifier (int)
+      |      |  definition: type (builtin), type=int
+      |      +> [13, 10] Identifier (b)
+      |      |  definition: variable defined at [13, 10], type=int
+      |      `> [13, 10] NoInitialization
+      `> [14, 4] ListInst [List with 3 elements]
+         []> [14, 4] IfThenElse
+         ||  +> [14, 7] Greater
+         ||  |  type: boolean
+         ||  |  +> [14, 7] Assign
+         ||  |  |  type: int
+         ||  |  |  +> [14, 8] Identifier (a)
+         ||  |  |  |  definition: variable defined at [13, 8], type=int
+         ||  |  |  `> [14, 12] Int (10)
+         ||  |  |     type: int
+         ||  |  `> [14, 18] Assign
+         ||  |     type: int
+         ||  |     +> [14, 19] Identifier (b)
+         ||  |     |  definition: variable defined at [13, 10], type=int
+         ||  |     `> [14, 23] Int (5)
+         ||  |        type: int
+         ||  +> [15, 8] ListInst [List with 1 elements]
+         ||  |  []> [15, 8] Println
+         ||  |      `> [15, 16] ListExpr [List with 5 elements]
+         ||  |         []> [15, 16] StringLiteral (AFFECT SUCCESS a()
+         ||  |         ||  type: string
+         ||  |         []> [15, 36] Identifier (a)
+         ||  |         ||  definition: variable defined at [13, 8], type=int
+         ||  |         []> [15, 38] StringLiteral () > b()
+         ||  |         ||  type: string
+         ||  |         []> [15, 47] Identifier (b)
+         ||  |         ||  definition: variable defined at [13, 10], type=int
+         ||  |         []> [15, 49] StringLiteral ())
+         ||  |             type: string
+         ||  `> ListInst [List with 0 elements]
+         []> [17, 4] IfThenElse
+         ||  +> [17, 7] LowerOrEqual
+         ||  |  type: boolean
+         ||  |  +> [17, 7] Assign
+         ||  |  |  type: int
+         ||  |  |  +> [17, 8] Identifier (a)
+         ||  |  |  |  definition: variable defined at [13, 8], type=int
+         ||  |  |  `> [17, 12] Int (150)
+         ||  |  |     type: int
+         ||  |  `> [17, 20] Assign
+         ||  |     type: int
+         ||  |     +> [17, 21] Identifier (b)
+         ||  |     |  definition: variable defined at [13, 10], type=int
+         ||  |     `> [17, 25] Int (300)
+         ||  |        type: int
+         ||  +> [18, 8] ListInst [List with 1 elements]
+         ||  |  []> [18, 8] Println
+         ||  |      `> [18, 16] ListExpr [List with 5 elements]
+         ||  |         []> [18, 16] StringLiteral (AFFECT SUCCESS a()
+         ||  |         ||  type: string
+         ||  |         []> [18, 36] Identifier (a)
+         ||  |         ||  definition: variable defined at [13, 8], type=int
+         ||  |         []> [18, 38] StringLiteral () <= b()
+         ||  |         ||  type: string
+         ||  |         []> [18, 48] Identifier (b)
+         ||  |         ||  definition: variable defined at [13, 10], type=int
+         ||  |         []> [18, 50] StringLiteral ())
+         ||  |             type: string
+         ||  `> ListInst [List with 0 elements]
+         []> [20, 4] IfThenElse
+             +> [20, 7] Equals
+             |  type: boolean
+             |  +> [20, 7] Assign
+             |  |  type: int
+             |  |  +> [20, 8] Identifier (a)
+             |  |  |  definition: variable defined at [13, 8], type=int
+             |  |  `> [20, 12] Divide
+             |  |     type: int
+             |  |     +> [20, 13] Identifier (b)
+             |  |     |  definition: variable defined at [13, 10], type=int
+             |  |     `> [20, 15] Int (3)
+             |  |        type: int
+             |  `> [20, 22] Assign
+             |     type: int
+             |     +> [20, 23] Identifier (b)
+             |     |  definition: variable defined at [13, 10], type=int
+             |     `> [20, 27] Minus
+             |        type: int
+             |        +> [20, 28] Identifier (b)
+             |        |  definition: variable defined at [13, 10], type=int
+             |        `> [20, 32] Int (200)
+             |           type: int
+             +> [21, 8] ListInst [List with 1 elements]
+             |  []> [21, 8] Println
+             |      `> [21, 16] ListExpr [List with 5 elements]
+             |         []> [21, 16] StringLiteral (AFFECT SUCCESS a()
+             |         ||  type: string
+             |         []> [21, 36] Identifier (a)
+             |         ||  definition: variable defined at [13, 8], type=int
+             |         []> [21, 38] StringLiteral () == b()
+             |         ||  type: string
+             |         []> [21, 48] Identifier (b)
+             |         ||  definition: variable defined at [13, 10], type=int
+             |         []> [21, 50] StringLiteral ())
+             |             type: string
+             `> ListInst [List with 0 elements]

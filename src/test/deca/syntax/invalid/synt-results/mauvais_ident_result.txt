@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/mauvais_ident.deca:11:5: mismatched input '3' expecting {INSTANCEOF, LT, GT, EQUALS, PLUS, MINUS, TIMES, SLASH, PERCENT, DOT, SEMI, EQEQ, NEQ, GEQ, LEQ, OR, AND}

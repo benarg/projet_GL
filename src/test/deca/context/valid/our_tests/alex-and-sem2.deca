@@ -1,0 +1,19 @@
+// Description:
+//    Programme vérifiant la sémantique de l'opérateur AND
+//    sur trois opérandes 
+//
+// Resultats:
+//    else branch -> expected behavior
+//    exit success
+//
+// Historique:
+//    cree le 18/01/2017
+
+{
+    if(true && false && (1/0 == 0)) {
+        println("shouldn't happen");
+    } else {
+        println("else branch -> expected behavior");
+    }
+    println("exit success");
+}

@@ -1,0 +1,8 @@
+class A {
+int a1 = 2;
+int a2 = 3;
+}
+{
+A a = new A();
+println(a.a1);
+}

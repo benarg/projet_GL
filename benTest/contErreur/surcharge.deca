@@ -1,0 +1,6 @@
+class A {
+    void p() {}
+}
+class B extends A {
+    int p() {}
+}

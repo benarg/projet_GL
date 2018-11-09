@@ -1,0 +1,52 @@
+`> [9, 0] Program
+   +> [9, 0] ListDeclClass [List with 0 elements]
+   `> [9, 0] Main
+      +> [10, 4] ListDeclVar [List with 6 elements]
+      |  []> [10, 8] DeclVar
+      |  ||  +> [10, 4] Identifier (int)
+      |  ||  +> [10, 8] Identifier (i1)
+      |  ||  `> [10, 8] NoInitialization
+      |  []> [11, 8] DeclVar
+      |  ||  +> [11, 4] Identifier (int)
+      |  ||  +> [11, 8] Identifier (i2)
+      |  ||  `> [11, 8] NoInitialization
+      |  []> [12, 12] DeclVar
+      |  ||  +> [12, 4] Identifier (boolean)
+      |  ||  +> [12, 12] Identifier (b1)
+      |  ||  `> [12, 12] NoInitialization
+      |  []> [12, 16] DeclVar
+      |  ||  +> [12, 4] Identifier (boolean)
+      |  ||  +> [12, 16] Identifier (b2)
+      |  ||  `> [12, 16] NoInitialization
+      |  []> [13, 8] DeclVar
+      |  ||  +> [13, 4] Identifier (int)
+      |  ||  +> [13, 8] Identifier (i3)
+      |  ||  `> [13, 8] NoInitialization
+      |  []> [13, 12] DeclVar
+      |      +> [13, 4] Identifier (int)
+      |      +> [13, 12] Identifier (i4)
+      |      `> [13, 12] NoInitialization
+      `> [14, 4] ListInst [List with 7 elements]
+         []> [14, 4] Assign
+         ||  +> [14, 4] Identifier (i3)
+         ||  `> [14, 9] Int (0)
+         []> [15, 4] Assign
+         ||  +> [15, 4] Identifier (i4)
+         ||  `> [15, 8] Int (1)
+         []> [16, 4] Assign
+         ||  +> [16, 4] Identifier (i2)
+         ||  `> [16, 9] Identifier (i4)
+         []> [17, 4] Assign
+         ||  +> [17, 4] Identifier (b1)
+         ||  `> [17, 9] BooleanLiteral (true)
+         []> [18, 4] Assign
+         ||  +> [18, 4] Identifier (b2)
+         ||  `> [18, 9] Identifier (b1)
+         []> [20, 4] Println
+         ||  `> [20, 12] ListExpr [List with 2 elements]
+         ||     []> [20, 12] StringLiteral (This is i3 : )
+         ||     []> [20, 29] Identifier (i3)
+         []> [21, 4] Println
+             `> [21, 12] ListExpr [List with 2 elements]
+                []> [21, 12] StringLiteral (This is i4 : )
+                []> [21, 29] Identifier (i4)

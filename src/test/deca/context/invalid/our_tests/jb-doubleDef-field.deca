@@ -1,0 +1,12 @@
+// Description:
+//    DoubleDef of field
+//
+// Resultats:
+//    Should throw a contextual error (rule 3.17)
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    int x, x;
+}

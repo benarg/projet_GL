@@ -1,0 +1,27 @@
+// Description:
+//    Variable declarations with initializations and assign 
+//
+// Resultats:
+//    
+//
+// Historique:
+//    cree le 10/01/2017
+
+{
+    int i1 = 1;
+    int i2 = 2;
+    float f1 = 1.1;
+    float f2 = 2.2;
+    int i3, i4;
+    boolean b1 = true;
+    boolean b2 = false;
+    boolean b3, b4;
+    b3 = true;
+    b4 = false;
+
+    println("This is i1 : ", i1);
+    println("This is i2 : ", i2);
+    println("This is f1 : ", f1);
+    println("This is f2 : ", f2);
+
+}

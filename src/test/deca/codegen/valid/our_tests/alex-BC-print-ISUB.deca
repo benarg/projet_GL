@@ -1,0 +1,15 @@
+// Description:
+//    Teste le print et println d'une soustraction sur un entier
+//
+// Resultats:
+//    - ISUB1       : 9 - 6 - 3               = 0
+//    - ISUB2       : 365 - 31 - 7            = 327
+// 
+// Historique:
+//    cree le 17/01/2017
+
+{
+    println("- ISUB1       : 9 - 6 - 3               = ", 9 - 6 - 3);
+    print("- ISUB2       : 365 - 31 - 7            = ", 365 - 31 - 7);
+    println("");
+}

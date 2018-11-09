@@ -1,0 +1,3 @@
+`> [9, 0] Program
+   +> [9, 0] ListDeclClass [List with 0 elements]
+   `> [9, 0] EmptyMain

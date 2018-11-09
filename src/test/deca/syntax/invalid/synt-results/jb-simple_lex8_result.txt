@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/jb-simple_lex8.deca:12:1: left-hand side of assignment is not an lvalue

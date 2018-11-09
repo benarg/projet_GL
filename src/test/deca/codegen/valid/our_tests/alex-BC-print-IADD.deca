@@ -1,0 +1,15 @@
+// Description:
+//    Teste le print et println d'une addition sur un entier
+//
+// Resultats:
+//    - IADD1       : 1 + 2 + 3 + 4           = 10
+//    - IADD2       : 5 + 6 + 7 + 8           = 26
+// 
+// Historique:
+//    cree le 17/01/2017
+
+{
+    println("- IADD1       : 1 + 2 + 3 + 4           = ", 1 + 2 + 3 + 4);
+    print("- IADD2       : 5 + 6 + 7 + 8           = ", 5 + 6 + 7 + 8);
+    println("");
+}

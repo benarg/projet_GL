@@ -1,0 +1,12 @@
+// Description:
+//    test simple de programme contextuellement incorrect
+//
+// Resultats:
+//    Ligne 11: variable a est deja initialisee
+// 
+// Historique:
+//    cree le 12/01/2017
+
+{
+   int a = 3.0;
+}

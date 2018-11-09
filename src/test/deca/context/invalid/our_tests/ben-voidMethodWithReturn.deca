@@ -1,0 +1,16 @@
+// Description:
+//    Invalid method - a void method which returns something
+//
+// Resultats:
+//    Should throw Contextual error (rule 3.24)
+//
+// Historique:
+//    cree le 23/01/2017
+
+
+class A {
+  int x;
+  void set() {
+    return 2;
+  }
+}

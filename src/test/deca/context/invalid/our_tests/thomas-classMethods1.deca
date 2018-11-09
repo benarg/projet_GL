@@ -1,0 +1,40 @@
+class A {
+
+    B b = new B();
+
+    int x = 0;
+
+    void add(int x) {
+        this.x = this.x + x;
+        b.x = b.x + 1;
+    }
+
+
+}
+
+class B {
+
+    protected int x;
+
+    void add() {
+
+        this.x = this.x + 1;
+
+    }
+
+
+}
+
+
+{
+
+    A a = new A();
+
+    println(a.x);
+    println(a.b.x);
+    a.add(3);
+    println(a.x);
+    println(a.b.x);
+    
+
+}

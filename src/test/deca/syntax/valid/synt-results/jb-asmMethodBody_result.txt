@@ -1,0 +1,29 @@
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 1 elements]
+   |  []> [10, 0] DeclClass
+   |      +> [10, 6] Identifier (A)
+   |      +> [10, 8] Identifier (Object)
+   |      +> [11, 4] ListDeclField [List with 0 elements]
+   |      `> [11, 4] ListDeclMethod [List with 1 elements]
+   |         []> [11, 4] DeclMethod
+   |             +> [11, 4] Identifier (boolean)
+   |             +> [11, 12] Identifier (asmMethod)
+   |             +> [11, 22] ListDeclParam [List with 0 elements]
+   |             `> [12, 0] MethodBodyASM
+   `> [18, 0] Main
+      +> [19, 4] ListDeclVar [List with 0 elements]
+      `> [19, 4] ListInst [List with 1 elements]
+         []> [19, 4] IfThenElse
+             +> [19, 8] MethodCall
+             |  +> [19, 9] New
+             |  |  `> [19, 13] Identifier (A)
+             |  +> [19, 18] Identifier (asmMethod)
+             |  `> [19, 28] ListExpr [List with 0 elements]
+             +> [20, 8] ListInst [List with 1 elements]
+             |  []> [20, 8] Println
+             |      `> [20, 16] ListExpr [List with 1 elements]
+             |         []> [20, 16] StringLiteral (SUCCESS)
+             `> [21, 6] ListInst [List with 1 elements]
+                []> [22, 8] Println
+                    `> [22, 16] ListExpr [List with 1 elements]
+                       []> [22, 16] StringLiteral (FAIL)

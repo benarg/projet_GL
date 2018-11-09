@@ -1,0 +1,12 @@
+// Description:
+//    UnaryExpr valid
+//
+// Resultats:
+//    Ligne 11: Expression unaire
+// 
+// Historique:
+//    cree le 18/01/2017
+
+{
+println(-3);
+}

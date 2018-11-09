@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/robin-test6-elseElse.deca:3:0: mismatched input 'boolean' expecting {<EOF>, CLASS, OBRACE}

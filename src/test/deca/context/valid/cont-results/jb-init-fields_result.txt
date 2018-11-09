@@ -1,0 +1,144 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [10, 0] Program
+   +> [10, 0] ListDeclClass [List with 1 elements]
+   |  []> [10, 0] DeclClass
+   |      +> [10, 6] Identifier (A)
+   |      |  definition: type defined at [10, 6], type=A
+   |      +> [10, 8] Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> [11, 4] ListDeclField [List with 7 elements]
+   |      |  []> [11, 8] [Visibility=PUBLIC] DeclField
+   |      |  ||  +> [11, 4] Identifier (int)
+   |      |  ||  |  definition: type (builtin), type=int
+   |      |  ||  +> [11, 8] Identifier (x)
+   |      |  ||  |  definition: field defined at [11, 8], type=int
+   |      |  ||  `> [11, 8] Initialization
+   |      |  ||     `> [11, 12] Int (3)
+   |      |  ||        type: int
+   |      |  []> [11, 15] [Visibility=PUBLIC] DeclField
+   |      |  ||  +> [11, 4] Identifier (int)
+   |      |  ||  |  definition: type (builtin), type=int
+   |      |  ||  +> [11, 15] Identifier (x2)
+   |      |  ||  |  definition: field defined at [11, 15], type=int
+   |      |  ||  `> [11, 15] NoInitialization
+   |      |  []> [12, 10] [Visibility=PUBLIC] DeclField
+   |      |  ||  +> [12, 4] Identifier (float)
+   |      |  ||  |  definition: type (builtin), type=float
+   |      |  ||  +> [12, 10] Identifier (y)
+   |      |  ||  |  definition: field defined at [12, 10], type=float
+   |      |  ||  `> [12, 10] Initialization
+   |      |  ||     `> [12, 14] Float (1.2)
+   |      |  ||        type: float
+   |      |  []> [12, 19] [Visibility=PUBLIC] DeclField
+   |      |  ||  +> [12, 4] Identifier (float)
+   |      |  ||  |  definition: type (builtin), type=float
+   |      |  ||  +> [12, 19] Identifier (y2)
+   |      |  ||  |  definition: field defined at [12, 19], type=float
+   |      |  ||  `> [12, 19] NoInitialization
+   |      |  []> [13, 11] [Visibility=PUBLIC] DeclField
+   |      |  ||  +> [13, 4] Identifier (Object)
+   |      |  ||  |  definition: type (builtin), type=Object
+   |      |  ||  +> [13, 11] Identifier (z)
+   |      |  ||  |  definition: field defined at [13, 11], type=Object
+   |      |  ||  `> [13, 11] Initialization
+   |      |  ||     `> [13, 15] New
+   |      |  ||        type: Object
+   |      |  ||        `> [13, 19] Identifier (Object)
+   |      |  ||           definition: type (builtin), type=Object
+   |      |  []> [14, 11] [Visibility=PUBLIC] DeclField
+   |      |  ||  +> [14, 4] Identifier (Object)
+   |      |  ||  |  definition: type (builtin), type=Object
+   |      |  ||  +> [14, 11] Identifier (w)
+   |      |  ||  |  definition: field defined at [14, 11], type=Object
+   |      |  ||  `> [14, 11] NoInitialization
+   |      |  []> [15, 12] [Visibility=PUBLIC] DeclField
+   |      |      +> [15, 4] Identifier (boolean)
+   |      |      |  definition: type (builtin), type=boolean
+   |      |      +> [15, 12] Identifier (b)
+   |      |      |  definition: field defined at [15, 12], type=boolean
+   |      |      `> [15, 12] Initialization
+   |      |         `> [15, 16] BooleanLiteral (true)
+   |      |            type: boolean
+   |      `> [11, 4] ListDeclMethod [List with 0 elements]
+   `> [18, 0] Main
+      +> [19, 4] ListDeclVar [List with 1 elements]
+      |  []> [19, 6] DeclVar
+      |      +> [19, 4] Identifier (A)
+      |      |  definition: type defined at [10, 6], type=A
+      |      +> [19, 6] Identifier (a)
+      |      |  definition: variable defined at [19, 6], type=A
+      |      `> [19, 6] Initialization
+      |         `> [19, 10] New
+      |            type: A
+      |            `> [19, 14] Identifier (A)
+      |               definition: type defined at [10, 6], type=A
+      `> [20, 4] ListInst [List with 1 elements]
+         []> [20, 4] IfThenElse
+             +> [20, 8] And
+             |  type: boolean
+             |  +> [20, 8] And
+             |  |  type: boolean
+             |  |  +> [20, 8] And
+             |  |  |  type: boolean
+             |  |  |  +> [20, 8] And
+             |  |  |  |  type: boolean
+             |  |  |  |  +> [20, 8] Equals
+             |  |  |  |  |  type: boolean
+             |  |  |  |  |  +> [20, 9] Selection
+             |  |  |  |  |  |  type: int
+             |  |  |  |  |  |  +> [20, 9] Identifier (a)
+             |  |  |  |  |  |  |  definition: variable defined at [19, 6], type=A
+             |  |  |  |  |  |  `> [20, 11] Identifier (x)
+             |  |  |  |  |  |     definition: field defined at [11, 8], type=int
+             |  |  |  |  |  `> [20, 16] Int (3)
+             |  |  |  |  |     type: int
+             |  |  |  |  `> [20, 22] Equals
+             |  |  |  |     type: boolean
+             |  |  |  |     +> [20, 23] Selection
+             |  |  |  |     |  type: float
+             |  |  |  |     |  +> [20, 23] Identifier (a)
+             |  |  |  |     |  |  definition: variable defined at [19, 6], type=A
+             |  |  |  |     |  `> [20, 25] Identifier (y)
+             |  |  |  |     |     definition: field defined at [12, 10], type=float
+             |  |  |  |     `> [20, 30] Float (1.2)
+             |  |  |  |        type: float
+             |  |  |  `> [20, 38] InstanceOf
+             |  |  |     type: boolean
+             |  |  |     +> [20, 39] Selection
+             |  |  |     |  type: Object
+             |  |  |     |  +> [20, 39] Identifier (a)
+             |  |  |     |  |  definition: variable defined at [19, 6], type=A
+             |  |  |     |  `> [20, 41] Identifier (z)
+             |  |  |     |     definition: field defined at [13, 11], type=Object
+             |  |  |     `> [20, 54] Identifier (Object)
+             |  |  |        definition: type (builtin), type=Object
+             |  |  `> [20, 65] Equals
+             |  |     type: boolean
+             |  |     +> [20, 66] Selection
+             |  |     |  type: Object
+             |  |     |  +> [20, 66] Identifier (a)
+             |  |     |  |  definition: variable defined at [19, 6], type=A
+             |  |     |  `> [20, 68] Identifier (w)
+             |  |     |     definition: field defined at [14, 11], type=Object
+             |  |     `> [20, 73] Null
+             |  |        type: null
+             |  `> [20, 82] Selection
+             |     type: boolean
+             |     +> [20, 82] Identifier (a)
+             |     |  definition: variable defined at [19, 6], type=A
+             |     `> [20, 84] Identifier (b)
+             |        definition: field defined at [15, 12], type=boolean
+             +> [21, 8] ListInst [List with 1 elements]
+             |  []> [21, 8] Println
+             |      `> [21, 16] ListExpr [List with 1 elements]
+             |         []> [21, 16] StringLiteral (SUCCESS)
+             |             type: string
+             `> [22, 6] ListInst [List with 1 elements]
+                []> [23, 8] Println
+                    `> [23, 16] ListExpr [List with 1 elements]
+                       []> [23, 16] StringLiteral (FAIL)
+                           type: string

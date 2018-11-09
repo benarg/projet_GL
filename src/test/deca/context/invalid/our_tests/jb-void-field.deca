@@ -1,0 +1,12 @@
+// Description:
+//    Void field
+//
+// Resultats:
+//    Should throw a contextual error (rule 2.5)
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    void x;
+}

@@ -1,0 +1,1 @@
+src/test/deca/syntax/invalid/our_synt_tests/robin-test10-invSymb.deca:4:11: l'entrée n'a pas été reconnue -> DEFAULT

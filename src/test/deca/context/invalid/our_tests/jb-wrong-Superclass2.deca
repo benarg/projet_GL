@@ -1,0 +1,11 @@
+// Description:
+//    Class extends a wrong superclass
+//
+// Resultats:
+//    Should a contextual error (rule 0.2)
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A extends WrongSuperClass {
+}

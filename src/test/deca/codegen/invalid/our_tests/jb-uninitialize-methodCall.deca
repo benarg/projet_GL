@@ -1,0 +1,21 @@
+// Description:
+//    Calling on a non initilized Object
+//
+// Resultats:
+//    Should raise an error on execution
+//
+// Historique:
+//    cree le 22/01/2017
+
+class A {
+    protected int x;
+    int getX() {
+        return x;
+    }
+}
+
+{
+    A a;
+    println(a.getX());
+    println("FAIL");
+}

@@ -1,0 +1,5 @@
+// Error: code missing "{" at the beginning.
+
+
+    println("I'm missing the {");
+}

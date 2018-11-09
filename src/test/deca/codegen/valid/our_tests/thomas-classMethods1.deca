@@ -1,0 +1,15 @@
+class A {
+
+    void hello() {
+        println("hello");
+    }
+
+}
+
+{
+
+    A a = new A();
+
+    a.hello();
+
+}

@@ -1,0 +1,4 @@
+OBRACE: [@0,408:408='{',<34>,13:0]
+PRINTLN: [@1,414:420='println',<14>,14:4]
+OPARENT: [@2,421:421='(',<32>,14:11]
+src/test/deca/syntax/invalid/our_lex_tests/alex-car-echappement1.deca:14:13: l'entrée n'a pas été reconnue -> DEFAULT

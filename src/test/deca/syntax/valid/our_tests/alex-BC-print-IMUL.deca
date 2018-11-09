@@ -1,0 +1,15 @@
+// Description:
+//    Teste le print et println d'une multiplication sur un entier
+//
+// Resultats:
+//    - IMUL1       : 5 * 5 * 4               = 100
+//    - IMUL2       : 50 * 5 * 4              = 1000
+// 
+// Historique:
+//    cree le 17/01/2017
+
+{
+    println("- IMUL1       : 5 * 5 * 4               = ", 5 * 5 * 4);
+    print("- IMUL2       : 50 * 5 * 4              = ", 50 * 5 * 4);
+    println("");
+}

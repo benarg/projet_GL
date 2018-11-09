@@ -1,0 +1,125 @@
+DEBUG fr.ensimag.deca.tree.Program.verifyProgram(Program.java:48) - verify program: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:46) - verify listClass: start
+DEBUG fr.ensimag.deca.tree.ListDeclClass.verifyListClass(ListDeclClass.java:52) - verify listClass: end
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:35) - verify Main: start
+DEBUG fr.ensimag.deca.tree.Main.verifyMain(Main.java:50) - verify Main: end
+`> [1, 0] Program
+   +> [1, 0] ListDeclClass [List with 1 elements]
+   |  []> [1, 0] DeclClass
+   |      +> [1, 6] Identifier (Fibonacci)
+   |      |  definition: type defined at [1, 6], type=Fibonacci
+   |      +> [1, 16] Identifier (Object)
+   |      |  definition: type (builtin), type=Object
+   |      +> [3, 4] ListDeclField [List with 0 elements]
+   |      `> [3, 4] ListDeclMethod [List with 1 elements]
+   |         []> [3, 4] DeclMethod
+   |             +> [3, 4] Identifier (int)
+   |             |  definition: type (builtin), type=int
+   |             +> [3, 8] Identifier (Fibo)
+   |             |  definition: method defined at [3, 4], type=int
+   |             +> [3, 13] ListDeclParam [List with 1 elements]
+   |             |  []> [3, 13] DeclParam
+   |             |      +> [3, 13] Identifier (int)
+   |             |      |  definition: type (builtin), type=int
+   |             |      `> [3, 17] Identifier (n)
+   |             |         definition: parameter defined at [3, 17], type=int
+   |             `> [3, 20] MethodBody
+   |                +> [3, 20] ListDeclVar [List with 0 elements]
+   |                `> [3, 20] ListInst [List with 4 elements]
+   |                   []> [5, 8] IfThenElse
+   |                   ||  +> [5, 13] Lower
+   |                   ||  |  type: boolean
+   |                   ||  |  +> [5, 13] Identifier (n)
+   |                   ||  |  |  definition: parameter defined at [3, 17], type=int
+   |                   ||  |  `> [5, 17] Int (1)
+   |                   ||  |     type: int
+   |                   ||  +> [6, 12] ListInst [List with 2 elements]
+   |                   ||  |  []> [6, 12] Println
+   |                   ||  |  ||  `> [6, 20] ListExpr [List with 1 elements]
+   |                   ||  |  ||     []> [6, 20] StringLiteral (n must be greater than or equal to 1)
+   |                   ||  |  ||         type: string
+   |                   ||  |  []> [7, 12] Return
+   |                   ||  |      `> [7, 19] UnaryMinus
+   |                   ||  |         type: int
+   |                   ||  |         `> [7, 20] Int (1)
+   |                   ||  |            type: int
+   |                   ||  `> ListInst [List with 0 elements]
+   |                   []> [9, 8] IfThenElse
+   |                   ||  +> [9, 12] Equals
+   |                   ||  |  type: boolean
+   |                   ||  |  +> [9, 12] Identifier (n)
+   |                   ||  |  |  definition: parameter defined at [3, 17], type=int
+   |                   ||  |  `> [9, 17] Int (1)
+   |                   ||  |     type: int
+   |                   ||  +> [10, 12] ListInst [List with 1 elements]
+   |                   ||  |  []> [10, 12] Return
+   |                   ||  |      `> [10, 19] Int (1)
+   |                   ||  |         type: int
+   |                   ||  `> ListInst [List with 0 elements]
+   |                   []> [12, 8] IfThenElse
+   |                   ||  +> [12, 12] Equals
+   |                   ||  |  type: boolean
+   |                   ||  |  +> [12, 12] Identifier (n)
+   |                   ||  |  |  definition: parameter defined at [3, 17], type=int
+   |                   ||  |  `> [12, 17] Int (2)
+   |                   ||  |     type: int
+   |                   ||  +> [13, 12] ListInst [List with 1 elements]
+   |                   ||  |  []> [13, 12] Return
+   |                   ||  |      `> [13, 19] Int (1)
+   |                   ||  |         type: int
+   |                   ||  `> ListInst [List with 0 elements]
+   |                   []> [15, 8] Return
+   |                       `> [15, 15] Plus
+   |                          type: int
+   |                          +> [15, 16] MethodCall
+   |                          |  type: int
+   |                          |  +> [15, 16] This
+   |                          |  |  type: Fibonacci
+   |                          |  +> [15, 16] Identifier (Fibo)
+   |                          |  |  definition: method defined at [3, 4], type=int
+   |                          |  `> [15, 21] ListExpr [List with 1 elements]
+   |                          |     []> [15, 21] Minus
+   |                          |         type: int
+   |                          |         +> [15, 21] Identifier (n)
+   |                          |         |  definition: parameter defined at [3, 17], type=int
+   |                          |         `> [15, 23] Int (1)
+   |                          |            type: int
+   |                          `> [15, 28] MethodCall
+   |                             type: int
+   |                             +> [15, 28] This
+   |                             |  type: Fibonacci
+   |                             +> [15, 28] Identifier (Fibo)
+   |                             |  definition: method defined at [3, 4], type=int
+   |                             `> [15, 33] ListExpr [List with 1 elements]
+   |                                []> [15, 33] Minus
+   |                                    type: int
+   |                                    +> [15, 33] Identifier (n)
+   |                                    |  definition: parameter defined at [3, 17], type=int
+   |                                    `> [15, 35] Int (2)
+   |                                       type: int
+   `> [20, 0] Main
+      +> [22, 4] ListDeclVar [List with 1 elements]
+      |  []> [22, 14] DeclVar
+      |      +> [22, 4] Identifier (Fibonacci)
+      |      |  definition: type defined at [1, 6], type=Fibonacci
+      |      +> [22, 14] Identifier (f)
+      |      |  definition: variable defined at [22, 14], type=Fibonacci
+      |      `> [22, 14] Initialization
+      |         `> [22, 18] New
+      |            type: Fibonacci
+      |            `> [22, 22] Identifier (Fibonacci)
+      |               definition: type defined at [1, 6], type=Fibonacci
+      `> [24, 4] ListInst [List with 1 elements]
+         []> [24, 4] Println
+             `> [24, 12] ListExpr [List with 2 elements]
+                []> [24, 12] StringLiteral (Fibo(20) = )
+                ||  type: string
+                []> [24, 27] MethodCall
+                    type: int
+                    +> [24, 27] Identifier (f)
+                    |  definition: variable defined at [22, 14], type=Fibonacci
+                    +> [24, 29] Identifier (Fibo)
+                    |  definition: method defined at [3, 4], type=int
+                    `> [24, 34] ListExpr [List with 1 elements]
+                       []> [24, 34] Int (20)
+                           type: int

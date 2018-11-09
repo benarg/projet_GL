@@ -1,0 +1,15 @@
+// Description:
+//    Teste le print et println d'un entier
+//
+// Resultats:
+//    - INT1        : Quarante-Deux           = 42
+//    - INT2        : Treize                  = 13
+// 
+// Historique:
+//    cree le 17/01/2017
+
+{
+    println("- INT1        : Quarante-Deux           = ", 42);
+    print("- INT2        : Treize                  = ", 13);
+    println("");
+}
